@@ -1,9 +1,9 @@
 ---
 title: "Git prático para iniciantes - O início de um projeto"
 slug: git-prático-para-iniciantes
-date: 2026-04-02
-tags: versioning, guide
-author: Matheus Henrique
+date: 2026-02-11
+tags: versionamento, guia
+author: matheus
 ---
 
 # Introdução
@@ -45,7 +45,7 @@ enzo@pc-do-enzo:~/projeto$
 
 É essencial que você entenda que o git possui três áreas e que seus arquivos vão ter estados nessas áreas. As áreas basicamente são: _working directory_, _staging area_ e o diretório `.git` do projeto.
 
-![As três áreas do git](../content/media/git-areas.png)
+<img src="/media/git-areas.png" alt="As três áreas do git" width="700" height="500">
 
 Resumindo o fluxo nessas áreas de maneira simples.
 

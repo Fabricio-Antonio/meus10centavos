@@ -1,10 +1,10 @@
 {
   "marmite_version": "0.2.7",
-  "posts": 10,
+  "posts": 11,
   "pages": 2,
-  "generated_at": "2026-02-04 00:33:12.136804631 -03:00",
-  "timestamp": 1770175992,
-  "elapsed_time": 0.095628908,
+  "generated_at": "2026-02-11 09:11:33.308937096 -03:00",
+  "timestamp": 1770811893,
+  "elapsed_time": 0.104011903,
   "config": {
     "name": "Meus 10 Centavos",
     "tagline": "Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião",
@@ -56,6 +56,12 @@
     ],
     "extra": null,
     "authors": {
+      "matheus": {
+        "name": "Matheus Henrique",
+        "avatar": "https://avatars.githubusercontent.com/u/44449793?v=4",
+        "bio": "Desenvolvedor, como muitos outros, com alguma experiência no que faz.",
+        "links": null
+      },
       "fabricio": {
         "name": "Fabrício Santos",
         "avatar": "https://avatars.githubusercontent.com/u/90152237?v=4",
