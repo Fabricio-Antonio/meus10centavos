@@ -247,3 +247,9 @@ Queria deixar registrado, meu agradecimento ao meu amigo Fabrício, que criou es
 https://git-scm.com/book/en/v2
 
 https://git-scm.com/book/pt-br/v2
+
+##### Créditos
+Agradeço a contribuição do Matheus Henrique.
+
+GitHub: [github.com/mathstylish](https://github.com/mathstylish)\
+LinkedIn: [linkedin.com/in/mathstylish/](https://www.linkedin.com/in/mathstylish/)
