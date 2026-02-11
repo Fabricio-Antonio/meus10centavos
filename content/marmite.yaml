@@ -53,6 +53,10 @@ authors:
     name: "Carlos Souza"
     bio: "IT enthusiast. I'm from Pernambuco, Brazil, currently studying to develop open source projects as a hobby."
     avatar: "https://avatars.githubusercontent.com/u/219468948?v=4"
+  matheus:
+    name: "Matheus Henrique"
+    bio: "Desenvolvedor, como muitos outros, com alguma experiência no que faz."
+    avatar: "https://avatars.githubusercontent.com/u/44449793?v=4"
 
 toc: true
 json_feed: true
