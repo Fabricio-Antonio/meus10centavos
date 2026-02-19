@@ -21,6 +21,7 @@ A forma de contribuição do projeto é via Fork.
 
 * Sempre escreva formalmente os conteúdos e não cite questões que não estejam intimamente ligadas com o tópico abordado. Caso não estejam ligadas ao tópico abordado, que seja então como uma forma de exemplificar melhor a ideia.
 * Não escreva palavrões, e evite exprimir a usa opinião própria sobre um assunto
+* Todos os conteúdos são colocados em /content e seguem o formato `ANO-MES-DIA-titulo.md`
 
 ## Reportando Problemas
 
