@@ -1,4 +1,4 @@
-# Estruturas Binárias
+ # Estruturas Binárias
 
 * Nota previa: Nenhum código aqui está sendo feito com uma sintaxe de uma linguagem real. O intuito disso é pra evitar de o conhecimento se atrelar à uma linguagem em específico
 
@@ -102,7 +102,8 @@ Explicando onde esse NameInternalizer pode acabar pecando, a gente começa com u
 class InternID {
   offset: int,
   length: int,
-}```
+}
+```
 
 Que no caso o 'offset' é onde a String se iniciar e o 'length' o tamanho. O código então ficaria algo como?
 
@@ -131,7 +132,6 @@ Pra implementar esse InternID então fica 'simples', em termos porque também é
 Pra implementar isso então, a mesma lógica das flags, mas um pouco diferente:
 
 ```
-
 const MAX_LENGTH = 400;
 
 class InternID {
