@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate><lastBuildDate>Thu, 26 Feb 2026 02:23:22 GMT</lastBuildDate><generator>marmite</generator><item><title>Como criar um blog com Marmite</title><link>https://meus10centavos.vercel.app//como-criar-blog-marmite.html</link><author>fabricio</author><category>tutorial</category><category>marmite</category><category>rust</category><category>blog</category><guid>https://meus10centavos.vercel.app//como-criar-blog-marmite.html</guid><pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">tag-blog</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<p>Neste tutorial, vou mostrar como criar seu próprio blog usando o <strong>Marmite</strong>, um gerador de sites estáticos escrito em Rust.</p>
+<h2><a href="#o-que-é-o-marmite" aria-hidden="true" class="anchor" id="o-que-é-o-marmite"></a>O que é o Marmite?</h2>
+<p><a href="https://marmite.blog/">Marmite</a> é um gerador de sites estáticos minimalista que transforma arquivos Markdown em um blog completo. Suas principais características são:</p>
+<ul>
+<li><strong>Zero configuração</strong> para começar</li>
+<li><strong>Escrito em Rust</strong> — rápido e eficiente</li>
+<li><strong>Temas e colorschemes</strong> incluídos</li>
+<li><strong>Busca integrada</strong></li>
+<li><strong>RSS Feed</strong></li>
+<li><strong>Suporte a tags e arquivos</strong></li>
+</ul>
+<h2><a href="#instalação" aria-hidden="true" class="anchor" id="instalação"></a>Instalação</h2>
+<p>A forma mais fácil de instalar é usando o script de instalação:</p>
+<pre><code class="language-bash">curl -sS https://marmite.blog/install.sh | sh
+</code></pre>
+<p>Ou se você tem Rust instalado:</p>
+<pre><code class="language-bash">cargo install marmite
+</code></pre>
+<h2><a href="#criando-seu-primeiro-blog" aria-hidden="true" class="anchor" id="criando-seu-primeiro-blog"></a>Criando seu primeiro blog</h2>
+<ol>
+<li><strong>Crie uma pasta para o conteúdo:</strong></li>
+</ol>
+<pre><code class="language-bash">mkdir meu-blog
+cd meu-blog
+</code></pre>
+<ol start="2">
+<li><strong>Inicialize o blog:</strong></li>
+</ol>
+<pre><code class="language-bash">marmite . --init-site \
+    --name &quot;Meu Blog&quot; \
+    --tagline &quot;Minha descrição&quot; \
+    --enable-search true
+</code></pre>
+<ol start="3">
+<li><strong>Crie seu primeiro post:</strong></li>
+</ol>
+<pre><code class="language-bash">marmite . --new &quot;Meu Primeiro Post&quot; -t &quot;novo,post&quot;
+</code></pre>
+<ol start="4">
+<li><strong>Gere e visualize o site:</strong></li>
+</ol>
+<pre><code class="language-bash">marmite . --serve
+</code></pre>
+<p>Acesse <code>http://localhost:8000</code> e veja seu blog funcionando!</p>
+<h2><a href="#estrutura-de-um-post" aria-hidden="true" class="anchor" id="estrutura-de-um-post"></a>Estrutura de um post</h2>
+<p>Os posts são arquivos Markdown com um frontmatter YAML:</p>
+<pre><code class="language-markdown">---
+title: &quot;Título do Post&quot;
+date: 2026-01-31
+tags: tag1, tag2
+---
+
+Conteúdo do post aqui...
+</code></pre>
+<h2><a href="#próximos-passos" aria-hidden="true" class="anchor" id="próximos-passos"></a>Próximos passos</h2>
+<ul>
+<li>Personalize o <code>marmite.yaml</code> com suas informações</li>
+<li>Explore os colorschemes disponíveis</li>
+<li>Adicione mais conteúdo!</li>
+</ul>
+<hr />
+<p>Gostou? Deixe seu comentário!</p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>Bem-vindo(a) ao Meus 10 Centavos!</title><link>https://meus10centavos.vercel.app//bem-vindo.html</link><author>fabricio</author><category>blog</category><category>pessoal</category><category>inicio</category><guid>https://meus10centavos.vercel.app//bem-vindo.html</guid><pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">tag-blog</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<p>Olá, seja bem-vindo(a) ao meu cantinho na internet!</p>
+<p>Minha ideia com esse blog é manter minhas opiniões e dicas sobre assuntos que praticamente toda semana alguém me pergunta. Por isso, irei manter o Meus 10 Centavos como um hub dos meus conhecimentos e experiências; uma outra boa definição é &quot;segundo cérebro&quot;.</p>
+<p>Não irei discutir necessariamente sobre os assuntos trending topics da semana. Os critérios para que uma pauta torne-se um post aqui são, primeiro e mais importante: eu querer; segundo: se muita gente me perguntar sobre o mesmo assunto e eu tiver preguiça de repetir sempre a mesma coisa; terceiro: eu achar que pode ser útil de alguma forma documentar o assunto X para a comunidade ou para mim mesmo.</p>
+<p>Não haverá uma categoria fixa para rotular meu blog, tipo: tutorial, carreira ou notícias tech. E nem quero...</p>
+<p>Aqui posso falar sem forçar o exibicionismo técnico que é exigido no GitHub e sem a falsidade do LinkedIn. Aqui posso ser eu mesmo e falar do meu jeitinho, delicado igual um cavalo, como meus amigos costumam dizer.</p>
+<h2><a href="#o-que-esperar-deste-blog" aria-hidden="true" class="anchor" id="o-que-esperar-deste-blog"></a>O que esperar deste blog?</h2>
+<p>Aqui você vai encontrar:</p>
+<p>Minha opinião sem filtro... Sem o exibicionismo técnico do GitHub nem a falsidade do LinkedIn (o exibicionismo técnico talvez apareça às vezes).</p>
+<h2><a href="#por-que-criar-um-blog-em-2026" aria-hidden="true" class="anchor" id="por-que-criar-um-blog-em-2026"></a>Por que criar um blog em 2026?</h2>
+<p>Até minha namorada achou meio besta a ideia de fazer um blog em um período em que ninguém mais acessa blogs ou lê qualquer coisa; talvez você compartilhe do mesmo pensamento dela.</p>
+<p>Mas a ideia de transmitir minhas ideias por escrito é realmente criar essa &quot;barreira&quot;. Como já citado, quero poupar saliva e não ficar repetindo sempre a mesma coisa. Até já tentei fazer um canal no YouTube. Não foi unicamente com essa proposta, mas também continha outros tipos de conteúdo, e o Meus 10 Centavos era um dos quadros do canal. Mas não sou nenhuma referência técnica como o Fabio Akita ou o Augusto Galego, os quais eu admiro muito e tenho como referência técnica e de sucesso. Nem trabalho em nenhuma Big Tech ou empresa prestigiada como Nubank, Itaú ou IBM, como os YouTubers/influencers tech que eu mesmo assisto às vezes. Então, por qual motivo alguém se importaria de assistir aos meus vídeos?</p>
+<p>Quem me assistiria, majoritariamente, seriam pessoas que vieram até mim perguntando algo que eu já tinha explicado em vídeo; contudo, pouquíssimas pessoas assistiriam realmente prestando atenção e dando valor ao que estava sendo dito. Além do que, era muito difícil competir com outros criadores que fazem conteúdo sem nenhuma profundidade, mas tinham bastante visualizações por ter uma edição hiperestimulante com GIFs, animações e legendas enormes pulando na tela.</p>
+<p>Talvez você pense: &quot;Bastava você fazer uma edição parecida&quot;. Se eu fizesse assim, a pessoa não estaria assistindo pelo valor do conteúdo, e sim pela edição hipnotizante. Não vou perder meu tempo com o esforço de escrever roteiro, lutar contra a timidez gravando, aprender e aplicar edição para as pessoas não darem valor. Escrevendo em um blog, mesmo que só uma pessoa leia, eu tenho certeza de que ela teve um real interesse no meu conteúdo. Sinto-me mais valorizado sabendo que a pessoa fez questão de exilar-se das distrações para estar 100% presente consumindo o que escrevi.</p>
+<p>Além disso, escrever ajuda a organizar os pensamentos e solidificar o conhecimento. Se, de quebra, alguém se beneficiar do que escrevo, melhor ainda!</p>
+<h2><a href="#tecnologia-do-blog" aria-hidden="true" class="anchor" id="tecnologia-do-blog"></a>Tecnologia do blog</h2>
+<p>Este blog é feito com Marmite, um gerador de sites estáticos minimalista escrito em Rust. Simples, rápido e eficiente, exatamente como um blog deveria ser.</p>
+<p>Eu já tinha pensado em fazer um blog antes, mas devido à falta de tempo para criar um do zero, acabei deixando a ideia no fundo da gaveta. Hoje descobri essa ferramenta assistindo a um episódio do podcast Papinho Tech, do Gustavo Caetano, que entrevistou o Bruno Rocha, criador do Marmite.</p>
+<h2><a href="#referências" aria-hidden="true" class="anchor" id="referências"></a>Referências</h2>
+<p><a href="https://www.youtube.com/@Akitando">Fabio Akita</a><br />
+<a href="https://www.youtube.com/@GutoGalego">Augusto Galengo</a><br />
+<a href="https://www.youtube.com/@oguscaetano">Gustavo Caetano</a><br />
+<a href="https://www.linkedin.com/in/rochacbruno/">Bruno Rocha</a></p>
+<hr />
+<p>Fique à vontade para explorar e volte sempre!</p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item></channel></rss>

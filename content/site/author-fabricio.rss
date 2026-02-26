@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Wed, 04 Feb 2026 00:00:00 GMT</pubDate><lastBuildDate>Thu, 26 Feb 2026 02:23:22 GMT</lastBuildDate><generator>marmite</generator><item><title>Faz sentido ser Full-Stack?</title><link>https://meus10centavos.vercel.app//faz-sentido-ser-fullstack.html</link><author>fabricio</author><category>carreira</category><guid>https://meus10centavos.vercel.app//faz-sentido-ser-fullstack.html</guid><pubDate>Wed, 04 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<blockquote>
+<p>&quot;Full-Stack é um indeciso, ele não sabe qual caminho seguir.&quot;  - Aleatório da Internet</p>
+</blockquote>
+<p>Foi com essa afirmação que eu me deparei outro dia, quando eu estava em um servidor de programadores, estava conversando, e um cidadão disse que, na opinião dele, um Full-Stack é um indeciso.</p>
+<p>Primeiramente se você está nesse artigo, é bem provável que você saiba o que é um Full-Stack, mas caso não saiba vou dar (lá ele!) uma explicação rápida.</p>
+<p>Um Full-Stack é o profissional da área de desenvolvimento que ele é capaz de desenvolver tanto o Front-End (a parte visual) quanto o Back-End (a parte mais lógica essencial da aplicação) tornando-se um Full-Stack, ele consegue trabalhar em uma aplicação sozinho cobrindo todas as necessidades.</p>
+<p>Por que eu discordo dessa afirmativa? Full-Stacks são altamente valorizados por terem justamente essa visão geral dos projetos. Na prática, quem precisa de um Full-Stack, majoritariamente é quem esteja priorizando entrega rápida e integração. Como por exemplo o trabalho de freelancer, de startups, de empresas pequenas.</p>
+<h2><a href="#visão-sistemática" aria-hidden="true" class="anchor" id="visão-sistemática"></a>visão sistemática.</h2>
+<p>Ser Full-Stack não significa necessariamente uma pessoa que está pulando de galho em galho, de tecnologia em tecnologia, sendo superficial em tudo. Significa ser adaptável, ser flexível, entende? Ser praticamente um &quot;canivete suíço&quot; da programação.</p>
+<p>Eu acredito que seja possível ser um Full-Stack, mas isso demanda no <strong>MÍNIMO</strong> uns <strong>4 anos</strong> para ser um Full-Stack.</p>
+<p>Eu não acredito naquela pessoa que diz:</p>
+<blockquote>
+<p>&quot;Ah, vou iniciar a programação hoje, minha meta é ser full stack, eu vou começar meus estudos. focando em ser um full stack desde agora.&quot;</p>
+</blockquote>
+<p>Não! Isso é ser <strong>Full-Esterco</strong>, faz merda no Front e no Back.</p>
+<p>Eu acredito que seja necessário no mais ou menos, no mínimo 2 anos de Front e 2 anos de Back para uma pesspa rotular-se como Full-Stack. Afinal, vamos ser sinceros, só de front-end, tem um monte de tecnologia: HTML, CSS, JavaScript, TypeScript, React, Tailwind, Next, e mais um monte.</p>
+<p>Isso pensando só no ecossistema JavaScript, obviamente. Se você, porque é minha stack, então falarei sob essa ótica, mas cada linguagem, também de front-end, tem seus frameworks específicos. Veja, são bastante tecnologias, e cada uma delas tem conceitos para se aprofundar.</p>
+<p>Eu não acredito num Full-Stack de 1 ano ou 2 anos, não. Full-Stack é uma construção a longo prazo. Como eu disse, Full-Stack não é uma pessoa que está pulando de galho em galho. É uma pessoa que tem uma visão geral de tudo.</p>
+<h2><a href="#flexibilidade-estratégica" aria-hidden="true" class="anchor" id="flexibilidade-estratégica"></a>Flexibilidade estratégica</h2>
+<p>Reforçando, o Full-Stack não é sobre ser mediano em tudo. Significa ter profundidade estratégica de acordo com o contexto. O que seria isso?</p>
+<p>Seria aprofundar seus conhecimentos de acordo com a demanda. Por exemplo, se eu entrar em uma equipe/projeto onde está precisando de um front-end, e tem uma tarefa específica, de uma tecnologia específica a qual eu não domino, então eu vou aprender ela e me aprofundo nela até onde for necessário. Da mesma forma, quando for a atuar no Back-End.</p>
+<h2><a href="#mentalidade-de-produto" aria-hidden="true" class="anchor" id="mentalidade-de-produto"></a>Mentalidade de produto</h2>
+<p>Essa é a parte que eu penso ser a melhor Full-Stack. É justamente não ver as coisas de forma isolada. É conseguir integrar e conversar com as diferentes equipes. Por exemplo, um Full-Stack, ao mesmo tempo que ele consegue pensar na performance, ele consegue pensar na UI e na UX, consegue pensar na escalabilidade de uma aplicação. Ele tem em mente que tudo faz parte de um único organismo.</p>
+<h2><a href="#mercado-exige-multidisciplinaridade" aria-hidden="true" class="anchor" id="mercado-exige-multidisciplinaridade"></a>Mercado exige multidisciplinaridade</h2>
+<p>Hoje ainda mais do que quando eu escrevi esse texto 9 meses atrás...<br />
+Já que a I.A. pode auxiliar bastante tanto no trablho em si, como nos estudos.</p>
+<p>Eu acredito que você queira crescer na carreira, atingir cargos cada vez mais altos. Imagina só, ser um sênior, mas que consegue entender ambos os lados de uma aplicação tanto Front como Back-End minimamente. Imagina você, sendo um Júnior, tendo um Sênior desse. Você teria respeito por ele? Teria admiração? Teria ele como uma referência técnica? Veja o quanto ele não tem a lhe agregar. Ao mesmo tempo, imagine-se você sendo esse Sênior. O quanto você não teria a agregar um Júnior?</p>
+<p>Pessoalmente, eu já vi algumas vagas de Pleno e de Sênior que pedem noções de Back-End. Não que ser um especialista não seja bom, obviamente. É incrível, é maravilhoso (dependendo do momento do mercado). Mas, principalmente, empresas pequenas e startups querem ROI o mais rápido possível. No curto e grosso, devs que façam mais com menos.</p>
+<p>Ser Full-Stack é especialmente interessante para quem está desempregado, imagine só, você um Front-End, apenas Front-End, você está ignorando toda uma fatia do mercado, porque você não tem conhecimento técnico para atingir aquela outra área. Você sendo Full-Stack, você não tem essa limitação... praticamente não há tempo ruim para Full-Stack, você é Front-End, você aplica para Front-End consegue, aplica para Back-End e consegue também.</p>
+<p>Sem contar que até para vagas específicas, como por exemplo, a vaga de front-end apenas, mas você vai se destacar no meio dos outros front-end. Enquanto uma pessoa só sabe mexer com o React, você sabendo o NodeJS, sabendo o Express, sabendo o NestJS, sabendo fazer uma integração com banco de dados, etc, etc, você, nesse momento, tem um diferencial. Você não cai mais no mesmo cesto que os outros.</p>
+<p>Caso você não tenha gostado ou discorde, deixo que <a href="https://pt.wikipedia.org/wiki/Ariano_Suassuna">Ariano Suassuna</a> responda por mim:</p>
+<blockquote>
+<p>A humanidade se divide em dois grupos: os que concordam comigo e os errados.<br />
+-- Ariano Suassuna</p>
+</blockquote>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>Como fazer um bom currículo otimizado para ATS</title><link>https://meus10centavos.vercel.app//como-fazer-um-bom-curriculo-otimizado-para-ats.html</link><author>fabricio</author><category>tutorial</category><category>carreira</category><guid>https://meus10centavos.vercel.app//como-fazer-um-bom-curriculo-otimizado-para-ats.html</guid><pubDate>Tue, 03 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<h1><a href="#como-fazer-um-bom-currículo" aria-hidden="true" class="anchor" id="como-fazer-um-bom-currículo"></a>Como fazer um bom currículo</h1>
+<p>Essa estrutura de currículo é principalmente para profissionais de T.I., mais especificamente para programadores. Essa é a estrutura que eu mesmo uso e tenho tido bastante resultados.<br />
+O modelo de currículo que iriei te passar é <strong>otimizado para ATS.</strong></p>
+<p><strong>Observação:</strong> Caso você não saiba, meu caro juninho, quando vocẽ faz uma aplicação online para uma vaga, antes você passa por uma I.A. chamada ATS, Applicant Tracking System (Sistema de Rastreamento de Candidatos). Ou seja antes de você fazer os olhos do recrutador brilarem, você precisa fazer os leds do ATS ascenderem.</p>
+<p>Tenho quase certeza que você não tem noção da função de um currículo, não é um histórico de onde você trabalhou, o currículo serve para você dar carteirada e se exibir.</p>
+<h2><a href="#estrutura" aria-hidden="true" class="anchor" id="estrutura"></a>Estrutura</h2>
+<h3><a href="#cabeçalho-do-currículo" aria-hidden="true" class="anchor" id="cabeçalho-do-currículo"></a>Cabeçalho do currículo</h3>
+<p>No topo adicione suas informações. Nome e sobrenome, número de contato, LinkedIn e GitHub. CEP e cidade só se você estiver aplicando para presencial ou híbrido. A não ser que a vaga seja de modelo não motivo para você adicionar uma foto.</p>
+<p>Exemplo:</p>
+<img src="/media/cabeçalho.png" alt="Cabeçalho" width="700" height="500">
+<h3><a href="#resumo-profissional" aria-hidden="true" class="anchor" id="resumo-profissional"></a>Resumo profissional</h3>
+<p>Na parte do resumo profissional você adiciona qual sua função desejada, desenovlvedor Full-Stack, por exemplo. Importante que você não adicione &quot;patente&quot;, a empresa que descide se você é Júnior, Pleno ou Sênior.</p>
+<p>Por exemplo, se você colocar desenvolvedor Full-Stack Júnior, talvez você tenha capacidade de Pleno e até execute tarefas de Pleno, mas seja contratado como Júnior só pelo motivo de você ter se rotulado assim.</p>
+<p>No resumo profissional você tem que dar o máximo de carteirada em no máximo 4 linhas. Inclua tempo de experiência se você tiver, principais projetos relevantes que você participou. Adicione também sua linguagem e stack principal, isso já faz parte da otimização de ATS</p>
+<p>Exemplo: <br />
+<img src="/media/resumo.png" alt="resumo" width="700" height="500"></p>
+<p><strong>Observação:</strong> Não abuse do negrito, adicione apensas nas palavras que você quer que chame atenção. Negrito é apenas para as coisas importantes, se você colocar negrito em tudo então nada é importante.</p>
+<p>Prompt para gerar na IA:</p>
+<pre><code>Escreva um resumo profissional com no máximo 4 linhas de modo que me passe autoridade
+
+- [cite sua stack]
+- [tempo de experiência]
+- [cite projetos revelantes/que você se orgulha/ foi difícil fazer]
+</code></pre>
+<h3><a href="#formação-acadêmica-e-idiomas" aria-hidden="true" class="anchor" id="formação-acadêmica-e-idiomas"></a>Formação acadêmica e idiomas</h3>
+<p>Autoexplicativo...</p>
+<p>Exemplo:<br />
+<img src="/media/formação.png" alt="formação" width="700" height="500"></p>
+<h3><a href="#experiência-profissional" aria-hidden="true" class="anchor" id="experiência-profissional"></a>Experiência profissional</h3>
+<p>A forma como você irá descrever suas experiência é um pouco diferente de como um currículo comum é estruturado.<br />
+Para vagas de T.I. o ideal é essa estrutura:</p>
+<ul>
+<li>Função exercida e período de atuação ao lado</li>
+<li>Empresa</li>
+<li>Resumo geral da sua atuação/do projeto</li>
+<li>Suas principais responsabilidades</li>
+<li>Destaque. O que você fez que foi muito foda, teve muito reconhecimento, ou muito difícil?</li>
+<li>Técnologias que você utilizou</li>
+</ul>
+<p><strong>Observação:</strong> É crucial que você procure passar o máximo de autoridade aqui, essa é sua hora de se exibir igual um pavão, só não mostra o rabo.</p>
+<p>Exemplo:<br />
+<img src="/media/experiencia.png" alt="Experiência" width="700" height="500"></p>
+<p>Cite suas três últimas experiências, ou projetos grandes caso você seja estudante. Caso não tenha projetos grandes, fale dos prjetos que você tem mais orgulho e adicione o link dos repositório e dele em produção (se aplicável).</p>
+<p>As tecnologias utilizadas são cruciais pra que seu currículo tenha êxito com o ATS, pois ele funciona lendo todo o seu currículo e buscando as palavras-chaves para a vaga. Exemplo: Full-Stack, COBOL, assembly, Cassandra</p>
+<h3><a href="#habilidades-e-tecnologias" aria-hidden="true" class="anchor" id="habilidades-e-tecnologias"></a>Habilidades e Tecnologias</h3>
+<p>Aqui você fará na seguinte estrutura:</p>
+<ul>
+<li>Linguagens:</li>
+<li>Frameworks e Bibliotecas:</li>
+<li>Banco de Dados:</li>
+<li>Ferramentas:</li>
+<li>Metodologias Ágeis:</li>
+<li>Soft skills:</li>
+</ul>
+<p>Exemplo:<br />
+<img src="/media/habilidades.png" alt="Experiência" width="700" height="500"></p>
+<p><strong>o currículo deve conter no máximo 3 páginas</strong></p>
+<p>👉 <a href="/media/exemplo.docx">Baixar o modelo de currículo</a> 👈</p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>Como fazer SWAP</title><link>https://meus10centavos.vercel.app//como-fazer-swap.html</link><author>fabricio</author><category>tutorial</category><category>linux</category><guid>https://meus10centavos.vercel.app//como-fazer-swap.html</guid><pubDate>Mon, 02 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<h2><a href="#o-que-é-swap" aria-hidden="true" class="anchor" id="o-que-é-swap"></a>O que é SWAP?</h2>
+<p>A swap é uma extensão temporária da sua memória RAM, feita usando o espaço do seu SSD ou HD tipo uma &quot;memória RAM fake&quot;.</p>
+<p>Quando a RAM enche, o Linux começa a jogar dados &quot;menos usados&quot; pra esse espaço da swap, pra liberar RAM pra o que é mais urgente.</p>
+<p>&quot;E se eu não fizer isso?&quot;, você pode questionar. O Linux é um sistema que obedece cegamente, caso você esgote a memória RAM e não tenha uma swap configurada, ele simplismente vai travar o sistema e você vai ter que reiniciar sua máquina. Digo isso por experiência própria...</p>
+<p>&quot;Por qual motivo eu nunca ouvi falar disso?&quot;, talvez você esteja se questionando. Se você está nesse artigo então é grande a possibilidade de você ser recém-chegado no mundo Linux migrando do Ruindows, bem provavelmente. Os outros sistemas fazem esse gerenciamento de forma automática e você não precisa nem saber que isso existe.</p>
+<h2><a href="#como-a-swap-funciona-na-prática" aria-hidden="true" class="anchor" id="como-a-swap-funciona-na-prática"></a>Como a SWAP funciona na prática?</h2>
+<p>O sistema monitora o uso da RAM.</p>
+<p>Quando a RAM se aproxima do limite (dependendo do valor de <code>swappiness</code>), ele começa a mover partes da memória pouco usadas pra swap. Essas partes continuam acessíveis, mas ficam no SSD/HD (muito mais lento que a RAM). Isso evita travamentos e aumenta a estabilidade, principalmente em multitarefa.</p>
+<h3><a href="#observações-importantes" aria-hidden="true" class="anchor" id="observações-importantes"></a>Observações importantes!</h3>
+<p><strong>Swap é mais lenta que RAM.</strong><br />
+Porque seu SSD (ou pior, um HD) é muito mais lento que RAM. Se o sistema começar a depender demais da swap, você sente um lag violento.</p>
+<p><strong>Swap constante = desgaste do SSD.</strong><br />
+Swap em SSD não é o fim do mundo, mas se ela for usada o tempo todo, vai acelerar o desgaste. Por isso é bom manter a RAM &quot;limpa&quot; e limitar o uso da swap com <code>swappiness</code>.</p>
+<h2><a href="#configurando-swap" aria-hidden="true" class="anchor" id="configurando-swap"></a>Configurando SWAP</h2>
+<p>Rode o comando:</p>
+<pre><code>swapon --show
+</code></pre>
+<p>Para verificar ter certeza se você tem uma swap, mas 90% de chance de não ter.<br />
+Se você não tem swap não terá nenhum retorno, mas se você tiver swap irá ter retorno semelhante a este:</p>
+<pre><code>NAME      TYPE SIZE USED PRIO
+/swapfile file   8G   3G   -2
+</code></pre>
+<h4><a href="#criarativar-swap-file-se-não-tiver" aria-hidden="true" class="anchor" id="criarativar-swap-file-se-não-tiver"></a>Criar/ativar SWAP file (se não tiver)</h4>
+<h5><a href="#comando-completo" aria-hidden="true" class="anchor" id="comando-completo"></a>Comando completo:</h5>
+<pre><code># Cria um swap de 4GB (ajuste se quiser)
+sudo fallocate -l 4G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+</code></pre>
+<p>Depois adicione no fstab para ativar automaticamente:</p>
+<pre><code>echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+</code></pre>
+<h5><a href="#comando-com-explicações" aria-hidden="true" class="anchor" id="comando-com-explicações"></a>Comando com explicações:</h5>
+<p>Criar um arquivo de swap com 4 GB</p>
+<pre><code>sudo fallocate -l 4G /swapfile
+</code></pre>
+<p>Criamos um arquivo especial de 4 GB chamado <code>/swapfile</code>, que será usado como “RAM falsa” quando a memória real estiver cheia.</p>
+<p>Restringir o acesso ao arquivo de swap</p>
+<pre><code>sudo chmod 600 /swapfile
+</code></pre>
+<p>Demos permissão de leitura/escrita só pro root, por segurança. Isso impede que outro processo leia ou altere esse arquivo diretamente.</p>
+<p>Formatar esse arquivo como uma área de swap</p>
+<pre><code>sudo mkswap /swapfile
+</code></pre>
+<p>Dizemos ao sistema:
+“Esse arquivo aqui é uma área de swap, tá ok? 👉👉 ”<br />
+Ele cria a estrutura de controle necessária.</p>
+<p>Ativar a swap agora</p>
+<pre><code>sudo swapon /swapfile
+</code></pre>
+<p>Ligamos a swap imediatamente.<br />
+A partir desse momento, o sistema pode começar a usar esse arquivo como memória auxiliar.\</p>
+<p>Configurar para ativar automaticamente no boot</p>
+<pre><code>echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+</code></pre>
+<p>Alteramos o arquivo <code>/etc/fstab</code> (que diz o que montar no boot), pra garantir que <strong>sempre que você reiniciar, a swap vai estar ativa.</strong></p>
+<p>Por padrão, o Linux só usa a swap quando a RAM já está no limite. Você pode mudar isso pra ele ser um pouco mais &quot;esperto&quot; e já ir aliviando antes de travar tudo.</p>
+<p>Rode:</p>
+<pre><code>cat /proc/sys/vm/swappiness
+</code></pre>
+<p>Para verificar o valor atual. Provavelmente <code>60</code></p>
+<p>Reduza o lag e evitar travamento total, coloca algo tipo <code>20</code>:</p>
+<pre><code>echo 'vm.swappiness=20' | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+</code></pre>
+<p>Isso faz o sistema usar a swap de forma mais equilibrada com a RAM. Se quiser testar o comportamento, você pode começar com <code>30</code> e ir ajustando depois.</p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>Cursos grátis</title><link>https://meus10centavos.vercel.app//cursos-gratis.html</link><author>fabricio</author><category>curso</category><guid>https://meus10centavos.vercel.app//cursos-gratis.html</guid><pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<p>Compilado de links de cursos grátis de diversas áreas, inclusive programação. A maioria das plataformas citadas eu mesmo já usei. Além dos links também trago como é a abordagem, se tem validade para horas complementares para faculdade e os principais cursos que cada plataforma oferece.</p>
+<h2><a href="#kultive" aria-hidden="true" class="anchor" id="kultive"></a><a href="https://kultivi.com/">Kultive</a></h2>
+<h5><a href="#custo-e-validade" aria-hidden="true" class="anchor" id="custo-e-validade"></a>Custo e validade</h5>
+<p>Oferece cursos 100% gratuitos e válidos como horas commplementares.</p>
+<h6><a href="#abordagem" aria-hidden="true" class="anchor" id="abordagem"></a>Abordagem:</h6>
+<p>Aulas gravadas, mas os professores são acessíveis no Instagram pra tirar dúvidas.</p>
+<h5><a href="#principais-cursos" aria-hidden="true" class="anchor" id="principais-cursos"></a>Principais cursos:</h5>
+<p>idiomas, vestibular(ENEM), conteúdo do ensino médio, concursos para polícia, OAB, saúde, negócios e carreira.<br />
+<a href="https://kultivi.com/">https://kultivi.com/</a></p>
+<h2><a href="#fundação-bradesco" aria-hidden="true" class="anchor" id="fundação-bradesco"></a><a href="https://www.ev.org.br/#">Fundação Bradesco</a></h2>
+<h5><a href="#custo-e-validade-1" aria-hidden="true" class="anchor" id="custo-e-validade-1"></a>Custo e validade</h5>
+<p>Oferece cursos 100% gratuitos e válidos como horas complementares.</p>
+<h6><a href="#abordagem-1" aria-hidden="true" class="anchor" id="abordagem-1"></a>Abordagem:</h6>
+<p>Conteúdo escrito e exercício de fixação.</p>
+<h5><a href="#principais-cursos-1" aria-hidden="true" class="anchor" id="principais-cursos-1"></a>Principais cursos:</h5>
+<p>Análise de dados, Inteligêncial artificial, negócios, investimentos, eduação, tecnologia, desenvolvimento pessoal e profissional, produtividade, programação, tecnologia da informação.<br />
+<a href="https://www.ev.org.br/#">https://www.ev.org.br/#</a></p>
+<h2><a href="#instituto-federal-rio-grande-do-sul-pucrs" aria-hidden="true" class="anchor" id="instituto-federal-rio-grande-do-sul-pucrs"></a><a href="https://moodle.ifrs.edu.br/course/index.php?categoryid=38">Instituto Federal Rio Grande do Sul (PUCRS)</a></h2>
+<h5><a href="#custo-e-validade-2" aria-hidden="true" class="anchor" id="custo-e-validade-2"></a>Custo e validade</h5>
+<p>Oferece cursos 100% gratuitos e válidos como horas complementares.</p>
+<h6><a href="#abordagem-2" aria-hidden="true" class="anchor" id="abordagem-2"></a>Abordagem:</h6>
+<p>Conteúdo escrito, aulas gravadas e exercício de fixação.</p>
+<h5><a href="#principais-cursos-2" aria-hidden="true" class="anchor" id="principais-cursos-2"></a>Principais cursos:</h5>
+<p>Ambiente e saúde, ciências exatas, ciências humanas, educação, eduação a distância, gestão e negócios, idiomas, línguas, literatura, informática, infraestrutura, pré-IFRS: preparatório para as Provas de ingresso no IFRS, proodução alimentícia, produção cultural, design, recursos naturais, turismo e hospitalidade.<br />
+<a href="https://moodle.ifrs.edu.br/course/index.php?categoryid=38">https://moodle.ifrs.edu.br/course/index.php?categoryid=38</a></p>
+<h2><a href="#coursera" aria-hidden="true" class="anchor" id="coursera"></a><a href="https://www.coursera.org/">Coursera</a></h2>
+<h5><a href="#custo-e-validade-3" aria-hidden="true" class="anchor" id="custo-e-validade-3"></a>Custo e validade</h5>
+<p>Oferece cursos pagos, mas tem como pedir bolsa de 100%. A maioria dos cursos são em lingua inglesa, mas há legendas e alguns feitos em português Válidos como horas complementares. Parceria com empresas grandes: Google, IBM, Stanford, University of Michigan, USP, ITA.</p>
+<h6><a href="#abordagem-3" aria-hidden="true" class="anchor" id="abordagem-3"></a>Abordagem:</h6>
+<p>Conteúdo escrito, aulas gravadas e exercício de fixação.</p>
+<h5><a href="#principais-cursos-3" aria-hidden="true" class="anchor" id="principais-cursos-3"></a>Principais cursos:</h5>
+<p>Engenharia de software e TI, negócios, vendas e marketing, ciência de dados e análise, saúde.<br />
+<a href="https://www.coursera.org/">https://www.coursera.org/</a></p>
+<h2><a href="#curso-em-vídeo" aria-hidden="true" class="anchor" id="curso-em-vídeo"></a><a href="https://www.cursoemvideo.com/cursos/">Curso em vídeo</a></h2>
+<h5><a href="#custo-e-validade-4" aria-hidden="true" class="anchor" id="custo-e-validade-4"></a>Custo e validade</h5>
+<p>Oferece cursos grátis, mas o certificado é pago, até o momento dessa pesquisa o valor é R$: 30, por certificado. Válidos como horas complementares.</p>
+<h6><a href="#abordagem-4" aria-hidden="true" class="anchor" id="abordagem-4"></a>Abordagem:</h6>
+<p>Aulas gravadas e exercício de fixação.</p>
+<h5><a href="#principais-cursos-4" aria-hidden="true" class="anchor" id="principais-cursos-4"></a>Principais cursos:</h5>
+<p>Engenharia de software e TI, negócios, vendas e marketing, ciência de dados e análise, saúde.<br />
+<a href="https://www.cursoemvideo.com/cursos/">https://www.cursoemvideo.com/cursos/</a></p>
+<h2><a href="#udemy" aria-hidden="true" class="anchor" id="udemy"></a><a href="https://www.udemy.com/">Udemy</a></h2>
+<h5><a href="#custo-e-validade-5" aria-hidden="true" class="anchor" id="custo-e-validade-5"></a>Custo e validade</h5>
+<p>Oferece cursos pagos, são caros, mas semanalmente tem promoções onde todos os cursos ficam por volta dos R$30. Válidos como horas complementares com ampla variedades de carga horária. Obs.: tem que saber filtrar os conteúdos de qualidade.</p>
+<h6><a href="#abordagem-5" aria-hidden="true" class="anchor" id="abordagem-5"></a>Abordagem:</h6>
+<p>Aulas gravadas.</p>
+<h5><a href="#principais-cursos-5" aria-hidden="true" class="anchor" id="principais-cursos-5"></a>Principais cursos:</h5>
+<p>Desenvolvimento de software e TI, negócios, Finanças, contabilidade, produtividade no escritório, desenvolvimento pessoal, desing, marketing, saúde e fitness, música.<br />
+<a href="https://www.udemy.com/">https://www.udemy.com/</a></p>
+<h2><a href="#escola-virtual" aria-hidden="true" class="anchor" id="escola-virtual"></a><a href="https://www.escolavirtual.gov.br/catalogo">Escola Virtual</a></h2>
+<h5><a href="#custo-e-validade-6" aria-hidden="true" class="anchor" id="custo-e-validade-6"></a>Custo e validade</h5>
+<p>Oferece cursos grátis. Não sei se tem validade com horas complementares.</p>
+<h6><a href="#abordagem-6" aria-hidden="true" class="anchor" id="abordagem-6"></a>Abordagem:</h6>
+<p>Conteúdo escrito.</p>
+<h5><a href="#principais-cursos-6" aria-hidden="true" class="anchor" id="principais-cursos-6"></a>Principais cursos:</h5>
+<p>Saneamento, análise e ciência de dados, finanças, comunicação, desenvolvimento pessoal, direito e legislação, direitos humanos, economia, educação e docência, estratégia e planejamento, ética, gestão de pessoas, gestão pública, infraestrutura,liderança, meio ambiente, logistica, políticas públicas, políticas sociais, regulação, saúde.<br />
+<a href="https://www.escolavirtual.gov.br/catalogo">https://www.escolavirtual.gov.br/catalogo</a></p>
+<h2><a href="#havard" aria-hidden="true" class="anchor" id="havard"></a><a href="https://pll.harvard.edu/catalog/free">Havard</a></h2>
+<h5><a href="#custo-e-validade-7" aria-hidden="true" class="anchor" id="custo-e-validade-7"></a>Custo e validade</h5>
+<p>Oferece cursos grátis, mas os certificados são pagos (em dolar). Não sei se tem validade com horas complementares.</p>
+<h6><a href="#abordagem-7" aria-hidden="true" class="anchor" id="abordagem-7"></a>Abordagem:</h6>
+<p>Aulas gravadas e execícios de fixação.</p>
+<h5><a href="#principais-cursos-7" aria-hidden="true" class="anchor" id="principais-cursos-7"></a>Principais cursos:</h5>
+<p>arte e desing, teologia, negócios, ciência da computação, ciência de dados, eduação e ensino, medicina e saúde, humanas, matemática, programação, ciência, ciências sociais.<br />
+<a href="https://pll.harvard.edu/catalog/free">https://pll.harvard.edu/catalog/free</a></p>
+<h2><a href="#aprenda-mais" aria-hidden="true" class="anchor" id="aprenda-mais"></a><a href="https://aprendamais.mec.gov.br/">Aprenda Mais</a></h2>
+<h5><a href="#custo-e-validade-8" aria-hidden="true" class="anchor" id="custo-e-validade-8"></a>Custo e validade</h5>
+<p>Oferece cursos grátis. Não sei se tem validade com horas complementares, mas acreidito que sim, pois são cursos oferecidos pelo Governo Federal em parceria com o Ministério da Eduação (MEC).</p>
+<h6><a href="#abordagem-8" aria-hidden="true" class="anchor" id="abordagem-8"></a>Abordagem:</h6>
+<p>conteúdo escrito.</p>
+<h5><a href="#principais-cursos-8" aria-hidden="true" class="anchor" id="principais-cursos-8"></a>Principais cursos:</h5>
+<p>ambiente e saúde, ciências exatas, ciências humanas, infraestrutura, ciências humanas, produção alimentícia, desenvolvimento eduacional e social, produção cultural e desing, gestão e negócios, recursos naturais, idiomas, linguas, literatura, segurança, informação, comunicação, turismo, hospitalidade e lazer, capacitação para autores.<br />
+<a href="https://aprendamais.mec.gov.br/">https://aprendamais.mec.gov.br/</a></p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>Como matar processos no linux</title><link>https://meus10centavos.vercel.app//como-matar-processos-no-linux.html</link><author>fabricio</author><category>tutorial</category><category>linux</category><guid>https://meus10centavos.vercel.app//como-matar-processos-no-linux.html</guid><pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<p>É um tutorial de algo besta, mas eu sempre acabo esquecendo como faz, então vou salvar aqui</p>
+<p>Lista todos os processo que estão rodando</p>
+<pre><code class="language-bash">sudo ss -tlpn
+</code></pre>
+<p>Lista todos os processos que estão rodando na porta &lt;número&gt;</p>
+<pre><code class="language-bash">sudo ss -tlpn | grep &lt;número&gt;
+</code></pre>
+<p>Exemplo:</p>
+<pre><code class="language-bash">sudo ss -tlpn | grep 8000
+</code></pre>
+<p>Mata processo que está rodando na porta 8000</p>
+<pre><code class="language-bash">sudo kill -9 `sudo lsof -t -i:&lt;número&gt;`
+sudo kill -9 $(lsof -t -i:&lt;número&gt;)
+</code></pre>
+<p>obs.: &lt;número&gt; deve ser todo incluindo o &lt;&gt; ser torcado pelo número</p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>Como aprender um novo idioma</title><link>https://meus10centavos.vercel.app//como-aprender-um-novo-idioma.html</link><author>fabricio</author><category>tutorial</category><category>inglês</category><category>curso</category><guid>https://meus10centavos.vercel.app//como-aprender-um-novo-idioma.html</guid><pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<h3><a href="#observações" aria-hidden="true" class="anchor" id="observações"></a>Observações</h3>
+<p>Os exemplos de idioma alvo de prendizagem citado será o inglês, por ser o principal idioma de quem quer aprender outro idioma, mas o método de estudo que vou te passar podem ser aplicado para quaisquer idiomas.</p>
+<p>(Não cheguei a testar em idiomas asiáticos, idiomas locais do containente africano e nem arábicos)</p>
+<p><strong>APRENDER UM IDIOMA DEPENDE ÚNICA E EXCLUSIVAMENTE DE VOCÊ, É UM PROCESSO PURAMENTE MERITOCRÁTICO!</strong></p>
+<h2><a href="#por-que-aprender-outra-língua" aria-hidden="true" class="anchor" id="por-que-aprender-outra-língua"></a>Por que aprender outra língua?</h2>
+<p>Mais flexbilidade cognitiva, bilíngues/poliglotas tem mais facilidades em testes que exigem controle do processamento da linguagem, além de criar uma &quot;reserva cognitiva&quot; que mantem lucidez de pensamento por mais tempo na velhice. As consequência das doença neurodegenerativas tem sintomas mais brando em pessoas multilíngues, a Demência por exemplo, tem um atraso de 4 anos e meio!</p>
+<p>Aprender outra língua também cria um repertório maior para pensar e capacidade expressar-se com você mesmo (o nonólogo interno, a voz da sua cabeça). Pois a denpender da língua ou das línguas que você fala, isso pode moldar sua forma de perceber concitos abstratos como tempo linear, futuro, passado <em>et sim</em>.</p>
+<p>Melhora a capacidade de lidar com dados e informações, pois a memória de trabalho é aprimorada</p>
+<p>Estudos mostram que pessoas multilíngues tem maior capacidade de impaita.</p>
+<h2><a href="#meta-aprendizagem" aria-hidden="true" class="anchor" id="meta-aprendizagem"></a>Meta-aprendizagem</h2>
+<p>Antes de aprender outra língua o mais importante é aprender a aprender. Entender quais os processos por trás da aquisição de conhecimentos, para isso é importante que você pesquise como esses processos acontecem para a partir de então conseguir otimizar esses processos de acordo com o que funciona melhor para você, pois cada pessoa tem resultados diferentes com métodos diferentes, ou seja, o que funciona pra mim talvez não funcione para ti.
+Mas de qualquer maneira irei passar o caminho das pedras que eu testei, segui e obtive os resultados que tenho.</p>
+<h3><a href="#curva-de-esquecimento-de-ebbinghaus" aria-hidden="true" class="anchor" id="curva-de-esquecimento-de-ebbinghaus"></a>Curva de esquecimento de Ebbinghaus</h3>
+<img src="/media/imagem_curva_de_aprendizagem.png" alt="Curva de esquecimento de Ebbinghaus" width="700" height="500">
+<p>Caso você não tenha entendido o diagrama acima, volte ao ensino médio e aprenda ler um gráfico, sinceramente não tem motivo pra você estar em um blog de T.I. se é incapaz de ler isso!<br />
+Uma ressalva se você é de outra área e veio querendo aprender outro idioma pra crescimento profissional, nesse caso você está de parabéns.</p>
+<p>Um dos principais conceitos que você deve entender é a <a href="https://en.wikipedia.org/wiki/Forgetting_curve">Curva de esquecimento de Ebbinghaus</a>. Segundo a teoria de Ebbinghaus, após você aprender algo novo em 24 horas você esquece 50% do conteúdo e para mitigar esse problema basta revisar com constância até que esse conteúdo se torne algo tão irraizado que você não esqueça mais.</p>
+<h2><a href="#principio-de-pareto" aria-hidden="true" class="anchor" id="principio-de-pareto"></a>Principio de Pareto</h2>
+<img src="/media/Principio_de _Pareto.png" alt="Princípio de Pareto" width="700" height="500">
+<p>O <a href="https://www.google.com/search?q=principio+de+pareto&amp;oq=principio+de+pare&amp;gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBggBEEUYOTIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIICAYQABgWGB4yCAgHEAAYFhgeMggICBAAGBYYHjIICAkQABgWGB7SAQg1NTQwajBqN6gCALACAA&amp;sourceid=chrome&amp;ie=UTF-8#vhid=Zo4Qt2IpTrhbqM&amp;vssid=l"><strong>Princípio de Pareto</strong></a>, também conhecido como a <strong>regra 80/20</strong>, foi formulado pelo economista italiano <strong>Vilfredo Pareto</strong> no final do século XIX. Ele observou que 80% das terras na Itália pertenciam a 20% da população, e essa proporção se repetia em muitos outros contextos.</p>
+<h4><a href="#o-que-é-o-princípio-de-pareto" aria-hidden="true" class="anchor" id="o-que-é-o-princípio-de-pareto"></a>O que é o Princípio de Pareto?</h4>
+<p>De forma geral, o princípio afirma que <strong>80% das consequências vêm de 20% das causas</strong>. É uma regra empírica que pode ser aplicada em diversas áreas, como negócios, gestão de tempo, economia, produtividade e até mesmo no dia a dia.</p>
+<h4><a href="#como-isso-se-aplica-no-aprendizado-de-idiomas" aria-hidden="true" class="anchor" id="como-isso-se-aplica-no-aprendizado-de-idiomas"></a>Como isso se aplica no aprendizado de idiomas?</h4>
+<p>Você tendo decorado 20% do vocabulário coditiano de uma língua você consegue entender e participar de 80% dos diálogos, texto, mídias etc.</p>
+<h2><a href="#pilares-do-idioma" aria-hidden="true" class="anchor" id="pilares-do-idioma"></a>Pilares do idioma</h2>
+<p>Toda as línguas se desenvolvem sob 4 pilares: <br />
+Escrita - Capacidade de descrever ideias e se expressar por escrito. <br />
+Leitura - Capacidade de entender a absorver ideias, conceitos, sentimentos passados por escrito. <br />
+Escuta - Capaciade de entender nativos e estrangeiros em um idioma X, inglês por exemplo. <br />
+Fala - A parte mais deseja e por isso muitas pessoas focam nela e deixam as outras de lado. A capacidade de expressar-se oralmente com nativos ou estrangeiros em um idioma X.</p>
+<h2><a href="#fluência" aria-hidden="true" class="anchor" id="fluência"></a>Fluência</h2>
+<p>A fluência constrói-se a partir do aprefeisoamento e equilíbrio das 4 habilidades citadas anteriormente.
+Há quem pense erroneamente que fluência é saber todas as palavras. No inglês há uma estimativa 250 mil palavras distintas, saber todas é impossível até para os próprios nativos. Em comparação no português há uma estimativa mais próxima de 370 mil palavras, de acordo com a última edição do Vocabulário Ortográfico da Língua Portuguesa (VOLP). <strong>Áulico, ignívomo, uxoricídio</strong>, são exemplos de palavras em português que eu aposto que você desconhece pelo menos uma delas, detalhe que essa é sua lingua mãe. Sendo assim, não se obrigue saber todas as palavras dos idiomas que você se propôr aprender.</p>
+<h2><a href="#ferramentas" aria-hidden="true" class="anchor" id="ferramentas"></a>Ferramentas</h2>
+<h4><a href="#duolingo-e-similares" aria-hidden="true" class="anchor" id="duolingo-e-similares"></a><a href="https://pt.duolingo.com/">Duolingo</a> e similares</h4>
+<p>Para nós da geração Z que crecemos com forte influência dos Estados Unidos da América o inglês é uma lingua que tivemos contato desde muito cedo através de jogo, filmes, termos e outras fontes. Logo, é um idioma que mesmo que você não tenha pleno domínio, mas com certeza você tem noção de palavras e frases muito básicas como: <em>like</em>, <em>I love you</em>, <em>water</em>, <em>red</em>. Justamente o típo de vocabulário que o <a href="https://pt.duolingo.com/">Duolingo</a> e apps similares te passam, por tanto é extremamente ineficiente para nós usarmos esses apps para aprender o inglês, mas para idiomas completamente fora de nossa realidade, aqueles que parecem idioma alienigena (na visão de um ocidental, nativo do continente americano da geração Z) tipo Alemão, Russo, Árabe, Francês... nesses caso é de muita utilidade começar por eles.</p>
+<h2><a href="#youtube-netflix-filmes" aria-hidden="true" class="anchor" id="youtube-netflix-filmes"></a>YouTube, Netflix, Filmes</h2>
+<p>Plataformas de filmes e streaming são exelêntes formas de ter contato com o idioma falado e treinar bastante a escuta, quando você está em um nível pelo menos no intermediário, quando você começa ter compreenção de ideias mais complexas e pensamentos abstratos podendo manter uma linha de raciocínio por um longo período além de ter vocabulário suficiente e discernimento dos sons para conseguir acompanhar um nativo.</p>
+<h2><a href="#animações-infantis" aria-hidden="true" class="anchor" id="animações-infantis"></a>Animações infantis</h2>
+<p>As animaçõees infantis, por exemplo Peppa Pig, são perfeitas para ter contato inicial com o idioma falado de modo não haver sentenças grande e complexas exelênte para inicar o treino da escuta</p>
+<h2><a href="#sites-de-notícias" aria-hidden="true" class="anchor" id="sites-de-notícias"></a>Sites de notícias</h2>
+<p>Perfeito para ter contato com o idioma escrito sem extender muito a ideia igual um livro que demanda um nível maior de aptidão com a leitura.<br />
+Sugiro o <a href="https://www.newsinlevels.com/">News in Levels</a> nele você consegue escolher seu nível de inglês e a partir disso ele te expõe as notícias com vocabulário e sentenças gramaticais mais complexas ou simples de acordo com sua escolha.</p>
+<h2><a href="#chat-gpt" aria-hidden="true" class="anchor" id="chat-gpt"></a>Chat GPT</h2>
+<p>Além de possibilitar treinar a leitura também é muito bom para treinar a escrtita, você pode pedir para ele temas para você sobre e ainda para que ele te corrija ou ensine tópicos gramaticais que tiver dificuldade.</p>
+<h2><a href="#livros-dáticos" aria-hidden="true" class="anchor" id="livros-dáticos"></a>Livros dáticos</h2>
+<p>A escolha de um material didádico é uma decisão importante, quase um casamento. É ele que ira guiar-lhe para sanar as lacunas na sua gramática, e lembre-se: gramática não é apenas sobre como escrever certo, se você não souber gramática também irá falar errado. Dependendo do idioma isso significa não ser entendido ou ser mal interpretado, então cuidado!</p>
+<p>Material didático para aprender inglês eu recomento a série Grammar in Use de Cambrige</p>
+<p><img src="/media/esssential_grammar_in_use.png" alt="Essential Grammar in Use" width="150"> <img src="/media/english_grammar_in_use.png" alt="English Grammar in Use" width="150"> <img src="/media/advanced_grammar_in_use.png" alt="Advanced Grammar in Use" width="150"></p>
+<p>Iniciante - intermediário - Avançado</p>
+<p>Todos dispõem de exelentes explicações e exercícios além de um teste diagnóstico no final caso você não souber onde tem deficiência, caso não souber nada comece pela primeira unidade do primeiro livro.</p>
+<p>O terceiro livro, <em>Advanced Grammar in Use</em> é descartável caso você não pretenda estudar fora ou escrever textos acadêmicos ou jornalísticos em inglês.</p>
+<p>Caso seu foco seja outo idioma eu recomendo a série Complete (leanguage) Grammar.</p>
+<p><img src="/media/german.png" alt="German" width="150"> <img src="/media/italian.png" alt="Italian" width="150"> <img src="/media/spanish.png" alt="Spanish" width="150"> <img src="/media/french.png" alt="French" width="150"></p>
+<p>Tem para todos os idiomas, mas é necessário que você saiba inglês pois eles são completamente em inglês.</p>
+<h2><a href="#anki" aria-hidden="true" class="anchor" id="anki"></a>Anki</h2>
+<p>Para revisar vocabulário eu recomendo o anki, tem disponível versão web, desktop para computares e laptops, e app para mobile.
+O <a href="https://apps.ankiweb.net/">Anki</a> mistura os conceitos de revisão espaçado com base na teoria da <a href="https://en.wikipedia.org/wiki/Forgetting_curve">Curva de esquecimento de Ebbinghaus</a> e a técnica de memorização chamada Flash Cards. Os Flash Cards nada mais são que cartões onde de um lado tem uma pergunta e do outro a resposta, ou no caso dos idiomas de um lado a palavra no idioma X e do outra a tradução. Também é possível colocar audios assim treinando a escuta, leitura, memorização, e falar de uma vez</p>
+<p><figure><img src="/media/flashcards.png" alt="Flashcards Anki" /></figure></p>
+<h4><a href="#configurando-seu-anki" aria-hidden="true" class="anchor" id="configurando-seu-anki"></a>Configurando seu Anki</h4>
+<p><a href="https://www.youtube.com/watch?v=p2o0TCOX4bg">Como Baixar e Instalar ANKI no Computador/Notebook</a> <br />
+<a href="https://www.youtube.com/watch?v=rGJORQdsfzg">Como colocar áudios no Anki em minutos</a> <br />
+<a href="https://www.youtube.com/watch?v=xzwVq-fv8_E&amp;t=326s">Como Ter Um Controle De Toda a Sua Revisão No Anki</a></p>
+<h2><a href="#livros" aria-hidden="true" class="anchor" id="livros"></a>Livros</h2>
+<p>Livros não didáticos são a melhor forma de criar vocabulário e aprender gramática de forma menos chata, o ideal é que você leia livros do seu gosto e interesse no idioma que está aprendendo, se você tiver o nível necessário para tal obviamente.</p>
+<h2><a href="#parceiro-de-conversação" aria-hidden="true" class="anchor" id="parceiro-de-conversação"></a>Parceiro de conversação</h2>
+<p>Tem um amigo que está aprendendo o mesmo idioma que você para conversarem é o melhor e mais divertido jeito de estudar e melhorar a fala.</p>
+<p>Nesse quesito, caso você não tenha um parceiro de conversação eu recomendo o uso do app <a href="https://tandem.net/pt-br">Tandem</a>, nesse app você ensina seu idioma para um estrangeiro e ele te ensina o idioma dele. Você ensina português pra um estadounidense e ele te esnina inglês, por exemplo.</p>
+<h1><a href="#trilha" aria-hidden="true" class="anchor" id="trilha"></a>Trilha</h1>
+<p>Segui o método do linguista e educador Stephen Krashen. O seu método <em>language acquisition</em> baseia-se na ideia de adiquirir o idioma ao invés de estudá-lo igual nas escolas tradicionais, mas o ideal é consiliar os dois métodos.<br />
+O linguista defende que um idioma é separado em duas partes: inputs e outputs (entrada e saída de informações). Ele defende que devemos nos dedicar ao inputs (consumir o idiomas) para depois fazermos outputs (expressar o idioma), antes de expressar suas ideias é necessário que construa um vocabulário base do idioma e após o vocabulário específico, o vocabulário específico é referente as palavras da sua área profissional. Uma enfermeira, um advogado, um programador, e um vendedor precisam de vocabulários diferentes e que talvez não faça sentido para uma pessoa de outra profissão saber. Por exemplo, bisturí, para a enfermeira e para o médico é essencial saber essa palavra. Para o programador, o advogado, e o vendedor é completamente inútil.</p>
+<p>A forma que usei para aprender seguindo esse método foi:</p>
+<p>1 - Cataloguei as duas mil palavras mais comuns do inglês e decorei usando o Anki.</p>
+<p>2 - Comecei construir vocabulário específico de assuntos e termos da minha área de atuação, hobbies e interesses.</p>
+<p>3 - iniciei nos conceitos fundamentais da gramática e estrutura da língua para entender como ler.</p>
+<p>4 - Comecei ler. Ler sites de notícas, blogs, textos curtos. Somente quando me senti capaz é que eu comecei ler livros completos.</p>
+<p>5 - comecei assistindo vídeos com aúdio em inglês e legenda também em inglês (pelo YouTube), pois eu aprendi ler antes de tudo, eu sabia que seria necessário antes de ir para a escuta.</p>
+<p>6 - Comecei assistir videos sem legenda, e audio em inglês. Também comecei ouvir podcasts, que é mais difícico, pois não há video para olhar os movimentos da boca.</p>
+<p>7 - Procurei parceiros de conversação. Há quem defenda que a fala deve começar desde o inicio, mas eu acho perigoso, pois você pode criar vícios de linguagens. É mais danoso ter um vício de linguagem do que ter um &quot;atraso&quot; na fala.</p>
+<p>Obviamente eu não passei de uma fase para a outra em dias ou semanas, fui no meu tempo e tendo noção dos meus limites e do que eu realmete sabia, mas esse processo pode ser otimizado tudo depende do seu tempo disponível e dedicação.</p>
+<p>Qualquer dúvida é só falar comigo. Bons estudos.</p>
+<h4><a href="#referências" aria-hidden="true" class="anchor" id="referências"></a>Referências:</h4>
+<p>Canais<br />
+<a href="https://www.youtube.com/@GabrielPoliglota">Gabriel Poliglota</a><br />
+<a href="https://www.youtube.com/@MundodoPoliglota">Mundo do Poliglota</a><br />
+<a href="https://www.youtube.com/@anagomes_me">Ana Gomes</a><br />
+<a href="https://www.youtube.com/c/Bil%C3%ADnguese">Bilíngue-se</a><br />
+<a href="https://www.youtube.com/@BemPoliglota">Bem Poliglota</a><br />
+<a href="https://www.youtube.com/@Canguroenglish">Canguro English</a><br />
+<a href="https://www.youtube.com/@LearnEnglishwithBobtheCanadian">Learn English with Bob the Canadian</a><br />
+<a href="https://www.youtube.com/@RealLifeEnglish1/videos">RealLife English</a></p>
+<p>Videos<br />
+<a href="https://youtu.be/T8ej2DfMnvQ?si=wLNTPQF_hruLoJaq">Os poderes de saber mais de uma língua</a><br />
+<a href="https://www.youtube.com/watch?v=_fmqo8p-57Q">Como seu cérebro muda ao falar outros idiomas</a></p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>Como criar um blog com Marmite</title><link>https://meus10centavos.vercel.app//como-criar-blog-marmite.html</link><author>fabricio</author><category>tutorial</category><category>marmite</category><category>rust</category><category>blog</category><guid>https://meus10centavos.vercel.app//como-criar-blog-marmite.html</guid><pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<p>Neste tutorial, vou mostrar como criar seu próprio blog usando o <strong>Marmite</strong>, um gerador de sites estáticos escrito em Rust.</p>
+<h2><a href="#o-que-é-o-marmite" aria-hidden="true" class="anchor" id="o-que-é-o-marmite"></a>O que é o Marmite?</h2>
+<p><a href="https://marmite.blog/">Marmite</a> é um gerador de sites estáticos minimalista que transforma arquivos Markdown em um blog completo. Suas principais características são:</p>
+<ul>
+<li><strong>Zero configuração</strong> para começar</li>
+<li><strong>Escrito em Rust</strong> — rápido e eficiente</li>
+<li><strong>Temas e colorschemes</strong> incluídos</li>
+<li><strong>Busca integrada</strong></li>
+<li><strong>RSS Feed</strong></li>
+<li><strong>Suporte a tags e arquivos</strong></li>
+</ul>
+<h2><a href="#instalação" aria-hidden="true" class="anchor" id="instalação"></a>Instalação</h2>
+<p>A forma mais fácil de instalar é usando o script de instalação:</p>
+<pre><code class="language-bash">curl -sS https://marmite.blog/install.sh | sh
+</code></pre>
+<p>Ou se você tem Rust instalado:</p>
+<pre><code class="language-bash">cargo install marmite
+</code></pre>
+<h2><a href="#criando-seu-primeiro-blog" aria-hidden="true" class="anchor" id="criando-seu-primeiro-blog"></a>Criando seu primeiro blog</h2>
+<ol>
+<li><strong>Crie uma pasta para o conteúdo:</strong></li>
+</ol>
+<pre><code class="language-bash">mkdir meu-blog
+cd meu-blog
+</code></pre>
+<ol start="2">
+<li><strong>Inicialize o blog:</strong></li>
+</ol>
+<pre><code class="language-bash">marmite . --init-site \
+    --name &quot;Meu Blog&quot; \
+    --tagline &quot;Minha descrição&quot; \
+    --enable-search true
+</code></pre>
+<ol start="3">
+<li><strong>Crie seu primeiro post:</strong></li>
+</ol>
+<pre><code class="language-bash">marmite . --new &quot;Meu Primeiro Post&quot; -t &quot;novo,post&quot;
+</code></pre>
+<ol start="4">
+<li><strong>Gere e visualize o site:</strong></li>
+</ol>
+<pre><code class="language-bash">marmite . --serve
+</code></pre>
+<p>Acesse <code>http://localhost:8000</code> e veja seu blog funcionando!</p>
+<h2><a href="#estrutura-de-um-post" aria-hidden="true" class="anchor" id="estrutura-de-um-post"></a>Estrutura de um post</h2>
+<p>Os posts são arquivos Markdown com um frontmatter YAML:</p>
+<pre><code class="language-markdown">---
+title: &quot;Título do Post&quot;
+date: 2026-01-31
+tags: tag1, tag2
+---
+
+Conteúdo do post aqui...
+</code></pre>
+<h2><a href="#próximos-passos" aria-hidden="true" class="anchor" id="próximos-passos"></a>Próximos passos</h2>
+<ul>
+<li>Personalize o <code>marmite.yaml</code> com suas informações</li>
+<li>Explore os colorschemes disponíveis</li>
+<li>Adicione mais conteúdo!</li>
+</ul>
+<hr />
+<p>Gostou? Deixe seu comentário!</p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>Bem-vindo(a) ao Meus 10 Centavos!</title><link>https://meus10centavos.vercel.app//bem-vindo.html</link><author>fabricio</author><category>blog</category><category>pessoal</category><category>inicio</category><guid>https://meus10centavos.vercel.app//bem-vindo.html</guid><pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<p>Olá, seja bem-vindo(a) ao meu cantinho na internet!</p>
+<p>Minha ideia com esse blog é manter minhas opiniões e dicas sobre assuntos que praticamente toda semana alguém me pergunta. Por isso, irei manter o Meus 10 Centavos como um hub dos meus conhecimentos e experiências; uma outra boa definição é &quot;segundo cérebro&quot;.</p>
+<p>Não irei discutir necessariamente sobre os assuntos trending topics da semana. Os critérios para que uma pauta torne-se um post aqui são, primeiro e mais importante: eu querer; segundo: se muita gente me perguntar sobre o mesmo assunto e eu tiver preguiça de repetir sempre a mesma coisa; terceiro: eu achar que pode ser útil de alguma forma documentar o assunto X para a comunidade ou para mim mesmo.</p>
+<p>Não haverá uma categoria fixa para rotular meu blog, tipo: tutorial, carreira ou notícias tech. E nem quero...</p>
+<p>Aqui posso falar sem forçar o exibicionismo técnico que é exigido no GitHub e sem a falsidade do LinkedIn. Aqui posso ser eu mesmo e falar do meu jeitinho, delicado igual um cavalo, como meus amigos costumam dizer.</p>
+<h2><a href="#o-que-esperar-deste-blog" aria-hidden="true" class="anchor" id="o-que-esperar-deste-blog"></a>O que esperar deste blog?</h2>
+<p>Aqui você vai encontrar:</p>
+<p>Minha opinião sem filtro... Sem o exibicionismo técnico do GitHub nem a falsidade do LinkedIn (o exibicionismo técnico talvez apareça às vezes).</p>
+<h2><a href="#por-que-criar-um-blog-em-2026" aria-hidden="true" class="anchor" id="por-que-criar-um-blog-em-2026"></a>Por que criar um blog em 2026?</h2>
+<p>Até minha namorada achou meio besta a ideia de fazer um blog em um período em que ninguém mais acessa blogs ou lê qualquer coisa; talvez você compartilhe do mesmo pensamento dela.</p>
+<p>Mas a ideia de transmitir minhas ideias por escrito é realmente criar essa &quot;barreira&quot;. Como já citado, quero poupar saliva e não ficar repetindo sempre a mesma coisa. Até já tentei fazer um canal no YouTube. Não foi unicamente com essa proposta, mas também continha outros tipos de conteúdo, e o Meus 10 Centavos era um dos quadros do canal. Mas não sou nenhuma referência técnica como o Fabio Akita ou o Augusto Galego, os quais eu admiro muito e tenho como referência técnica e de sucesso. Nem trabalho em nenhuma Big Tech ou empresa prestigiada como Nubank, Itaú ou IBM, como os YouTubers/influencers tech que eu mesmo assisto às vezes. Então, por qual motivo alguém se importaria de assistir aos meus vídeos?</p>
+<p>Quem me assistiria, majoritariamente, seriam pessoas que vieram até mim perguntando algo que eu já tinha explicado em vídeo; contudo, pouquíssimas pessoas assistiriam realmente prestando atenção e dando valor ao que estava sendo dito. Além do que, era muito difícil competir com outros criadores que fazem conteúdo sem nenhuma profundidade, mas tinham bastante visualizações por ter uma edição hiperestimulante com GIFs, animações e legendas enormes pulando na tela.</p>
+<p>Talvez você pense: &quot;Bastava você fazer uma edição parecida&quot;. Se eu fizesse assim, a pessoa não estaria assistindo pelo valor do conteúdo, e sim pela edição hipnotizante. Não vou perder meu tempo com o esforço de escrever roteiro, lutar contra a timidez gravando, aprender e aplicar edição para as pessoas não darem valor. Escrevendo em um blog, mesmo que só uma pessoa leia, eu tenho certeza de que ela teve um real interesse no meu conteúdo. Sinto-me mais valorizado sabendo que a pessoa fez questão de exilar-se das distrações para estar 100% presente consumindo o que escrevi.</p>
+<p>Além disso, escrever ajuda a organizar os pensamentos e solidificar o conhecimento. Se, de quebra, alguém se beneficiar do que escrevo, melhor ainda!</p>
+<h2><a href="#tecnologia-do-blog" aria-hidden="true" class="anchor" id="tecnologia-do-blog"></a>Tecnologia do blog</h2>
+<p>Este blog é feito com Marmite, um gerador de sites estáticos minimalista escrito em Rust. Simples, rápido e eficiente, exatamente como um blog deveria ser.</p>
+<p>Eu já tinha pensado em fazer um blog antes, mas devido à falta de tempo para criar um do zero, acabei deixando a ideia no fundo da gaveta. Hoje descobri essa ferramenta assistindo a um episódio do podcast Papinho Tech, do Gustavo Caetano, que entrevistou o Bruno Rocha, criador do Marmite.</p>
+<h2><a href="#referências" aria-hidden="true" class="anchor" id="referências"></a>Referências</h2>
+<p><a href="https://www.youtube.com/@Akitando">Fabio Akita</a><br />
+<a href="https://www.youtube.com/@GutoGalego">Augusto Galengo</a><br />
+<a href="https://www.youtube.com/@oguscaetano">Gustavo Caetano</a><br />
+<a href="https://www.linkedin.com/in/rochacbruno/">Bruno Rocha</a></p>
+<hr />
+<p>Fique à vontade para explorar e volte sempre!</p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item></channel></rss>

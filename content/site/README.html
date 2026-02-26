@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark" />
+    <meta name="generator" content="Marmite" />
+    
+<meta property="og:title" content="Clean Theme Documentation">
+
+<meta property="og:description" content="
+A minimal, clean theme for Marmite static site generator.
+Features
+
+Clean Design: Minimal, distract...">
+
+
+<meta property="og:url" content="https://meus10centavos.vercel.app/README.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Meus 10 Centavos">
+
+
+<meta property="article:author" content="https://meus10centavos.vercel.app/author-fabricio.html">
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://meus10centavos.vercel.app/README.html"
+    },
+    "url": "https://meus10centavos.vercel.app/README.html",
+    "headline": "Clean Theme Documentation",
+    "description": "A minimal, clean theme for Marmite static site generator.
+Features
+
+Clean Design: Minimal, distraction-free layout
+Responsive: Works great o...",
+    
+    "author": {
+        "@type": "Person",
+        "name": "Fabrício Santos",
+        "url": "https://meus10centavos.vercel.app/author-fabricio.html",
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Meus 10 Centavos",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://meus10centavos.vercel.app/"
+        }
+    },
+    
+}
+</script>
+
+
+    <title>Clean Theme Documentation | Meus 10 Centavos</title>
+    <link rel="stylesheet" type="text/css" href="/static/pico.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/marmite.css">
+    
+    <link rel="stylesheet" type="text/css" href="/static/custom.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github.min.css" id="highlightjs-theme" />
+
+
+
+        <link rel="alternate" type="application/rss+xml" title="index" href="/index.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: tutorial" href="/tag-tutorial.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: linux" href="/tag-linux.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: curso" href="/tag-curso.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: blog" href="/tag-blog.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: carreira" href="/tag-carreira.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: pessoal" href="/tag-pessoal.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: ingles" href="/tag-ingles.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: inglês" href="/tag-ingles.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: inicio" href="/tag-inicio.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: marmite" href="/tag-marmite.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: rust" href="/tag-rust.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: guia" href="/tag-guia.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: versionamento" href="/tag-versionamento.rss">
+    <link rel="alternate" type="application/rss+xml" title="author: fabricio" href="/author-fabricio.rss">
+    <link rel="alternate" type="application/rss+xml" title="author: carlos" href="/author-carlos.rss">
+    <link rel="alternate" type="application/rss+xml" title="author: matheus" href="/author-matheus.rss">
+    <link rel="alternate" type="application/rss+xml" title="year: 2026" href="/archive-2026.rss">
+    
+
+    
+    <link rel="alternate" type="application/feed+json" title="JSON index" href="/index.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: tutorial" href="/tag-tutorial.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: linux" href="/tag-linux.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: curso" href="/tag-curso.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: blog" href="/tag-blog.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: carreira" href="/tag-carreira.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: pessoal" href="/tag-pessoal.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: ingles" href="/tag-ingles.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: inglês" href="/tag-ingles.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: inicio" href="/tag-inicio.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: marmite" href="/tag-marmite.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: rust" href="/tag-rust.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: guia" href="/tag-guia.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: versionamento" href="/tag-versionamento.json">
+    <link rel="alternate" type="application/feed+json" title="JSON author: fabricio" href="/author-fabricio.json">
+    <link rel="alternate" type="application/feed+json" title="JSON author: carlos" href="/author-carlos.json">
+    <link rel="alternate" type="application/feed+json" title="JSON author: matheus" href="/author-matheus.json">
+    <link rel="alternate" type="application/feed+json" title="JSON year: 2026" href="/archive-2026.json">
+    
+    
+
+    
+    
+</head>
+<body>
+    
+    <div class="container-fluid announcement-wrapper">
+        <div class="announcement"><p>Siga-me nas redes: <a href="https://github.com/Fabricio-Antonio" target="_blank">GitHub</a> e <a href="https://www.linkedin.com/in/fabricio-ss/" target="_blank">LinkedIn</a></p>
+</div>
+    </div>
+    
+    <main class="container">
+        
+        <header class="header-content">
+            <nav class="header-nav">
+                <ul class="header-name">
+                    <li>
+                        <hgroup class="h-card">
+                            <h2>
+                                <a href="/" class="contrast p-name u-url">
+                                    
+                                        Meus 10 Centavos
+                                    
+                                </a>
+                            </h2>
+                             <p class="p-note">Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</p> 
+                        </hgroup>
+                    </li>
+                </ul>
+                <button id="menu-toggle" class="hamburger">&#9776;</button>
+
+                <ul class="header-menu" id="header-menu">
+                    
+                      
+                      
+                    <li>
+                        
+                        <a class="menu-item secondary"  href="/index.html">Início</a>
+                        
+                    </li>
+                    
+                      
+                      
+                    <li>
+                        
+                        <a class="menu-item secondary"  href="/tags.html">Tags</a>
+                        
+                    </li>
+                    
+                      
+                      
+                    <li>
+                        
+                        <a class="menu-item secondary"  href="/archive.html">Arquivo</a>
+                        
+                    </li>
+                    
+                      
+                      
+                    <li>
+                        
+                        <a class="menu-item secondary"  href="/about.html">Sobre</a>
+                        
+                    </li>
+                    
+                    
+                    
+                    <li><a href="#" id="search-toggle" class="secondary" title="Search (Ctrl + Shift + F)"> <span class="search-txt">Search</span><span class="search-magnifier"></span></a></li>
+                    
+                    <div class="underline"></div>
+                </ul>
+            </nav>
+            
+            <div class="marmite-background-overlay" id="overlay-close"></div>
+            <div class="marmite-search-bar hidden">
+                <span>Buscar</span>
+                <button class="marmite-close-button" id="search-close">X</button>
+                <input placeholder="Search" id="marmite-search-input" />
+                <div class="marmite-search-bar-result">
+                    <ul id="marmite-search-bar-result"></ul>
+                </div>
+            </div>
+            
+        </header>
+        
+        <section class="main-content">
+            
+
+
+
+<article class="h-entry">
+  <data class="p-name" value="Clean Theme Documentation"></data>
+  <a class="u-url" href="/README.html" style="display: none;"></a>
+  
+
+  
+
+  
+
+
+<div class="content-title" id="title">
+    <h1>Clean Theme Documentation</h1> 
+    
+
+
+<span class="content-date">
+    <small></small>
+</span>
+
+</div>
+
+  
+  
+  <div class="content-toc">
+    <a href="#" id="toc"></a>
+    <details>
+    <summary>🗒️</summary>
+    <ul>
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#customization">Customization</a></li>
+<ul>
+<li><a href="#colors">Colors</a></li>
+<li><a href="#layout">Layout</a></li>
+<li><a href="#typography">Typography</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+</ul>
+<li><a href="#configuration">Configuration</a></li>
+<ul>
+<li><a href="#required-marmite-settings">Required Marmite Settings</a></li>
+<li><a href="#optional-settings">Optional Settings</a></li>
+</ul>
+<li><a href="#markdown-fragments">Markdown Fragments</a></li>
+<li><a href="#content-structure">Content Structure</a></li>
+<ul>
+<li><a href="#posts">Posts</a></li>
+<li><a href="#pages">Pages</a></li>
+</ul>
+<li><a href="#assets-included">Assets Included</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#browser-support">Browser Support</a></li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#accessibility">Accessibility</a></li>
+<li><a href="#theme-configuration-themejson">Theme Configuration (theme.json)</a></li>
+<li><a href="#embedded-theme-template">Embedded Theme Template</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+</ul>
+
+    </details>
+  </div>
+  
+
+  <div class="content-html e-content"><!-- Content Injected to every content markdown header -->
+<p>A minimal, clean theme for Marmite static site generator.</p>
+<h2><a href="#features" aria-hidden="true" class="anchor" id="features"></a>Features</h2>
+<ul>
+<li><strong>Clean Design</strong>: Minimal, distraction-free layout</li>
+<li><strong>Responsive</strong>: Works great on desktop, tablet, and mobile</li>
+<li><strong>Dark Mode</strong>: Automatic dark mode based on system preference</li>
+<li><strong>Fast</strong>: Lightweight CSS and JavaScript</li>
+<li><strong>Accessible</strong>: Semantic HTML and keyboard navigation</li>
+<li><strong>SEO Ready</strong>: Proper meta tags and structured data</li>
+<li><strong>Search</strong>: Built-in search functionality (when enabled)</li>
+</ul>
+<h2><a href="#customization" aria-hidden="true" class="anchor" id="customization"></a>Customization</h2>
+<h3><a href="#colors" aria-hidden="true" class="anchor" id="colors"></a>Colors</h3>
+<p>You can easily customize the theme colors by editing the CSS custom properties in <code>static/style.css</code>:</p>
+<pre><code class="language-css">:root {
+  --primary-color: #2c5aa0;        /* Main brand color */
+  --secondary-color: #f8f9fa;      /* Background accents */
+  --text-color: #333;              /* Main text color */
+  --link-color: #2c5aa0;           /* Link color */
+  --background-color: #fff;        /* Page background */
+}
+</code></pre>
+<h3><a href="#layout" aria-hidden="true" class="anchor" id="layout"></a>Layout</h3>
+<p>The theme uses a flexible layout system. You can customize:</p>
+<ul>
+<li><strong>Header</strong>: Edit <code>templates/base.html</code> or create <code>content/_header.md</code></li>
+<li><strong>Footer</strong>: Edit <code>templates/base.html</code> or create <code>content/_footer.md</code></li>
+<li><strong>Sidebar</strong>: Create <code>content/_sidebar.md</code></li>
+<li><strong>Hero Section</strong>: Create <code>content/_hero.md</code></li>
+</ul>
+<h3><a href="#typography" aria-hidden="true" class="anchor" id="typography"></a>Typography</h3>
+<p>The theme includes the accessible Atkinson Hyperlegible font for better readability:</p>
+<pre><code class="language-css">@font-face {
+  font-family: &quot;Atkinson Hyperlegible&quot;;
+  src: url(&quot;./Atkinson-Hyperlegible-Regular-102.woff&quot;);
+}
+</code></pre>
+<p>It also uses system fonts as fallback for fast loading:</p>
+<pre><code class="language-css">font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+</code></pre>
+<p>You can change the font settings in <code>static/style.css</code> or add additional web fonts.</p>
+<h3><a href="#javascript" aria-hidden="true" class="anchor" id="javascript"></a>JavaScript</h3>
+<p>The theme includes minimal JavaScript for:</p>
+<ul>
+<li>Search overlay functionality</li>
+<li>Smooth scrolling for anchor links</li>
+<li>External link indicators</li>
+<li>Mobile menu support</li>
+</ul>
+<h2><a href="#configuration" aria-hidden="true" class="anchor" id="configuration"></a>Configuration</h2>
+<h3><a href="#required-marmite-settings" aria-hidden="true" class="anchor" id="required-marmite-settings"></a>Required Marmite Settings</h3>
+<pre><code class="language-yaml"># marmite.yaml
+name: &quot;Your Site Name&quot;
+tagline: &quot;Your site description&quot;
+enable_search: true  # For search functionality
+</code></pre>
+<h3><a href="#optional-settings" aria-hidden="true" class="anchor" id="optional-settings"></a>Optional Settings</h3>
+<pre><code class="language-yaml"># Enhanced footer
+footer: |
+  &lt;p&gt;&amp;copy; 2025 Your Name. All rights reserved.&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;/about.html&quot;&gt;About&lt;/a&gt; | &lt;a href=&quot;/contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/p&gt;
+
+# Custom menu
+menu:
+  - [&quot;Home&quot;, &quot;index.html&quot;]
+  - [&quot;About&quot;, &quot;about.html&quot;]
+  - [&quot;Tags&quot;, &quot;tags.html&quot;]
+  - [&quot;Archive&quot;, &quot;archive.html&quot;]
+
+# Fediverse verification (adds rel=&quot;me&quot; link)
+extra:
+  fediverse_verification: &quot;https://mastodon.social/@yourusername&quot;
+</code></pre>
+<h2><a href="#markdown-fragments" aria-hidden="true" class="anchor" id="markdown-fragments"></a>Markdown Fragments</h2>
+<p>The theme supports these optional Markdown fragments:</p>
+<ul>
+<li><code>_announce.md</code> - Site-wide announcement bar</li>
+<li><code>_header.md</code> - Custom header content</li>
+<li><code>_hero.md</code> - Hero section on homepage</li>
+<li><code>_sidebar.md</code> - Sidebar content</li>
+<li><code>_footer.md</code> - Custom footer content</li>
+<li><code>_comments.md</code> - Comments system integration</li>
+<li><code>_htmlhead.md</code> - Custom HTML in <code>&lt;head&gt;</code></li>
+<li><code>_htmltail.md</code> - Custom HTML before <code>&lt;/body&gt;</code></li>
+</ul>
+<h2><a href="#content-structure" aria-hidden="true" class="anchor" id="content-structure"></a>Content Structure</h2>
+<h3><a href="#posts" aria-hidden="true" class="anchor" id="posts"></a>Posts</h3>
+<p>Posts should include front matter for best results:</p>
+<pre><code class="language-markdown">---
+title: &quot;Your Post Title&quot;
+date: 2025-07-21
+authors: [&quot;Your Name&quot;]
+tags: [&quot;tag1&quot;, &quot;tag2&quot;]
+description: &quot;Brief description for SEO&quot;
+banner_image: &quot;media/your-image.jpg&quot;
+---
+
+Your post content here...
+</code></pre>
+<h3><a href="#pages" aria-hidden="true" class="anchor" id="pages"></a>Pages</h3>
+<p>Pages are similar but typically don't have dates:</p>
+<pre><code class="language-markdown">---
+title: &quot;About&quot;
+description: &quot;About this website&quot;
+---
+
+About page content...
+</code></pre>
+<h2><a href="#assets-included" aria-hidden="true" class="anchor" id="assets-included"></a>Assets Included</h2>
+<p>The theme comes with these pre-built assets:</p>
+<ul>
+<li><strong>Atkinson-Hyperlegible-Regular-102.woff</strong>: Accessible web font for better readability</li>
+<li><strong>avatar-placeholder.png</strong>: Default avatar image for authors</li>
+<li><strong>favicon.ico</strong>: Site favicon</li>
+<li><strong>logo.png</strong>: Default site logo placeholder</li>
+<li><strong>robots.txt</strong>: SEO robots file</li>
+<li><strong>script.js</strong>: Theme JavaScript functionality</li>
+<li><strong>search.js</strong>: Search functionality (provided by Marmite)</li>
+<li><strong>style.css</strong>: Complete theme stylesheet</li>
+</ul>
+<h2><a href="#development" aria-hidden="true" class="anchor" id="development"></a>Development</h2>
+<p>To customize the theme further:</p>
+<ol>
+<li><strong>CSS</strong>: Edit <code>static/style.css</code></li>
+<li><strong>JavaScript</strong>: Edit <code>static/script.js</code></li>
+<li><strong>Templates</strong>: Modify files in <code>templates/</code></li>
+<li><strong>Assets</strong>: Replace or add images, fonts, etc. in <code>static/</code></li>
+<li><strong>Fonts</strong>: The theme includes Atkinson Hyperlegible font, or you can add your own</li>
+</ol>
+<h2><a href="#browser-support" aria-hidden="true" class="anchor" id="browser-support"></a>Browser Support</h2>
+<p>The theme supports all modern browsers:</p>
+<ul>
+<li>Chrome 60+</li>
+<li>Firefox 60+</li>
+<li>Safari 12+</li>
+<li>Edge 79+</li>
+</ul>
+<h2><a href="#performance" aria-hidden="true" class="anchor" id="performance"></a>Performance</h2>
+<p>The theme is optimized for performance:</p>
+<ul>
+<li><strong>CSS</strong>: Single file with CSS custom properties for easy theming</li>
+<li><strong>JavaScript</strong>: Minimal, focused functionality</li>
+<li><strong>Web font</strong>: Single Atkinson Hyperlegible font file (~40KB) for accessibility</li>
+<li><strong>System fonts</strong>: Used as fallback for fast loading</li>
+<li><strong>No external dependencies</strong> (except for search.js from Marmite)</li>
+<li><strong>Embedded assets</strong>: All theme files are embedded in Marmite binary</li>
+</ul>
+<h2><a href="#accessibility" aria-hidden="true" class="anchor" id="accessibility"></a>Accessibility</h2>
+<p>The theme follows accessibility best practices:</p>
+<ul>
+<li>Semantic HTML structure</li>
+<li>Keyboard navigation support</li>
+<li>High contrast colors</li>
+<li>Screen reader friendly</li>
+<li>Focus indicators</li>
+</ul>
+<h2><a href="#theme-configuration-themejson" aria-hidden="true" class="anchor" id="theme-configuration-themejson"></a>Theme Configuration (theme.json)</h2>
+<p>The theme includes a <code>theme.json</code> file that describes the theme and its capabilities:</p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;THEME_NAME&quot;,
+  &quot;version&quot;: &quot;0.1.0&quot;,
+  &quot;author&quot;: &quot;AUTHOR_NAME&quot;,
+  &quot;description&quot;: &quot;THEME_DESCRIPTION&quot;,
+  &quot;marmite_version&quot;: &quot;&gt;=0.2.6&quot;,
+  &quot;extra_config_allowed&quot;: {
+    &quot;fediverse_verification&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;required&quot;: false,
+      &quot;description&quot;: &quot;Enable Fediverse Username Verification&quot;,
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;example&quot;: &quot;https://mastodon.social/@username&quot;
+    }
+  }
+}
+</code></pre>
+<p>This configuration allows the theme to:</p>
+<ul>
+<li>Define supported extra configuration options</li>
+<li>Specify minimum Marmite version requirements</li>
+<li>Document theme metadata and features</li>
+</ul>
+<h2><a href="#embedded-theme-template" aria-hidden="true" class="anchor" id="embedded-theme-template"></a>Embedded Theme Template</h2>
+<p>As of Marmite 0.2.6+, this theme template is <strong>embedded directly in the Marmite binary</strong>. This means:</p>
+<ul>
+<li><strong>Always available</strong>: No need to download or locate template files</li>
+<li><strong>Version consistency</strong>: Template matches your Marmite version exactly</li>
+<li><strong>Fast theme creation</strong>: <code>--start-theme</code> extracts embedded files instantly</li>
+<li><strong>No external dependencies</strong>: Everything needed is included</li>
+</ul>
+<h2><a href="#license" aria-hidden="true" class="anchor" id="license"></a>License</h2>
+<p>This theme is released under the AGPL License, same as Marmite.</p>
+<!-- Content Injected to every content markdown footer -->
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+    <article><h5><a href="#comentários" aria-hidden="true" class="anchor" id="comentários"></a>Comentários</h5>
+<script src='https://utteranc.es/client.js'
+repo='Fabricio-Antonio/meus10centavos'
+issue-term='pathname'
+theme='github-dark'
+crossorigin='anonymous'
+async>
+</script>
+</article>
+
+
+
+
+
+
+        </section>
+        
+        <footer class="footer-content grid">
+            <div>
+  © 2026 · Meus 10 Centavos by <a href="https://www.linkedin.com/in/fabricio-ss/">Fabrício Santos</a> ·
+  <a href="https://github.com/rochacbruno/marmite">Marmite</a>
+</div>
+
+            
+        </footer>
+        
+    </main>
+
+    <script src="/static/marmite.js"></script>
+    <script src="/static/custom.js"></script>
+    
+    <script type="module" src="/static/search.js"></script>
+    
+    
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script>
+
+
+
+</body>
+</html>

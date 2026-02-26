@@ -1,0 +1,98 @@
+{
+  "marmite_version": "0.2.7",
+  "posts": 12,
+  "pages": 2,
+  "generated_at": "2026-02-25 23:23:22.429149203 -03:00",
+  "timestamp": 1772072602,
+  "elapsed_time": 0.24000697,
+  "config": {
+    "name": "Meus 10 Centavos",
+    "tagline": "Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião",
+    "url": "https://meus10centavos.vercel.app/",
+    "https": null,
+    "footer": "<div>\n  © 2026 · Meus 10 Centavos by <a href=\"https://www.linkedin.com/in/fabricio-ss/\">Fabrício Santos</a> ·\n  <a href=\"https://github.com/rochacbruno/marmite\">Marmite</a>\n</div>\n",
+    "language": "pt-BR",
+    "pagination": 10,
+    "pages_title": "Páginas",
+    "tags_title": "Tags",
+    "tags_content_title": "Posts marcados com “$tag”",
+    "archives_title": "Arquivo",
+    "archives_content_title": "Posts de “$year”",
+    "streams_title": "Streams",
+    "streams_content_title": "Posts from '$stream'",
+    "series_title": "Séries",
+    "series_content_title": "Série “$series”",
+    "default_author": "fabricio",
+    "authors_title": "Autores",
+    "enable_search": true,
+    "enable_related_content": true,
+    "search_title": "Buscar",
+    "content_path": "content",
+    "site_path": "",
+    "templates_path": "templates",
+    "static_path": "static",
+    "media_path": "media",
+    "card_image": "",
+    "banner_image": "https://yt3.googleusercontent.com/tTDf17wusDtAOct0zW93LeDiU-mVFuIJlC5kUrNnBX3LnGTAM2MERxC3RpCf66KWSkpy4MBb=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+    "logo_image": "",
+    "default_date_format": "%d %b %Y",
+    "menu": [
+      [
+        "Início",
+        "index.html"
+      ],
+      [
+        "Tags",
+        "tags.html"
+      ],
+      [
+        "Arquivo",
+        "archive.html"
+      ],
+      [
+        "Sobre",
+        "about.html"
+      ]
+    ],
+    "extra": null,
+    "authors": {
+      "carlos": {
+        "name": "Carlos Souza",
+        "avatar": "https://avatars.githubusercontent.com/u/219468948?v=4",
+        "bio": "IT enthusiast. I'm from Pernambuco, Brazil, currently studying to develop open source projects as a hobby.",
+        "links": null
+      },
+      "fabricio": {
+        "name": "Fabrício Santos",
+        "avatar": "https://avatars.githubusercontent.com/u/90152237?v=4",
+        "bio": "Não sou ninguém revelante, apenas um Fabrício entre os outros 167.869 FABRÍCIOs que existem no Brasil. Sou desenvolvedor Full-Esterco, faço m€rd4 no front e no back.",
+        "links": null
+      },
+      "matheus": {
+        "name": "Matheus Henrique",
+        "avatar": "https://avatars.githubusercontent.com/u/44449793?v=4",
+        "bio": "Desenvolvedor, como muitos outros, com alguma experiência no que faz.",
+        "links": null
+      }
+    },
+    "streams": {},
+    "series": {},
+    "toc": true,
+    "json_feed": true,
+    "show_next_prev_links": true,
+    "publish_md": false,
+    "source_repository": null,
+    "image_provider": null,
+    "markdown_parser": null,
+    "theme": null,
+    "file_mapping": [],
+    "enable_shortcodes": true,
+    "shortcode_pattern": null,
+    "build_sitemap": true,
+    "publish_urls_json": true,
+    "gallery_path": "gallery",
+    "gallery_create_thumbnails": true,
+    "gallery_thumb_size": 200,
+    "skip_image_resize": false
+  }
+}
