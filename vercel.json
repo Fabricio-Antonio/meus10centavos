@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "curl -sSf https://marmite.blog/install.sh | sh && export PATH=\"$HOME/.local/bin:$PATH\" && marmite content site",
+  "outputDirectory": "site",
+  "framework": null
+}
