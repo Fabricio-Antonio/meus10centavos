@@ -1,16 +1,99 @@
-/* Importar fonte Poppins do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Poppins + palette aligned with fabriciosantos.dev.br */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-/* Aplicar Poppins como fonte padrão */
-:root {
-  --font-family: 'Poppins', sans-serif;
+:root,
+[data-theme="light"],
+:root:not([data-theme="dark"]),
+[data-theme="dark"] {
+  --font-family: "Poppins", sans-serif;
+
+  /* Theme tokens */
+  --primary-color: #22d3ee;
+  --secondary-color: #0f172a;
+  --text-color: #e5e7eb;
+  --link-color: #22d3ee;
+  --link-hover-color: #67e8f9;
+  --border-color: #1f2937;
+  --background-color: #0b1120;
+  --code-background: #111827;
+
+  /* Pico tokens used by Marmite theme */
+  --pico-font-family: "Poppins", sans-serif;
+  --pico-background-color: #0b1120;
+  --pico-card-background-color: #0f172a;
+  --pico-color: #e5e7eb;
+  --pico-muted-color: #94a3b8;
+  --pico-primary: #22d3ee;
+  --pico-primary-hover: #67e8f9;
+  --pico-primary-focus: rgba(34, 211, 238, 0.25);
+  --pico-border-color: #1f2937;
+
+  --pico-color-azure-550: #22d3ee;
+  --pico-color-azure-650: #67e8f9;
+  --pico-color-slate-750: #1f2937;
+  --pico-color-slate-850: #0f172a;
+  --pico-menu-selected: #f8fafc;
+  --pico-menu: #94a3b8;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-/* Garantir que títulos também usem Poppins */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: #f8fafc;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-title a,
+.site-tagline {
+  color: var(--text-color);
+}
+
+.nav-item:hover,
+.header-menu a:hover {
+  background-color: rgba(34, 211, 238, 0.12);
+  text-decoration: none;
+}
+
+.nav-item.active,
+.search-toggle button,
+button,
+[role="button"],
+input[type="submit"] {
+  background: linear-gradient(90deg, #3b82f6 0%, #22d3ee 100%);
+  border-color: transparent;
+  color: #0b1120;
+  font-weight: 600;
+}
+
+.hero,
+.content-toc,
+blockquote,
+article,
+aside {
+  background-color: #0f172a;
+  border-color: #1e293b;
+}
+
+code,
+pre,
+kbd,
+samp {
+  background-color: var(--code-background);
+  border-color: #1f2937;
 }
