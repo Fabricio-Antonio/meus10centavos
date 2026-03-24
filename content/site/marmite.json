@@ -1,10 +1,10 @@
 {
   "marmite_version": "0.2.7",
-  "posts": 12,
+  "posts": 13,
   "pages": 2,
-  "generated_at": "2026-02-26 00:40:42.809591229 -03:00",
-  "timestamp": 1772077242,
-  "elapsed_time": 0.150235924,
+  "generated_at": "2026-03-24 18:24:17.557049878 -03:00",
+  "timestamp": 1774387457,
+  "elapsed_time": 0.141318339,
   "config": {
     "name": "Meus 10 Centavos",
     "tagline": "Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião",
@@ -62,16 +62,16 @@
         "bio": "Desenvolvedor, como muitos outros, com alguma experiência no que faz.",
         "links": null
       },
-      "fabricio": {
-        "name": "Fabrício Santos",
-        "avatar": "https://avatars.githubusercontent.com/u/90152237?v=4",
-        "bio": "Não sou ninguém revelante, apenas um Fabrício entre os outros 167.869 FABRÍCIOs que existem no Brasil. Sou desenvolvedor Full-Esterco, faço m€rd4 no front e no back.",
-        "links": null
-      },
       "carlos": {
         "name": "Carlos Souza",
         "avatar": "https://avatars.githubusercontent.com/u/219468948?v=4",
         "bio": "IT enthusiast. I'm from Pernambuco, Brazil, currently studying to develop open source projects as a hobby.",
+        "links": null
+      },
+      "fabricio": {
+        "name": "Fabrício Santos",
+        "avatar": "https://avatars.githubusercontent.com/u/90152237?v=4",
+        "bio": "Não sou ninguém revelante, apenas um Fabrício entre os outros 167.869 FABRÍCIOs que existem no Brasil. Sou desenvolvedor Full-Esterco, faço m€rd4 no front e no back.",
         "links": null
       }
     },

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://meus10centavos.vercel.app/a-faculdade-perfeita.html</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tudo-sobre-maquinas-virtuais.html</loc>
+  </url>
+  <url>
     <loc>https://meus10centavos.vercel.app/git-pratico-para-iniciantes.html</loc>
   </url>
   <url>
@@ -13,25 +19,25 @@
     <loc>https://meus10centavos.vercel.app/como-fazer-um-bom-curriculo-otimizado-para-ats.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/como-fazer-swap.html</loc>
+    <loc>https://meus10centavos.vercel.app/como-fazer-swap-em-zram.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/como-fazer-swap-em-zram.html</loc>
+    <loc>https://meus10centavos.vercel.app/como-fazer-swap.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/cursos-gratis.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/como-aprender-um-novo-idioma.html</loc>
-  </url>
-  <url>
     <loc>https://meus10centavos.vercel.app/como-matar-processos-no-linux.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/bem-vindo.html</loc>
+    <loc>https://meus10centavos.vercel.app/como-aprender-um-novo-idioma.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/como-criar-blog-marmite.html</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/bem-vindo.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/about.html</loc>
@@ -49,34 +55,34 @@
     <loc>https://meus10centavos.vercel.app/tag-linux.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-curso.html</loc>
+    <loc>https://meus10centavos.vercel.app/tag-carreira.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-blog.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-carreira.html</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-rust.html</loc>
+    <loc>https://meus10centavos.vercel.app/tag-curso.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-pessoal.html</loc>
   </url>
   <url>
+    <loc>https://meus10centavos.vercel.app/tag-marmite.html</loc>
+  </url>
+  <url>
     <loc>https://meus10centavos.vercel.app/tag-ingles.html</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-guia.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-inicio.html</loc>
   </url>
   <url>
+    <loc>https://meus10centavos.vercel.app/tag-rust.html</loc>
+  </url>
+  <url>
     <loc>https://meus10centavos.vercel.app/tag-versionamento.html</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-marmite.html</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-guia.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tags.html</loc>
@@ -112,34 +118,34 @@
     <loc>https://meus10centavos.vercel.app/tag-linux.rss</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-curso.rss</loc>
+    <loc>https://meus10centavos.vercel.app/tag-carreira.rss</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-blog.rss</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-carreira.rss</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-rust.rss</loc>
+    <loc>https://meus10centavos.vercel.app/tag-curso.rss</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-pessoal.rss</loc>
   </url>
   <url>
+    <loc>https://meus10centavos.vercel.app/tag-marmite.rss</loc>
+  </url>
+  <url>
     <loc>https://meus10centavos.vercel.app/tag-ingles.rss</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-guia.rss</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-inicio.rss</loc>
   </url>
   <url>
+    <loc>https://meus10centavos.vercel.app/tag-rust.rss</loc>
+  </url>
+  <url>
     <loc>https://meus10centavos.vercel.app/tag-versionamento.rss</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-marmite.rss</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-guia.rss</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/author-carlos.rss</loc>
@@ -163,34 +169,34 @@
     <loc>https://meus10centavos.vercel.app/tag-linux.json</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-curso.json</loc>
+    <loc>https://meus10centavos.vercel.app/tag-carreira.json</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-blog.json</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-carreira.json</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-rust.json</loc>
+    <loc>https://meus10centavos.vercel.app/tag-curso.json</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-pessoal.json</loc>
   </url>
   <url>
+    <loc>https://meus10centavos.vercel.app/tag-marmite.json</loc>
+  </url>
+  <url>
     <loc>https://meus10centavos.vercel.app/tag-ingles.json</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-guia.json</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-inicio.json</loc>
   </url>
   <url>
+    <loc>https://meus10centavos.vercel.app/tag-rust.json</loc>
+  </url>
+  <url>
     <loc>https://meus10centavos.vercel.app/tag-versionamento.json</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-marmite.json</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-guia.json</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/author-carlos.json</loc>
@@ -214,34 +220,34 @@
     <loc>https://meus10centavos.vercel.app/tag-linux-1.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-curso-1.html</loc>
+    <loc>https://meus10centavos.vercel.app/tag-carreira-1.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-blog-1.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-carreira-1.html</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-rust-1.html</loc>
+    <loc>https://meus10centavos.vercel.app/tag-curso-1.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-pessoal-1.html</loc>
   </url>
   <url>
+    <loc>https://meus10centavos.vercel.app/tag-marmite-1.html</loc>
+  </url>
+  <url>
     <loc>https://meus10centavos.vercel.app/tag-ingles-1.html</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-guia-1.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-inicio-1.html</loc>
   </url>
   <url>
+    <loc>https://meus10centavos.vercel.app/tag-rust-1.html</loc>
+  </url>
+  <url>
     <loc>https://meus10centavos.vercel.app/tag-versionamento-1.html</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-marmite-1.html</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-guia-1.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/author-carlos-1.html</loc>
