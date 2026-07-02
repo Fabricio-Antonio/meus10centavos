@@ -1,4 +1,113 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate><lastBuildDate>Tue, 24 Mar 2026 21:01:09 GMT</lastBuildDate><generator>marmite</generator><item><title>Tudo sobre maquinas virtuais</title><link>https://meus10centavos.vercel.app//tudo-sobre-maquinas-virtuais.html</link><author>carlos</author><category>tutorial</category><category>linux</category><guid>https://meus10centavos.vercel.app//tudo-sobre-maquinas-virtuais.html</guid><pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">tag-tutorial</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate><lastBuildDate>Thu, 02 Jul 2026 01:03:03 GMT</lastBuildDate><generator>marmite</generator><item><title>O guia de LinkedIn</title><link>https://meus10centavos.vercel.app//guia-de-linkedin.html</link><author>fabricio</author><category>carreira</category><category>tutorial</category><category>guia</category><guid>https://meus10centavos.vercel.app//guia-de-linkedin.html</guid><pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">tag-tutorial</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<p>Mais uma vez motivado pela preguiça de ensinar muitas pessoas a mesma coisa em um curto período de tempo, resolvi economizar saliva e escrever <strong>o guia de LinkedIn.</strong> Vou explicar como a rede funciona, como ter um posicionamento na rede, como fazer um bom perfil, etc.</p>
+<p><strong>Fontes</strong> <br />
+Certamente terá um @bado questionando &quot;com base em que você diz isso?&quot;, mas por incrível que pareça eu não tirei isso tudo da minha cavidade retal.</p>
+<p>Escrevo esse texto com base na minha experiência, no que eu testei, nas falhas e êxitos que tive. Também com base nas próprias métricas que o LinkedIn fornece sobre o perfil.<br />
+Além de convesas que tive com contratantes e donos de empresas, ou seja, eu ouvi diretamente o que incomada e o que eles gostam e vim repassar. E não orgulhosamente também adimito que já fui o otário que encontrou o esperto que tava vendendo o curso de currículo e LinkedIn, que realmente são eficazes, mas não valem o preço cobrado.</p>
+<h2><a href="#o-perfil-de-ouro" aria-hidden="true" class="anchor" id="o-perfil-de-ouro"></a>O perfil de ouro</h2>
+<p>Premeiramente parabéns por ter tomado vergonha na cara e estar tentando melhorar seu perfil, que atualmente está um repelente de contratantes.</p>
+<p>Vamos montar o perfil do Enzo (nome fictício)</p>
+<h3><a href="#url" aria-hidden="true" class="anchor" id="url"></a>URL</h3>
+<p>Enzo, você usaria @Enzo_Rei_Delas.https.418 como @ do seu Instagram? Não, né?! <strong>ENTÃO PORQUÊ KARALIOS VOCÊ VAI USAR UMA DESGRAÇA DESSA NA SUA REDE PROFISSIONAL?!</strong></p>
+<p>Provavelmente você ainda não reparou, mas cada usuário tem um URL especìfica no LinkedIn, é o equivalente ao @ do Instagram. <br />
+É muito comum ver pessoas que tem o nome muito comum, terem URLs cheias de números o que não é nada legal. A URL não é um fator que automáticamente rotula seu perfil como ruim, mas é um polimento, demonstra uma preocupação com detalhes.</p>
+<p>O ideal é você use seu próprio nome na URL ou use suas iniciais. Me citando como exemplo, meu nome é Fabrício e minha URL do LinkedIn é fabricio-ss, o &quot;ss&quot;, são as iniciais dos meus sobrenomes. Pois meus sobrenomes também são muito comuns.</p>
+<h3><a href="#foto-e-banner" aria-hidden="true" class="anchor" id="foto-e-banner"></a>Foto e Banner</h3>
+<h4><a href="#foto-de-perfil" aria-hidden="true" class="anchor" id="foto-de-perfil"></a>Foto de perfil</h4>
+<p>É de uma frequência assustadora, principalmente entre os iniciantes, de péssimas fotos de perfil. Quando penso que não há como ser pior alguém vem e supera...</p>
+<p>Cuidados com a foto</p>
+<ul>
+<li>A foto de perfil deve ser com foco no seu rosto, nunca de corpo inteiro;</li>
+<li>Em um ambiente bem iluminado, evite sombra no rosto;</li>
+<li>Sem boné ou óculos de Sol;</li>
+<li>A roupa deve ser de cor sólida;</li>
+<li>O fundo deve ser em um fundo neutro, uma parede branca, por exemplo;</li>
+<li>Nada de foto em grupo.</li>
+</ul>
+<p>Caso você queria uma foto feita com IA, aqui vai um prompt para gerar uma foto boa para o LinkedIn:</p>
+<p>Black and white studio portrait of a young man with short curly hair and glasses, wearing a fitted black t-shirt. He is posing with one hand on his chin in a thoughtful, confident expression, looking directly at the camera. Dramatic lighting (low-key lighting) with strong contrast, highlighting facial features and creating soft shadows. Dark solid background, minimalistic composition. Cinematic mood, sharp focus, high detail, professional photography, 85mm lens, shallow depth of field, ultra realistic, editorial style.</p>
+<p>Adicione uma foto de um modelo na posição que você quer e várias fotos suas, principalmente do rosto, em ângulos e iluminações variadas.</p>
+<p>Recomendo que use o GPT, foi onde eu fiz a minha.</p>
+<h4><a href="#banner" aria-hidden="true" class="anchor" id="banner"></a>Banner</h4>
+<p>Sobre o banner o ideal é que ele seja coeso com suas atividades, como você... é um dev o lógico é que o banner seja um wallpaper de código ou que seja referente a programação. Outra abordagem legal é com seu nome e as stacks que você atua.</p>
+<p>Exemplo: <br />
+<img src="/media/banner.png" alt="banner" width="700" height="500"></p>
+<h3><a href="#conexões" aria-hidden="true" class="anchor" id="conexões"></a>Conexões</h3>
+<p>Vai na seção Minha rede e adicione todos que são da mesma área que você, no caso outros desenvolvedores, até você atingir 500 conexões que é quando o algoritimo começa te considerar minimamente relevante. A partir desse marco você começa filtar.</p>
+<p>O ideal que você faça conexões com pessoas da mesma área que você, caso você esteja procurando emprego adicione o pessoal de RH e psicólogos que trabalham em RH e TechRecruiters. É muito interessante adicionar pessoas de áreas adjasentes a sua, por exemplo:</p>
+<ul>
+<li>Front-end adicionar UI/UX designer</li>
+<li>Back-end adicinoar pessoal de DevOps e CyberSecurity</li>
+<li>Front e Back se adcionarem mutuamente, etc.</li>
+</ul>
+<h3><a href="#headline" aria-hidden="true" class="anchor" id="headline"></a>Headline</h3>
+<p>Essa é a parte que você se rotula, é o que as pessoas olham quando pensam &quot;Quem esse cara pra falar isso?&quot; ao ver um comentário polémico em uma publicação. Motivo inclusive de memes pelo exagero que as pessoas fazem no LinkedIn para tentar demonstar execiva autoridade em funções simples. Não obstante também é visto usuário condenando seu perfil à forca pela má execução da rotulação.</p>
+<p>Coisas do tipo:</p>
+<p>&quot;Estudante da Ciência da Computaria na Uniesquina&quot; <br />
+&quot;Profissional XPTO em transição de carreira para programação&quot;</p>
+<p>Ou pior, os que fazem da headline uma sopa de letrinhas sem estratégia nenhuma</p>
+<p>&quot;Prgramador Java, JavaScript, Rust, React, Spring, CyberSegurança, certificado do curso qualquer da Udemy&quot;</p>
+<p>Headline tem que ser feita de forma estratégica! Ela é uma das principais formas de busca usada pelos contratantes, a headline pode jogar contra ou ao seu favor, dependendo de como for feita.</p>
+<p>A headline deve conter palavras-chave relevantes para sua atuação, por exemplo, para o front-enzo algumas palavras-chave importantes são JavaScript, TypeScrit e um dos três principais frameworks.</p>
+<p>Estrutura de uma boa headline: <br />
+sua profissão | stack</p>
+<p>Exemplo: <br />
+Desenolvedor Front-enzo | JavaScript/TypeScript, React, TailwindCSS</p>
+<p>As tecnologias citadas devem ser complementares, não faz sentido para o front-enzo adicionar Java e Spring Boot na sua headline.</p>
+<p>Quando você escreve vária tecnologias, a não ser que você seja um sênior com mais de 10 anos de exeriência, a impressão que possa é que você está pulando de galho em galho e não sabe com profundidade suficiente para atuar.</p>
+<h3><a href="#sobre" aria-hidden="true" class="anchor" id="sobre"></a>Sobre</h3>
+<p>Junto com a foto e a headline, o sobre compõe o top 3 partes que as pessoas mais errram. Muitas pessoas colocam que são &quot;devs apaixonados&quot; ou que são &quot;devs curiosos&quot;, mas cuidado que eu fiquei sabendo que o come C# de curioso está contratando...</p>
+<p>Muito comum as pessoas colocaram um texto gigante sem levar em consideração um fator. Ao entrar no seu perfil as pessoas não vêem todo o texto, só é possível ver as 4 primeiras linhas e se você não consegue fazer a pessoa que está olhando se interessar para clicar no botão ver mais.</p>
+<p>O segredo para um bom sobre é você dar o máximo de carteirada possível nessas linhas iniciais para causar interesse</p>
+<p>Exemplo: <br />
+<img src="/media/sobre.jpg" alt="banner" width="700" height="500"></p>
+<p>Observe que nesse exemplo tem 4 demonstrações de autorida: 1ª ser pesquisador, 2ª atuar em Health Tech,  3ª, tempo de expeeriência (mesmo sendo pouca), 4ª já ter feito sistema para órgão público.</p>
+<p>Ninguém está interessado na sua historinha de vida de paixão pela tecnologia desde a infância quando você desmontava eletrônicos velhos para ver como funcionavam. Quem recruta está procurando quem demonstra aptidão!</p>
+<p>Logo após você convencer quem está analisando seu perfil clicar em &quot;ver mais&quot; e desperdiçar mais alguns segundos da sua vida, você começa detlhar um pouco os tópicos das cateriadas e esmiussar sua atividade e responsabilidades, mas não muito há um campo exclusivo para isso, faça de forma resumida, comente só o que importa e o que impressiona.</p>
+<h4><a href="#principais-competências" aria-hidden="true" class="anchor" id="principais-competências"></a>Principais competências</h4>
+<p>Essa seção fica em anexo com o sobre, aqui você lista as 5 habilidades mais importantes que você tem, novamente deve haver coesão nas tecnologias citadas. Minha recomendação é que sejam as mesmas da headline.</p>
+<h3><a href="#serviços" aria-hidden="true" class="anchor" id="serviços"></a>Serviços</h3>
+<p>Apesar de parece que essa parte é exclusiva para freelancers, mas também contribue para as análises automatizadas com modelos de ATS. Além de seu perfil ser mais recomendado, pelo simples fato de estar mais completo.</p>
+<h3><a href="#destaque" aria-hidden="true" class="anchor" id="destaque"></a>Destaque</h3>
+<p>Autautoexplicativo.</p>
+<h3><a href="#experiência" aria-hidden="true" class="anchor" id="experiência"></a>Experiência</h3>
+<p>Outra seção que as pessoas fazer de forma muito inadequada. Descrever as experiência não é apenas colocar o tempo de atuação, nome da empresa e cargo.</p>
+<p>Estrutura da descrição da exeperiência:</p>
+<p>Breve descrição da atuação - Essa descrição deve ser mais ampla para dar um contexto do projeto que você trabalho. Qual era o projeo? Qual motivo do seu surgimento?</p>
+<p>Sua atuação - Cite quais foram suas responsabilidades. O que você fez? Como sua atuação impactou no projeto e por consequente na empresa?</p>
+<p>Resultado - Fale sobre as métricas de resultado. Com sua atuação nesse projeto quais resultados ele gerou? Quais os diferenciais?</p>
+<h3><a href="#formação-acadêmica" aria-hidden="true" class="anchor" id="formação-acadêmica"></a>Formação acadêmica</h3>
+<p>Sua Uniesquina fica aqui</p>
+<h3><a href="#licenças-e-certificados" aria-hidden="true" class="anchor" id="licenças-e-certificados"></a>Licenças e Certificados</h3>
+<p>Aqui os seu certificado de HTML5 da Udemy</p>
+<h3><a href="#projetos" aria-hidden="true" class="anchor" id="projetos"></a>Projetos</h3>
+<p>Se você tiver projetos open-source, acadêmico adicione aqui. É uma boa demonstração de capacidade técnica e de trabalho em equiper.</p>
+<h3><a href="#competências" aria-hidden="true" class="anchor" id="competências"></a>Competências</h3>
+<p>Você pode adicionar até 100 competências, você preencher essas 100 é muito importânte também pro algorítimo. Primeiro você adiciona suas competências técnicas (Linguagens, ferramentas, frameworks, tecnologias, etc), caso você não tenha habilidades técnicas suficientes então você usa das viadagens das softskills (escuta ativa, pensamento crítico, pensamento computacional, etc)</p>
+<h3><a href="#idiomas" aria-hidden="true" class="anchor" id="idiomas"></a>Idiomas</h3>
+<p>Aqui você adiciona que sabe a lingua do P, Elfico e Klingon</p>
+<h2><a href="#atividade" aria-hidden="true" class="anchor" id="atividade"></a>Atividade</h2>
+<p>Acredito que o LinkedIn é a única rede social que ninguém fica viciado e nem faz questão de entender como funciona tal qual o Instagram, por exemplo, onde todo mundo sonha em ter um mais de 5K de likes na sua foto no espelho do banheiro do shopping.</p>
+<p>O LinkedIn é uma rede social, isso parece uma obviedade, mas todo mundo ignora esse fator. O algorítimo favorece quem tem mais atividade, para entender isso basta comparar com aquela blogueirinha que você segue no Instagram que todos os dias posta um story dando bom dia. Ela não faz isso porquê ela acha bonito é porque mantem atividade e o algorítimo valoriza isso!</p>
+<p>Mas o LinkedIn não é a rede que você vai postar uma foto no espelho com a legenda &quot;indo alí&quot;, a atividade no LinkedIn é fundamentada em 4 pilares</p>
+<ul>
+<li>Esetabelecer marca pessoal</li>
+<li>Localizar as pessoas certas</li>
+<li>Interagir oferencendo insights</li>
+<li>Criar relacionamentos</li>
+</ul>
+<p>O que cada um quer dizer na prática?</p>
+<h3><a href="#esetabelecer-marca-pessoal" aria-hidden="true" class="anchor" id="esetabelecer-marca-pessoal"></a>Esetabelecer marca pessoal</h3>
+<p>Resumidamente, é ter o perfil preenchido com as informações necessáarias nos seus lugares. Onde você estudou, onde trabalhou, etc.</p>
+<h3><a href="#localizar-as-pessoas-certas" aria-hidden="true" class="anchor" id="localizar-as-pessoas-certas"></a>Localizar as pessoas certas</h3>
+<p>Criar conexão com as pessoas certas, ou seja pessoas do seu setor ou setor adjacente.</p>
+<h3><a href="#interagir-oferencendo-insights" aria-hidden="true" class="anchor" id="interagir-oferencendo-insights"></a>Interagir oferencendo insights</h3>
+<p>Prdouza conteúdo. &quot;Ah, não sei o que postar&quot;. Posta o que você está estudando, posta sua opnião sobre alguma polêmica do seu setor.</p>
+<h3><a href="#criar-relacionamentos" aria-hidden="true" class="anchor" id="criar-relacionamentos"></a>Criar relacionamentos</h3>
+<p>Faça comentário relevantes, não aqules sugerido da versão mobile ou qualquer porcaria tipo: &quot;top&quot;. Converse pela DM do LinkedIn (obs.: deixar e leva vacuo afeta essa pontuação)</p>
+<p>Se algum dia eu critiquei seu LinkedIn, melhore para que eu não tenha que voltar a criticá-lo novamente. De nada</p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>Tudo sobre maquinas virtuais</title><link>https://meus10centavos.vercel.app//tudo-sobre-maquinas-virtuais.html</link><author>carlos</author><category>tutorial</category><category>linux</category><guid>https://meus10centavos.vercel.app//tudo-sobre-maquinas-virtuais.html</guid><pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">tag-tutorial</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
 <h2><a href="#introdução" aria-hidden="true" class="anchor" id="introdução"></a>Introdução</h2>
 <p>As máquinas virtuais (VMs) revolucionaram a forma como utilizamos recursos computacionais. Seja você um desenvolvedor, administrador de sistemas ou simplesmente um entusiasta de tecnologia, entender o funcionamento das VMs é essencial no cenário tecnológico atual. Neste guia completo, vamos explorar tudo o que você precisa saber sobre máquinas virtuais.</p>
 <h2><a href="#o-que-são-máquinas-virtuais" aria-hidden="true" class="anchor" id="o-que-são-máquinas-virtuais"></a>O Que São Máquinas Virtuais?</h2>

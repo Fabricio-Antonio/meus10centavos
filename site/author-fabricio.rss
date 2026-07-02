@@ -1,15 +1,124 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate><lastBuildDate>Tue, 24 Mar 2026 21:01:09 GMT</lastBuildDate><generator>marmite</generator><item><title>A faculdade perfeita</title><link>https://meus10centavos.vercel.app//a-faculdade-perfeita.html</link><author>fabricio</author><category>carreira</category><guid>https://meus10centavos.vercel.app//a-faculdade-perfeita.html</guid><pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate><lastBuildDate>Thu, 02 Jul 2026 01:03:03 GMT</lastBuildDate><generator>marmite</generator><item><title>O guia de LinkedIn</title><link>https://meus10centavos.vercel.app//guia-de-linkedin.html</link><author>fabricio</author><category>carreira</category><category>tutorial</category><category>guia</category><guid>https://meus10centavos.vercel.app//guia-de-linkedin.html</guid><pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<p>Mais uma vez motivado pela preguiça de ensinar muitas pessoas a mesma coisa em um curto período de tempo, resolvi economizar saliva e escrever <strong>o guia de LinkedIn.</strong> Vou explicar como a rede funciona, como ter um posicionamento na rede, como fazer um bom perfil, etc.</p>
+<p><strong>Fontes</strong> <br />
+Certamente terá um @bado questionando &quot;com base em que você diz isso?&quot;, mas por incrível que pareça eu não tirei isso tudo da minha cavidade retal.</p>
+<p>Escrevo esse texto com base na minha experiência, no que eu testei, nas falhas e êxitos que tive. Também com base nas próprias métricas que o LinkedIn fornece sobre o perfil.<br />
+Além de convesas que tive com contratantes e donos de empresas, ou seja, eu ouvi diretamente o que incomada e o que eles gostam e vim repassar. E não orgulhosamente também adimito que já fui o otário que encontrou o esperto que tava vendendo o curso de currículo e LinkedIn, que realmente são eficazes, mas não valem o preço cobrado.</p>
+<h2><a href="#o-perfil-de-ouro" aria-hidden="true" class="anchor" id="o-perfil-de-ouro"></a>O perfil de ouro</h2>
+<p>Premeiramente parabéns por ter tomado vergonha na cara e estar tentando melhorar seu perfil, que atualmente está um repelente de contratantes.</p>
+<p>Vamos montar o perfil do Enzo (nome fictício)</p>
+<h3><a href="#url" aria-hidden="true" class="anchor" id="url"></a>URL</h3>
+<p>Enzo, você usaria @Enzo_Rei_Delas.https.418 como @ do seu Instagram? Não, né?! <strong>ENTÃO PORQUÊ KARALIOS VOCÊ VAI USAR UMA DESGRAÇA DESSA NA SUA REDE PROFISSIONAL?!</strong></p>
+<p>Provavelmente você ainda não reparou, mas cada usuário tem um URL especìfica no LinkedIn, é o equivalente ao @ do Instagram. <br />
+É muito comum ver pessoas que tem o nome muito comum, terem URLs cheias de números o que não é nada legal. A URL não é um fator que automáticamente rotula seu perfil como ruim, mas é um polimento, demonstra uma preocupação com detalhes.</p>
+<p>O ideal é você use seu próprio nome na URL ou use suas iniciais. Me citando como exemplo, meu nome é Fabrício e minha URL do LinkedIn é fabricio-ss, o &quot;ss&quot;, são as iniciais dos meus sobrenomes. Pois meus sobrenomes também são muito comuns.</p>
+<h3><a href="#foto-e-banner" aria-hidden="true" class="anchor" id="foto-e-banner"></a>Foto e Banner</h3>
+<h4><a href="#foto-de-perfil" aria-hidden="true" class="anchor" id="foto-de-perfil"></a>Foto de perfil</h4>
+<p>É de uma frequência assustadora, principalmente entre os iniciantes, de péssimas fotos de perfil. Quando penso que não há como ser pior alguém vem e supera...</p>
+<p>Cuidados com a foto</p>
+<ul>
+<li>A foto de perfil deve ser com foco no seu rosto, nunca de corpo inteiro;</li>
+<li>Em um ambiente bem iluminado, evite sombra no rosto;</li>
+<li>Sem boné ou óculos de Sol;</li>
+<li>A roupa deve ser de cor sólida;</li>
+<li>O fundo deve ser em um fundo neutro, uma parede branca, por exemplo;</li>
+<li>Nada de foto em grupo.</li>
+</ul>
+<p>Caso você queria uma foto feita com IA, aqui vai um prompt para gerar uma foto boa para o LinkedIn:</p>
+<p>Black and white studio portrait of a young man with short curly hair and glasses, wearing a fitted black t-shirt. He is posing with one hand on his chin in a thoughtful, confident expression, looking directly at the camera. Dramatic lighting (low-key lighting) with strong contrast, highlighting facial features and creating soft shadows. Dark solid background, minimalistic composition. Cinematic mood, sharp focus, high detail, professional photography, 85mm lens, shallow depth of field, ultra realistic, editorial style.</p>
+<p>Adicione uma foto de um modelo na posição que você quer e várias fotos suas, principalmente do rosto, em ângulos e iluminações variadas.</p>
+<p>Recomendo que use o GPT, foi onde eu fiz a minha.</p>
+<h4><a href="#banner" aria-hidden="true" class="anchor" id="banner"></a>Banner</h4>
+<p>Sobre o banner o ideal é que ele seja coeso com suas atividades, como você... é um dev o lógico é que o banner seja um wallpaper de código ou que seja referente a programação. Outra abordagem legal é com seu nome e as stacks que você atua.</p>
+<p>Exemplo: <br />
+<img src="/media/banner.png" alt="banner" width="700" height="500"></p>
+<h3><a href="#conexões" aria-hidden="true" class="anchor" id="conexões"></a>Conexões</h3>
+<p>Vai na seção Minha rede e adicione todos que são da mesma área que você, no caso outros desenvolvedores, até você atingir 500 conexões que é quando o algoritimo começa te considerar minimamente relevante. A partir desse marco você começa filtar.</p>
+<p>O ideal que você faça conexões com pessoas da mesma área que você, caso você esteja procurando emprego adicione o pessoal de RH e psicólogos que trabalham em RH e TechRecruiters. É muito interessante adicionar pessoas de áreas adjasentes a sua, por exemplo:</p>
+<ul>
+<li>Front-end adicionar UI/UX designer</li>
+<li>Back-end adicinoar pessoal de DevOps e CyberSecurity</li>
+<li>Front e Back se adcionarem mutuamente, etc.</li>
+</ul>
+<h3><a href="#headline" aria-hidden="true" class="anchor" id="headline"></a>Headline</h3>
+<p>Essa é a parte que você se rotula, é o que as pessoas olham quando pensam &quot;Quem esse cara pra falar isso?&quot; ao ver um comentário polémico em uma publicação. Motivo inclusive de memes pelo exagero que as pessoas fazem no LinkedIn para tentar demonstar execiva autoridade em funções simples. Não obstante também é visto usuário condenando seu perfil à forca pela má execução da rotulação.</p>
+<p>Coisas do tipo:</p>
+<p>&quot;Estudante da Ciência da Computaria na Uniesquina&quot; <br />
+&quot;Profissional XPTO em transição de carreira para programação&quot;</p>
+<p>Ou pior, os que fazem da headline uma sopa de letrinhas sem estratégia nenhuma</p>
+<p>&quot;Prgramador Java, JavaScript, Rust, React, Spring, CyberSegurança, certificado do curso qualquer da Udemy&quot;</p>
+<p>Headline tem que ser feita de forma estratégica! Ela é uma das principais formas de busca usada pelos contratantes, a headline pode jogar contra ou ao seu favor, dependendo de como for feita.</p>
+<p>A headline deve conter palavras-chave relevantes para sua atuação, por exemplo, para o front-enzo algumas palavras-chave importantes são JavaScript, TypeScrit e um dos três principais frameworks.</p>
+<p>Estrutura de uma boa headline: <br />
+sua profissão | stack</p>
+<p>Exemplo: <br />
+Desenolvedor Front-enzo | JavaScript/TypeScript, React, TailwindCSS</p>
+<p>As tecnologias citadas devem ser complementares, não faz sentido para o front-enzo adicionar Java e Spring Boot na sua headline.</p>
+<p>Quando você escreve vária tecnologias, a não ser que você seja um sênior com mais de 10 anos de exeriência, a impressão que possa é que você está pulando de galho em galho e não sabe com profundidade suficiente para atuar.</p>
+<h3><a href="#sobre" aria-hidden="true" class="anchor" id="sobre"></a>Sobre</h3>
+<p>Junto com a foto e a headline, o sobre compõe o top 3 partes que as pessoas mais errram. Muitas pessoas colocam que são &quot;devs apaixonados&quot; ou que são &quot;devs curiosos&quot;, mas cuidado que eu fiquei sabendo que o come C# de curioso está contratando...</p>
+<p>Muito comum as pessoas colocaram um texto gigante sem levar em consideração um fator. Ao entrar no seu perfil as pessoas não vêem todo o texto, só é possível ver as 4 primeiras linhas e se você não consegue fazer a pessoa que está olhando se interessar para clicar no botão ver mais.</p>
+<p>O segredo para um bom sobre é você dar o máximo de carteirada possível nessas linhas iniciais para causar interesse</p>
+<p>Exemplo: <br />
+<img src="/media/sobre.jpg" alt="banner" width="700" height="500"></p>
+<p>Observe que nesse exemplo tem 4 demonstrações de autorida: 1ª ser pesquisador, 2ª atuar em Health Tech,  3ª, tempo de expeeriência (mesmo sendo pouca), 4ª já ter feito sistema para órgão público.</p>
+<p>Ninguém está interessado na sua historinha de vida de paixão pela tecnologia desde a infância quando você desmontava eletrônicos velhos para ver como funcionavam. Quem recruta está procurando quem demonstra aptidão!</p>
+<p>Logo após você convencer quem está analisando seu perfil clicar em &quot;ver mais&quot; e desperdiçar mais alguns segundos da sua vida, você começa detlhar um pouco os tópicos das cateriadas e esmiussar sua atividade e responsabilidades, mas não muito há um campo exclusivo para isso, faça de forma resumida, comente só o que importa e o que impressiona.</p>
+<h4><a href="#principais-competências" aria-hidden="true" class="anchor" id="principais-competências"></a>Principais competências</h4>
+<p>Essa seção fica em anexo com o sobre, aqui você lista as 5 habilidades mais importantes que você tem, novamente deve haver coesão nas tecnologias citadas. Minha recomendação é que sejam as mesmas da headline.</p>
+<h3><a href="#serviços" aria-hidden="true" class="anchor" id="serviços"></a>Serviços</h3>
+<p>Apesar de parece que essa parte é exclusiva para freelancers, mas também contribue para as análises automatizadas com modelos de ATS. Além de seu perfil ser mais recomendado, pelo simples fato de estar mais completo.</p>
+<h3><a href="#destaque" aria-hidden="true" class="anchor" id="destaque"></a>Destaque</h3>
+<p>Autautoexplicativo.</p>
+<h3><a href="#experiência" aria-hidden="true" class="anchor" id="experiência"></a>Experiência</h3>
+<p>Outra seção que as pessoas fazer de forma muito inadequada. Descrever as experiência não é apenas colocar o tempo de atuação, nome da empresa e cargo.</p>
+<p>Estrutura da descrição da exeperiência:</p>
+<p>Breve descrição da atuação - Essa descrição deve ser mais ampla para dar um contexto do projeto que você trabalho. Qual era o projeo? Qual motivo do seu surgimento?</p>
+<p>Sua atuação - Cite quais foram suas responsabilidades. O que você fez? Como sua atuação impactou no projeto e por consequente na empresa?</p>
+<p>Resultado - Fale sobre as métricas de resultado. Com sua atuação nesse projeto quais resultados ele gerou? Quais os diferenciais?</p>
+<h3><a href="#formação-acadêmica" aria-hidden="true" class="anchor" id="formação-acadêmica"></a>Formação acadêmica</h3>
+<p>Sua Uniesquina fica aqui</p>
+<h3><a href="#licenças-e-certificados" aria-hidden="true" class="anchor" id="licenças-e-certificados"></a>Licenças e Certificados</h3>
+<p>Aqui os seu certificado de HTML5 da Udemy</p>
+<h3><a href="#projetos" aria-hidden="true" class="anchor" id="projetos"></a>Projetos</h3>
+<p>Se você tiver projetos open-source, acadêmico adicione aqui. É uma boa demonstração de capacidade técnica e de trabalho em equiper.</p>
+<h3><a href="#competências" aria-hidden="true" class="anchor" id="competências"></a>Competências</h3>
+<p>Você pode adicionar até 100 competências, você preencher essas 100 é muito importânte também pro algorítimo. Primeiro você adiciona suas competências técnicas (Linguagens, ferramentas, frameworks, tecnologias, etc), caso você não tenha habilidades técnicas suficientes então você usa das viadagens das softskills (escuta ativa, pensamento crítico, pensamento computacional, etc)</p>
+<h3><a href="#idiomas" aria-hidden="true" class="anchor" id="idiomas"></a>Idiomas</h3>
+<p>Aqui você adiciona que sabe a lingua do P, Elfico e Klingon</p>
+<h2><a href="#atividade" aria-hidden="true" class="anchor" id="atividade"></a>Atividade</h2>
+<p>Acredito que o LinkedIn é a única rede social que ninguém fica viciado e nem faz questão de entender como funciona tal qual o Instagram, por exemplo, onde todo mundo sonha em ter um mais de 5K de likes na sua foto no espelho do banheiro do shopping.</p>
+<p>O LinkedIn é uma rede social, isso parece uma obviedade, mas todo mundo ignora esse fator. O algorítimo favorece quem tem mais atividade, para entender isso basta comparar com aquela blogueirinha que você segue no Instagram que todos os dias posta um story dando bom dia. Ela não faz isso porquê ela acha bonito é porque mantem atividade e o algorítimo valoriza isso!</p>
+<p>Mas o LinkedIn não é a rede que você vai postar uma foto no espelho com a legenda &quot;indo alí&quot;, a atividade no LinkedIn é fundamentada em 4 pilares</p>
+<ul>
+<li>Esetabelecer marca pessoal</li>
+<li>Localizar as pessoas certas</li>
+<li>Interagir oferencendo insights</li>
+<li>Criar relacionamentos</li>
+</ul>
+<p>O que cada um quer dizer na prática?</p>
+<h3><a href="#esetabelecer-marca-pessoal" aria-hidden="true" class="anchor" id="esetabelecer-marca-pessoal"></a>Esetabelecer marca pessoal</h3>
+<p>Resumidamente, é ter o perfil preenchido com as informações necessáarias nos seus lugares. Onde você estudou, onde trabalhou, etc.</p>
+<h3><a href="#localizar-as-pessoas-certas" aria-hidden="true" class="anchor" id="localizar-as-pessoas-certas"></a>Localizar as pessoas certas</h3>
+<p>Criar conexão com as pessoas certas, ou seja pessoas do seu setor ou setor adjacente.</p>
+<h3><a href="#interagir-oferencendo-insights" aria-hidden="true" class="anchor" id="interagir-oferencendo-insights"></a>Interagir oferencendo insights</h3>
+<p>Prdouza conteúdo. &quot;Ah, não sei o que postar&quot;. Posta o que você está estudando, posta sua opnião sobre alguma polêmica do seu setor.</p>
+<h3><a href="#criar-relacionamentos" aria-hidden="true" class="anchor" id="criar-relacionamentos"></a>Criar relacionamentos</h3>
+<p>Faça comentário relevantes, não aqules sugerido da versão mobile ou qualquer porcaria tipo: &quot;top&quot;. Converse pela DM do LinkedIn (obs.: deixar e leva vacuo afeta essa pontuação)</p>
+<p>Se algum dia eu critiquei seu LinkedIn, melhore para que eu não tenha que voltar a criticá-lo novamente. De nada</p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>A faculdade perfeita</title><link>https://meus10centavos.vercel.app//a-faculdade-perfeita.html</link><author>fabricio</author><category>carreira</category><guid>https://meus10centavos.vercel.app//a-faculdade-perfeita.html</guid><pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
 <h1><a href="#a-escolha-perfeita-de-faculdade" aria-hidden="true" class="anchor" id="a-escolha-perfeita-de-faculdade"></a>A escolha perfeita de faculdade</h1>
 <p>Dessa vez iriei bostejar sobre faculdade, &quot;a decisão mais importante da sua vida&quot;. A dúvida mais comum principalmente entre os recém-saídos do ensino médio. Muitas questões corroem a mente nesse momento: Vale a pena fazer faculdade em 2077? Qual curso fazer? Unesquina ou Federal? Será que vou conseguir estágio? Preciso saber matemática? Etc, coisa e tal.</p>
 <p>Vou responder tais perguntas conforme o que eu lembrar das vezes que já me questionaram sobre isso.</p>
 <h2><a href="#faculdade-realmente-importavale-a-pena" aria-hidden="true" class="anchor" id="faculdade-realmente-importavale-a-pena"></a>Faculdade realmente importa/vale a pena?</h2>
 <p>Essa pergunta normalmente vem de pessoas que se acham Zuckerberg ou em pleno 2026 ainda estão iludidas com vendedores de cursos que falam que faculdade não é relevante.</p>
 <p>E sim, faculdade é muito importante, mas não pelos motivos que você está pensando (abordarei mais pra frente). Apesar de que todos os conhecimentos sobre desenvolvimento de software você pode aprender online em IAs, comunicades, ou como fazia os antigos Maias, pesquisando no Google e em fóruns. Faculdade torna-se muito relevantes por dois fatores: organização e mercado.</p>
-<p>Faculdade sempre vale a pena independênte do seu nível de conhecimento inicial ou objetivo de carreira. A faculdade sempre será vantajoso nem que seja apenas no network</p>
+<p>Faculdade sempre vale a pena independênte do seu nível de conhecimento inicial ou objetivo de carreira. A faculdade sempre será vantajoso nem que seja &quot;apenas&quot; no network</p>
 <h3><a href="#mercado" aria-hidden="true" class="anchor" id="mercado"></a>Mercado</h3>
 <p>Pelo fato da área do desenvolvimento de software não ser regularizada, assunto para outro post, qualquer Enzo de 16 anos pode fazer o curso do Guanabara no YouTube e se denominar programador. Tendo isso em vista o mercado precisa criar meios de filtrar os candidatos. Coloque-se no lugar do contratante, você prefere um Enzo ou um profissinal de verdade? Como você verificaria a qualidade dos candidatos da forma mais rápida e barata?</p>
 <p>Resposta: requisitos</p>
-<p>Mesmo com essse filtro o Enzo e profissinal de verdade cumprem todos os requisitos, mas como filtrar se a pessoa tem maturidade, responsabilidade? Como validar se a pessoa tem realmente um conhecimento sólido? Então as empresas procuram indicadores indiretos de qualidade um deles o diploma de faculdade.</p>
+<p>Mesmo com essse filtro o Enzo e profissinal de verdade cumprem todos os requisitos, mas como filtrar se a pessoa tem maturidade, responsabilidade? Como validar se a pessoa tem realmente um conhecimento sólido? Então as empresas procuram indicadores indiretos de qualidade, um deles o diploma de faculdade.</p>
 <p>Faculdade não garante que você é bom, mas pelo menos dá indicativos de que você conseguiu passar em um processo seletivo difícil, no contexto de passar no SISU ou ProUni, teve contato com uma base teórica sólida, tem o mínimo de disciplina e dedicação pra ter concluído. Ou seja, reduz os riscos na contratação, que é o que importa.</p>
 <h3><a href="#organização" aria-hidden="true" class="anchor" id="organização"></a>Organização</h3>
 <p>Outro fator que torna a faculdade muito relevante, mesmo todo conteúdo sendo disponível online é a organização dos conteúdos, se você for estudante autodidata você será afogado pela quantidade de conteúdo, e nem sempre conteúdo de qualidade. Na faculdade você não terá dor de cabeça para fazer filtragem dos materiais de estudo nem das ordens que cada tópico deve ser estudado, além de que você tem uma régua clara para saber se você realmente sabe</p>
@@ -32,7 +141,7 @@
 <p>Indepente da faculdade e curso que você fizer, você precisa estudar por fora de forma autodidata e é isso que torna a questão de qual faculdade fazer se torna meio f0da-s3.</p>
 <h3><a href="#indiação-e-networking" aria-hidden="true" class="anchor" id="indiação-e-networking"></a>Indiação e Networking</h3>
 <p>A nata do networkig está nessas instituições citadas anteriormente. Pois estão repleatas de donos e/ou filhos de donos empresas, empresas essa que usam algum tipo de sistema ou melhor ainda, são donos e/ou filhos de donos de empresas de T.I., consultoria, startaup que serão seus colegas de classe ou professores.</p>
-<p>Novamente, calma calabreso. Na sua unesquina ou federal qualquer também é possível fazer um bom networking, qualquer um faz Networking em qualquer lugar. Networking é sobre saber ouvir e ser claro.</p>
+<p>Novamente, calma calabreso. Na sua unesquina ou federal qualquer também é possível fazer um bom networking, as faculdades tem programa de parceria com empresas e promovem feiras e eventos que fomentam o network, qualquer um faz networking em qualquer lugar. Networking é sobre saber ouvir, ser simples e manter-se visível.</p>
 <p>Te citarei dois casos de networks meus em difernetes contextos</p>
 <h4><a href="#internet" aria-hidden="true" class="anchor" id="internet"></a>Internet</h4>
 <p>Eu costumo manter atividade quase religiosa em comunidades de programadores no Discord, certo dia veio um dos membros da comunidade procurando alguém para fechar uma equipe para participar de um hackathon online. Nesse hackathon, mesmo não tendo ganho, foi onde nasceu o projeto da minha starup, além disso foi onde conhecei meus parceiros de equipe, atualmente sócios. Um desses sócios também é meu cliente, faço prestação de serviços tais como: automação, desenvolvimento, e hospedagem, para a empresa de engenharia dele.</p>
@@ -57,6 +166,27 @@
 <h3><a href="#objetivo-de-carreira" aria-hidden="true" class="anchor" id="objetivo-de-carreira"></a>Objetivo de carreira</h3>
 <p>Se seu objetivo for seguir carreira acadêmica, quer focar nas titulações (mestrado, Ph.D, pós-doc), trabalhar em pesquisas (escrever artigos, apresentar seminários, etc). Nesse cenário Ciência da Computação (CC) é a melhor alternativa, pois te formará focando na parte científica.</p>
 <p>A única resalva é essa, mas se seu objetivo é ser dev pode fazer CC o qualquer outro, como já falei, todos irão sentar na mesma cadeira e exercer a mesma função.</p>
+<h3><a href="#tempo-do-curso" aria-hidden="true" class="anchor" id="tempo-do-curso"></a>Tempo do curso</h3>
+<p>Esse é um fator que deve ser bem analisado. Há formações mais curtas como Análise e Desenvolvimento de Sistemas (ADS), curso que eu fiz, que pega tudo que tem de mais importante no desenvolvimento de software e governança de T.I. retira o enchimento de linguiça formando o aluno em ~2 anos. Com essa formação você vai mais rápido para o mercado, também é vantajoso para quem quer ser concurseiro.
+Por outro lado você tem menos tempo para estudar de forma autodidata para ser minimamente competitivo no mercado quanod você se formar e menos tempo para procurar estágio. Nesses quesitos cursos como Ciência da Computação e Engenharia de Software, por exemplo, são mais vantajosos.</p>
+<p>Tirando essas considerações o que realmente muda na prática é o tempo que você vai passar em uma faculdade, o nome do curso no seu diploma, e sua experiência no curso, já que uns focam mais na matemática do que outros.</p>
+<h2><a href="#todos-os-cursos" aria-hidden="true" class="anchor" id="todos-os-cursos"></a>Todos os cursos</h2>
+<p>Aqui vai um resumo do GPT, mas muito bom do que você pode esperar de cada curso.</p>
+<h3><a href="#análise-e-desenvolvimento-de-sistemas-ads" aria-hidden="true" class="anchor" id="análise-e-desenvolvimento-de-sistemas-ads"></a>Análise e Desenvolvimento de Sistemas (ADS)</h3>
+<p>O curso de Análise e Desenvolvimento de Sistemas, conhecido como ADS, é o mais direto ao ponto. Trata-se de uma formação tecnológica, geralmente com duração entre dois e três anos, voltada para quem quer entrar rápido no mercado. As disciplinas giram em torno de lógica de programação, desenvolvimento web e mobile, banco de dados e construção de APIs. Existe também um contato inicial com engenharia de software, mas sem grande profundidade teórica. O foco aqui é execução: formar profissionais capazes de desenvolver sistemas funcionais no menor tempo possível. Por isso, é comum que egressos atuem como desenvolvedores front-end, back-end ou full-stack logo nos primeiros anos de carreira.</p>
+<h3><a href="#ciência-da-computação-cc" aria-hidden="true" class="anchor" id="ciência-da-computação-cc"></a>Ciência da Computação (CC)</h3>
+<p>Já o curso de Ciência da Computação segue uma linha completamente diferente. Ele é mais longo, mais denso e, honestamente, mais exigente. A base do curso está em algoritmos, estruturas de dados e matemática, incluindo cálculo e álgebra linear. Além disso, o aluno entra em contato com temas como inteligência artificial, compiladores e sistemas operacionais. O objetivo não é apenas ensinar a programar, mas desenvolver raciocínio computacional profundo. Isso abre portas para posições mais complexas, como engenharia de software em alto nível, machine learning e até pesquisa acadêmica. É o tipo de formação que exige mais esforço, mas também oferece mais amplitude de possibilidades no longo prazo.</p>
+<h3><a href="#engenharia-de-software" aria-hidden="true" class="anchor" id="engenharia-de-software"></a>Engenharia de Software</h3>
+<p>O curso de Engenharia de Software fica em um meio-termo interessante entre teoria e prática. Aqui, o foco não é só programar, mas entender como construir sistemas robustos e escaláveis. As disciplinas incluem arquitetura de software, padrões de projeto, testes, qualidade de código e metodologias ágeis. Também há uma preocupação maior com gestão de projetos e organização de equipes. O profissional formado nessa área tende a atuar como engenheiro de software, com potencial para evoluir para cargos como tech lead ou arquiteto de software, já que possui uma visão mais estruturada do desenvolvimento.</p>
+<h3><a href="#sistema-da-informação-si" aria-hidden="true" class="anchor" id="sistema-da-informação-si"></a>Sistema da Informação (SI)</h3>
+<p>Por outro lado, o curso de Sistemas de Informação traz uma abordagem mais voltada para o contexto empresarial. Além de programação e banco de dados, o aluno estuda processos de negócio, gestão de sistemas e governança de TI. Isso significa que ele não apenas desenvolve soluções, mas entende o problema que precisa ser resolvido dentro de uma organização. Esse perfil híbrido permite atuar tanto como desenvolvedor quanto como analista de sistemas ou até em funções mais estratégicas, conectando tecnologia e negócio.</p>
+<h3><a href="#engenharia-da-computação" aria-hidden="true" class="anchor" id="engenharia-da-computação"></a>Engenharia da Computação</h3>
+<p>Existe também o curso de Engenharia da Computação, que combina software com hardware. Aqui entram disciplinas como eletrônica, arquitetura de computadores e sistemas embarcados, além da programação em níveis mais baixos. É uma formação mais técnica e abrangente, indicada para quem tem interesse em trabalhar com dispositivos, IoT ou integração entre hardware e software. Para quem deseja seguir exclusivamente como desenvolvedor web, no entanto, pode ser uma escolha mais complexa do que o necessário.</p>
+<h3><a href="#outros" aria-hidden="true" class="anchor" id="outros"></a>Outros</h3>
+<p>Além desses, há formações mais especializadas, como Ciência de Dados, que foca em estatística, machine learning e análise de grandes volumes de dados. Nesse caminho, o profissional atua como cientista de dados, engenheiro de machine learning ou analista, lidando muito mais com modelos e previsões do que com desenvolvimento tradicional. Da mesma forma, cursos voltados para Banco de Dados aprofundam conhecimentos em modelagem, SQL avançado e performance, formando especialistas que atuam como engenheiros de dados ou DBAs. Já a área de Redes de Computadores direciona o aluno para infraestrutura, protocolos de comunicação, segurança e cloud computing, abrindo portas para carreiras em DevOps e engenharia de infraestrutura.</p>
+<p>No fim das contas, a escolha do curso define mais o ponto de partida do que o destino final. O mercado de tecnologia valoriza muito mais a capacidade de resolver problemas e construir soluções do que o nome específico da graduação. Um profissional de ADS pode, com prática e experiência, alcançar o mesmo nível técnico de alguém formado em Ciência da Computação. A diferença real está na profundidade da base e no tempo necessário para atingir determinados níveis de complexidade. Por isso, a decisão mais inteligente não é apenas “qual curso fazer”, mas “qual estratégia seguir para chegar onde você quer chegar”.</p>
+<h2><a href="#matemática" aria-hidden="true" class="anchor" id="matemática"></a>Matemática</h2>
+<p>Você não precisa ser o brabo da matemática muito menos gostar dela, você vai sofrer um pouco dependendo curso que escolher por causa das matérias de cálculo, mas no cotidiano da profissão você não vai usar. Salvo exceções de trabalho/área muito específicica, mas de na maioria das vezes não usará.</p>
 <p>Caso você não tenha gostado ou discorde, deixo que <a href="https://pt.wikipedia.org/wiki/Ariano_Suassuna">Ariano Suassuna</a> responda por mim:</p>
 <blockquote>
 <p>A humanidade se divide em dois grupos: os que concordam comigo e os errados.<br />
