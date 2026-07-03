@@ -2,9 +2,9 @@
   "marmite_version": "0.2.7",
   "posts": 14,
   "pages": 2,
-  "generated_at": "2026-07-01 22:32:57.410422720 -03:00",
-  "timestamp": 1782955977,
-  "elapsed_time": 0.248724986,
+  "generated_at": "2026-07-02 23:28:48.466137728 -03:00",
+  "timestamp": 1783045728,
+  "elapsed_time": 0.563959991,
   "config": {
     "name": "Meus 10 Centavos",
     "tagline": "Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião",
@@ -56,16 +56,16 @@
     ],
     "extra": null,
     "authors": {
-      "carlos": {
-        "name": "Carlos Souza",
-        "avatar": "https://avatars.githubusercontent.com/u/219468948?v=4",
-        "bio": "IT enthusiast. I'm from Pernambuco, Brazil, currently studying to develop open source projects as a hobby.",
-        "links": null
-      },
       "fabricio": {
         "name": "Fabrício Santos",
         "avatar": "https://avatars.githubusercontent.com/u/90152237?v=4",
         "bio": "Não sou ninguém revelante, apenas um Fabrício entre os outros 167.869 FABRÍCIOs que existem no Brasil. Sou desenvolvedor Full-Esterco, faço m€rd4 no front e no back.",
+        "links": null
+      },
+      "carlos": {
+        "name": "Carlos Souza",
+        "avatar": "https://avatars.githubusercontent.com/u/219468948?v=4",
+        "bio": "IT enthusiast. I'm from Pernambuco, Brazil, currently studying to develop open source projects as a hobby.",
         "links": null
       },
       "matheus": {

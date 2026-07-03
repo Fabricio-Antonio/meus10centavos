@@ -178,4 +178,14 @@ Prdouza conteúdo. "Ah, não sei o que postar". Posta o que você está estudand
 
 Faça comentário relevantes, não aqules sugerido da versão mobile ou qualquer porcaria tipo: "top". Converse pela DM do LinkedIn (obs.: deixar e leva vacuo afeta essa pontuação)
 
+## Criação de conteúdo
+
+Agora vai o ouro sobre publicar no LinkedIn: PUBLIQUE NO HORÁRIO QUE TODOS ESTÃO NO TRABALHO!
+
+O LinkedIn é uma rede profissional, ninguém acompanha o que rola fora do horário de trabalho (salvo exceçõe), rodo conteúdo publicado na sexta e no fim de semana tem queda em todas as métricas.
+
+### Minha estratégia
+
+Eu costumo postar coneteúdo no primiro dia últil do LinkedIn (Segunda) e no último dia últil do LinkedIn (Quinta). Assim eu estarei presente no feed das pessoas assim que elas forem usar a rede na Segundo e serei o último post visto na semana também, as chances de ser lembrado são maiores e também o engajemnto é maior. O melhor horário para postar é entre 09:00 e 16:00, teste e veja em qual horário você tem mais engajamento.
+
 Se algum dia eu critiquei seu LinkedIn, melhore para que eu não tenha que criticá-lo novamente. De nada
