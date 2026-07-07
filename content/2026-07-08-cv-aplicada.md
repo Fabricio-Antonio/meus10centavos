@@ -2,7 +2,7 @@
 
 title: "Computer Vision: notas técnicas de um pipeline completa"  
 slug: cv-aplicada
-date: 2026-07-07  
+date: 2026-07-08  
 tags: IA, computer vision
 author: fabricio
 
