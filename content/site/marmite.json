@@ -2,9 +2,9 @@
   "marmite_version": "0.2.7",
   "posts": 15,
   "pages": 2,
-  "generated_at": "2026-07-07 02:06:18.294787927 -03:00",
-  "timestamp": 1783400778,
-  "elapsed_time": 0.32546888,
+  "generated_at": "2026-07-07 02:15:22.829755044 -03:00",
+  "timestamp": 1783401322,
+  "elapsed_time": 0.470223445,
   "config": {
     "name": "Meus 10 Centavos",
     "tagline": "Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião",
@@ -56,6 +56,12 @@
     ],
     "extra": null,
     "authors": {
+      "matheus": {
+        "name": "Matheus Henrique",
+        "avatar": "https://avatars.githubusercontent.com/u/44449793?v=4",
+        "bio": "Desenvolvedor, como muitos outros, com alguma experiência no que faz.",
+        "links": null
+      },
       "fabricio": {
         "name": "Fabrício Santos",
         "avatar": "https://avatars.githubusercontent.com/u/90152237?v=4",
@@ -66,12 +72,6 @@
         "name": "Carlos Souza",
         "avatar": "https://avatars.githubusercontent.com/u/219468948?v=4",
         "bio": "IT enthusiast. I'm from Pernambuco, Brazil, currently studying to develop open source projects as a hobby.",
-        "links": null
-      },
-      "matheus": {
-        "name": "Matheus Henrique",
-        "avatar": "https://avatars.githubusercontent.com/u/44449793?v=4",
-        "bio": "Desenvolvedor, como muitos outros, com alguma experiência no que faz.",
         "links": null
       }
     },
