@@ -42,6 +42,7 @@ Outro fator que torna a faculdade muito relevante, mesmo todo conteúdo sendo di
 Muitas pessoas acham que fazer Federal é uma garantia de ser bem sucedido na área, o que não passa nem perto de ser um fato. Isso pode ser uma realidade para outras áreas e profissões, mas como T.I. é quase um universo paralelo, onde muitas regra do mundo comum não se aplicam, a realidade é outra.
 
 Se você não for cursar em nenhuma dessas faculdades:
+- ITA
 - USP
 - FIAP
 - PUC
