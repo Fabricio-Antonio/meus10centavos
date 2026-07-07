@@ -10,6 +10,8 @@ author: fabricio
 
 O pior momento na carreira de dev é o início onde você não sabe para onde quer ir e provavelmente irá perder muito tempo fazendo algo que no momento você acha que é o caminho certo, mas daqui alguns meses notará que foi apenas uma perda de tempo. Essa é minha tentativia de te poupar esse tempo explicando por onde começar.
 
+O primeiro passo é a faculdade, e eu já tenho um texto sobre isso, esse é o segundo.
+
 ## Qual melhor linguagem para começar?
 A principal dúvida dos iniciantes. Serei curto e grosso igual meu pé, a melhor linguagem para começar é a que você iriá seguir carreira. Por exemplo, não faz sentido aprender uma linguagem fácil e depois aprender a que você quer, isso é total perda de tempo. E tem até uns animais que já vi sugerir começar pela mais difícil e depois ir para sua principal.
 
