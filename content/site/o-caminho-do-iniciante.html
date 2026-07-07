@@ -53,6 +53,7 @@ O pior momento na carreira de dev é o início onde você não sabe para onde qu
 }
 </script>
 
+    
 
     <title>O caminho do iniciante | Meus 10 Centavos</title>
     <link rel="stylesheet" type="text/css" href="/static/pico.min.css">
@@ -60,24 +61,29 @@ O pior momento na carreira de dev é o início onde você não sabe para onde qu
     
     <link rel="stylesheet" type="text/css" href="/static/custom.css">
     
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github.min.css" id="highlightjs-theme" />
+    
+
+
+<link rel="stylesheet" href="/static/arborium.css" />
+
 
 
 
         <link rel="alternate" type="application/rss+xml" title="index" href="/index.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: tutorial" href="/tag-tutorial.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: linux" href="/tag-linux.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: carreira" href="/tag-carreira.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: blog" href="/tag-blog.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: curso" href="/tag-curso.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: linux" href="/tag-linux.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: guia" href="/tag-guia.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: curso" href="/tag-curso.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: blog" href="/tag-blog.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: rust" href="/tag-rust.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: inglês" href="/tag-ingles.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: versionamento" href="/tag-versionamento.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: pessoal" href="/tag-pessoal.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: inglês" href="/tag-ingles.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: ingles" href="/tag-ingles.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: marmite" href="/tag-marmite.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: computer vision" href="/tag-computer-vision.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: IA" href="/tag-ia.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: inicio" href="/tag-inicio.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: marmite" href="/tag-marmite.rss">
     <link rel="alternate" type="application/rss+xml" title="author: fabricio" href="/author-fabricio.rss">
     <link rel="alternate" type="application/rss+xml" title="author: carlos" href="/author-carlos.rss">
     <link rel="alternate" type="application/rss+xml" title="author: matheus" href="/author-matheus.rss">
@@ -87,18 +93,19 @@ O pior momento na carreira de dev é o início onde você não sabe para onde qu
     
     <link rel="alternate" type="application/feed+json" title="JSON index" href="/index.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: tutorial" href="/tag-tutorial.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: linux" href="/tag-linux.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: carreira" href="/tag-carreira.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: blog" href="/tag-blog.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: curso" href="/tag-curso.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: linux" href="/tag-linux.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: guia" href="/tag-guia.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: curso" href="/tag-curso.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: blog" href="/tag-blog.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: rust" href="/tag-rust.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: inglês" href="/tag-ingles.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: versionamento" href="/tag-versionamento.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: pessoal" href="/tag-pessoal.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: inglês" href="/tag-ingles.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: ingles" href="/tag-ingles.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: marmite" href="/tag-marmite.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: computer vision" href="/tag-computer-vision.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: IA" href="/tag-ia.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: inicio" href="/tag-inicio.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: marmite" href="/tag-marmite.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: fabricio" href="/author-fabricio.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: carlos" href="/author-carlos.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: matheus" href="/author-matheus.json">
@@ -182,7 +189,7 @@ O pior momento na carreira de dev é o início onde você não sabe para onde qu
             <div class="marmite-search-bar hidden">
                 <span>Buscar</span>
                 <button class="marmite-close-button" id="search-close">X</button>
-                <input placeholder="Search" id="marmite-search-input" />
+                <input placeholder="Search" id="marmite-search-input" data-show-matches="false" data-match-count="3" />
                 <div class="marmite-search-bar-result">
                     <ul id="marmite-search-bar-result"></ul>
                 </div>
@@ -213,11 +220,12 @@ O pior momento na carreira de dev é o início onde você não sabe para onde qu
 
 
 <span class="content-date">
-    <small> 07 Jul 2026 - &#10710; 8 min</small>
+    <small> 07 Jul 2026 - &#10710; 8.0 min</small>
 </span>
 
 </div>
 
+  
   
   
   <div class="content-toc">
@@ -243,6 +251,7 @@ O pior momento na carreira de dev é o início onde você não sabe para onde qu
 
   <div class="content-html e-content"><!-- Content Injected to every content markdown header -->
 <p>O pior momento na carreira de dev é o início onde você não sabe para onde quer ir e provavelmente irá perder muito tempo fazendo algo que no momento você acha que é o caminho certo, mas daqui alguns meses notará que foi apenas uma perda de tempo. Essa é minha tentativia de te poupar esse tempo explicando por onde começar.</p>
+<p>O primeiro passo é a faculdade, e eu já tenho um texto sobre isso, esse é o segundo.</p>
 <h2><a href="#qual-melhor-linguagem-para-começar" aria-hidden="true" class="anchor" id="qual-melhor-linguagem-para-começar"></a>Qual melhor linguagem para começar?</h2>
 <p>A principal dúvida dos iniciantes. Serei curto e grosso igual meu pé, a melhor linguagem para começar é a que você iriá seguir carreira. Por exemplo, não faz sentido aprender uma linguagem fácil e depois aprender a que você quer, isso é total perda de tempo. E tem até uns animais que já vi sugerir começar pela mais difícil e depois ir para sua principal.</p>
 <p>Deixe-me justificar minha ideia. Quando você aprende uma linguagem de programação, você não vai aprender apenas a linguagem, também é necessário aprender o ecossistema. O que eu quero dizer com isso? Aprender a linguagem e as tecnologias adjacentes, frameworks, libs, etc. Tendo em vista isso, quanto antes você focar em um ecossitema melhor.</p>
@@ -522,7 +531,7 @@ O pior momento na carreira de dev é o início onde você não sabe para onde qu
 
 
 <span class="content-date">
-    <small> 07 Jul 2026 - &#10710; 8 min</small>
+    <small> 07 Jul 2026 - &#10710; 8.0 min</small>
 </span>
 
           
@@ -581,7 +590,7 @@ O pior momento na carreira de dev é o início onde você não sabe para onde qu
       <a href="/guia-de-linkedin.html">← O guia de LinkedIn</a>
     </div>
     <div>
-      
+      <a href="/cv-aplicada.html">Computer Vision: notas técnicas de um pipeline completa →</a>
     </div>
   </nav>
 </article>
@@ -624,11 +633,6 @@ async>
     
     
     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
-<script>
-  hljs.highlightAll();
-</script>
-
 
 
 </body>

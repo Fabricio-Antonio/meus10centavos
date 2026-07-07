@@ -1,5 +1,692 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate><lastBuildDate>Tue, 07 Jul 2026 05:56:52 GMT</lastBuildDate><generator>marmite</generator><item><title>O caminho do iniciante</title><link>https://meus10centavos.vercel.app//o-caminho-do-iniciante.html</link><author>fabricio</author><category>carreira</category><guid>https://meus10centavos.vercel.app//o-caminho-do-iniciante.html</guid><pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate><lastBuildDate>Tue, 07 Jul 2026 23:14:59 GMT</lastBuildDate><generator>marmite</generator><item><title>Computer Vision: notas técnicas de um pipeline completa</title><link>https://meus10centavos.vercel.app//cv-aplicada.html</link><author>fabricio</author><category>IA</category><category>computer vision</category><guid>https://meus10centavos.vercel.app//cv-aplicada.html</guid><pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<h2><a href="#computer-vision-para-avaliação-de-feridas-notas-técnicas-de-um-pipeline-end-to-end" aria-hidden="true" class="anchor" id="computer-vision-para-avaliação-de-feridas-notas-técnicas-de-um-pipeline-end-to-end"></a><strong>Computer Vision para avaliação de feridas: notas técnicas de um pipeline end-to-end</strong></h2>
+<p>Este post documenta o que aprendi ao implementar um sistema de inferência CV para segmentação, classificação e mensuração métrica de feridas crônicas. O foco é arquitetura, algoritmos e decisões de engenharia.</p>
+<p>Este post resume o que estudei, aprendi, e apliquei ao longo desse caminho.</p>
+<hr />
+<h2><a href="#o-problema-de-pixels-a-centímetros" aria-hidden="true" class="anchor" id="o-problema-de-pixels-a-centímetros"></a><strong>O problema: de pixels a centímetros</strong></h2>
+<p>Avaliar feridas crônicas envolve duas tarefas distintas de visão computacional:</p>
+<ol>
+<li><strong>Segmentação</strong> — encontrar exatamente onde está a lesão na imagem.</li>
+<li><strong>Classificação</strong> — inferir sinais clínicos (infecção, exsudato, etc.).</li>
+</ol>
+<p>Mas há um terceiro desafio, que só aparece quando você coloca o sistema no mundo real: <strong>como converter pixels em centímetros?</strong> Sem escala espacial, uma máscara bonita ainda não responde à pergunta que importa: <em>qual é a área da ferida?</em></p>
+<p>Esse detalhe mudou completamente minha forma de pensar sobre CV.</p>
+<h2><a href="#1-arquitetura-do-sistema" aria-hidden="true" class="anchor" id="1-arquitetura-do-sistema"></a><strong>1. Arquitetura do sistema</strong></h2>
+<p>O pipeline é distribuído em três camadas:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Camada</strong></th>
+<th><strong>Stack</strong></th>
+<th><strong>Responsabilidade</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mobile</td>
+<td>React Native / Expo</td>
+<td>Captura, upload via presigned URL S3</td>
+</tr>
+<tr>
+<td>Backend</td>
+<td>NestJS + MongoDB</td>
+<td>Auth JWT, metadados clínicos, orquestração</td>
+</tr>
+<tr>
+<td>CV Service</td>
+<td>FastAPI + PyTorch/OpenCV</td>
+<td>Inferência, pós-processamento, geometria, calibração</td>
+</tr>
+</tbody>
+</table>
+<p>O serviço CV expõe <code>POST /infer</code> (JSON <code>{ image_url }</code> ou multipart <code>file</code>), autenticado via header <code>x-api-key</code>, com cache Redis (<code>SHA-256</code> do payload) e rate limiting (60 req/min).</p>
+<p>Além dos algoritmos, aprendi a estruturar um serviço de inferência de produção:</p>
+<ul>
+<li><strong>FastAPI</strong> como microserviço de CV, separado do backend NestJS.</li>
+<li><strong>Orquestrador</strong> que coordena segmentação, classificação, calibração e medição.</li>
+<li><strong>Modo debug</strong> que salva artefatos intermediários (01–09 + meta.json) para inspecionar cada etapa.</li>
+<li><strong>Erros tipados</strong> com mensagens técnicas e amigáveis para o frontend.</li>
+<li><strong>Cache Redis</strong> e rate limiting para uso em produção.</li>
+<li><strong>Testes unitários</strong> para detecção ArUco, geometria, pós-processamento e validação.</li>
+</ul>
+<p>A lição: em CV aplicada, <strong>observabilidade</strong> importa tanto quanto acurácia. Sem debug visual, você debugga no escuro.</p>
+<p>Dois modelos rodam em produção:</p>
+<ul>
+<li><strong>Segmentação</strong>: U-Net + EfficientNet-B3 → <strong>TorchScript</strong> (<code>torch.jit.trace</code>)</li>
+<li><strong>Classificação</strong>: EfficientNet-B3 (<code>timm</code>) → <strong>ONNX opset 17</strong> com batch dinâmico</li>
+</ul>
+<hr />
+<h2><a href="#2-treinamento" aria-hidden="true" class="anchor" id="2-treinamento"></a><strong>2. Treinamento</strong></h2>
+<h3><a href="#21-segmentação" aria-hidden="true" class="anchor" id="21-segmentação"></a><strong>2.1 Segmentação</strong></h3>
+<p>Para segmentação, usei uma U-Net com encoder EfficientNet-B3, pré-treinado no ImageNet, via segmentation_models_pytorch. A escolha faz sentido: EfficientNet oferece um bom equilíbrio entre capacidade e eficiência, e a U-Net é o padrão de ouro para máscaras semânticas.</p>
+<pre class="marmite-code"><code class="marmite-code-inner">smp.Unet(
+
+encoder_name=&quot;efficientnet-b3&quot;,
+
+encoder_weights=&quot;imagenet&quot;,
+
+in_channels=3,
+
+classes=1,
+
+)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>Hiperparâmetro</strong></th>
+<th><strong>Valor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loss</td>
+<td><code>DiceLoss(mode=&quot;binary&quot;)</code></td>
+</tr>
+<tr>
+<td>Optimizer</td>
+<td>AdamW, lr = 1e-3</td>
+</tr>
+<tr>
+<td>Batch size</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Image size</td>
+<td>512×512</td>
+</tr>
+<tr>
+<td>Early stopping</td>
+<td>patience = 5 (maximize val Dice)</td>
+</tr>
+<tr>
+<td>Mixed precision</td>
+<td>AMP (<code>GradScaler</code>)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Augmentações</strong> (<code>albumentations</code>):</p>
+<pre class="marmite-code"><code class="marmite-code-inner">A.Resize(512, 512)
+
+A.HorizontalFlip(p=0.5)
+
+A.VerticalFlip(p=0.2)
+
+A.RandomRotate90(p=0.5)
+
+A.ShiftScaleRotate(shift_limit=0.05, scale_limit=0.1, rotate_limit=20, p=0.5)
+
+A.ColorJitter(p=0.3)
+
+A.Normalize()
+</code></pre>
+<h3><a href="#o-que-aprendi-no-treinamento" aria-hidden="true" class="anchor" id="o-que-aprendi-no-treinamento"></a><strong>O que aprendi no treinamento</strong></h3>
+<ul>
+<li><strong>Dice Loss</strong> funciona melhor que BCE pura para classes desbalanceadas, feridas geralmente ocupam uma fração pequena da imagem.</li>
+<li><strong>Mixed precision (AMP)</strong> reduz uso de memória e acelera o treino sem perda perceptível de qualidade.</li>
+<li><strong>Augmentações</strong> (flip, rotação, color jitter, shift/scale) são essenciais, mas insuficientes se o dataset não refletir condições reais de captura.</li>
+<li>Métricas como <strong>IoU e Dice</strong> no validation set são úteis, mas não garantem nada em fotos mobile com flash, sombra ou compressão JPEG agressiva.</li>
+</ul>
+<p>Exportei o modelo para <strong>TorchScript</strong>, o que me ensinou que o caminho treino → produção tem requisitos próprios: normalização idêntica, tamanho de entrada fixo e cuidado com operadores suportados na exportação.</p>
+<h3><a href="#22-classificação" aria-hidden="true" class="anchor" id="22-classificação"></a><strong>2.2 Classificação</strong></h3>
+<p>EfficientNet-B3 via <code>timm</code>, <code>BCEWithLogitsLoss</code>, lr = 3e-4, batch = 8, image size = 384. Métrica: F1.</p>
+<h3><a href="#23-export" aria-hidden="true" class="anchor" id="23-export"></a><strong>2.3 Export</strong></h3>
+<pre class="marmite-code"><code class="marmite-code-inner"># TorchScript (seg)
+
+scripted = torch.jit.trace(model, dummy_input)  *# dummy: (1, 3, 512, 512)*
+
+# ONNX (cls)
+
+torch.onnx.export(..., opset_version=17, dynamic_axes={&quot;input&quot;: {0: &quot;batch&quot;}})
+</code></pre>
+<p><strong>Constraint crítico</strong>: a normalização e o resize da inferência devem ser idênticos ao treino. Qualquer divergência degrada a distribuição de logits da U-Net e desloca o threshold ótimo de binarização.</p>
+<hr />
+<h2><a href="#3-pipeline-de-inferência-orquestrador" aria-hidden="true" class="anchor" id="3-pipeline-de-inferência-orquestrador"></a><strong>3. Pipeline de inferência (orquestrador)</strong></h2>
+<p>Fluxo completo em <code>run_inference_pipeline()</code>:</p>
+<p>original (HxW) → cap MAX_WORKING_DIMENSION=1536 (INTER_AREA) → preprocess_mobile_rgb (CLAHE + brightness norm + unsharp) → letterbox 512×512 (scale = 512/max(h,w), pad simétrico) → tensor (C,H,W) normalizado → U-Net → prob map (512×512) → unletterbox → working resolution → postprocess_wound_mask (threshold sweep + morfologia + CC) → extract_wound_geometry (PCA + minAreaRect + Feret) → overlay PNG base64</p>
+<p>A mesma informação de forma mais bonita:</p>
+<img src="/media/diagrama.png" alt="Diagrama de fluxo da análise de feridas" width="1000" height="1000">
+<h3><a href="#31-letterbox--unletterbox" aria-hidden="true" class="anchor" id="31-letterbox--unletterbox"></a><strong>3.1 Letterbox / Unletterbox</strong></h3>
+<p>Dado <code>target_size = 512</code>:</p>
+<pre class="marmite-code"><code class="marmite-code-inner">scale = target_size / max(h, w)
+
+content_w = round(w * scale)
+
+content_h = round(h * scale)
+
+pad_left = (512 - content_w) // 2
+
+pad_top  = (512 - content_h) // 2
+</code></pre>
+<p>A máscara inferida é recortada da região <code>[pad_top:pad_top+content_h, pad_left:pad_left+content_w]</code> e redimensionada para <code>(working_h, working_w)</code> com <code>INTER_NEAREST</code> (preserva binarização).</p>
+<p><strong>Por que importa</strong>: resize direto para 512×512 distorce aspect ratio e altera a geometria da ferida. Letterbox mantém proporções; o custo é propagar <code>LetterboxMeta</code> (scale, pad_left, pad_top) em todo o pipeline.</p>
+<h3><a href="#32-pré-processamento-mobile" aria-hidden="true" class="anchor" id="32-pré-processamento-mobile"></a><strong>3.2 Pré-processamento mobile</strong></h3>
+<p>Aplicado no espaço <strong>LAB</strong> (preserva crominância):</p>
+<ol>
+<li><strong>CLAHE</strong> no canal L: <code>clipLimit=2.0</code>, <code>tileGridSize=(8,8)</code></li>
+<li><strong>Normalização de brilho</strong>: se <code>mean(gray) &lt; 90</code> ou <code>&gt; 200</code>, escala por <code>α = clip(128/mean, 0.85, 1.15)</code></li>
+<li><strong>Unsharp mask</strong>: <code>out = 1.25·img - 0.25·GaussianBlur(img, σ=1.0)</code></li>
+</ol>
+<p>Ativado via <code>MOBILE_IMAGE_PREPROCESS=true</code>. Não altera geometria — apenas distribuição de intensidade.</p>
+<hr />
+<h2><a href="#4-pós-processamento-de-máscara" aria-hidden="true" class="anchor" id="4-pós-processamento-de-máscara"></a><strong>4. Pós-processamento de máscara</strong></h2>
+<p>Entrada: mapa probabilístico <code>P ∈ [0,1]^{H×W}</code>. Saída: máscara binária + contorno + <code>geometry_confidence</code>.</p>
+<p>Em vez de um threshold fixo, implementei um <strong>sweep automático</strong> (0.35, 0.40, 0.45, 0.50, 0.55) que escolhe o valor que gera componentes utilizáveis. Depois:</p>
+<ul>
+<li>Morfologia leve para fechar buracos sem fragmentar a região.</li>
+<li>Análise de <strong>componentes conectados</strong> com filtros de plausibilidade (área, aspect ratio, compactness, solidity).</li>
+<li>Fallback para regiões pequenas mas clinicamente plausíveis quando nenhum componente “estrito” passa nos critérios.</li>
+</ul>
+<h3><a href="#41-threshold-sweep" aria-hidden="true" class="anchor" id="41-threshold-sweep"></a><strong>4.1 Threshold sweep</strong></h3>
+<p><code>sweep = [0.35, 0.40, 0.45, 0.50, 0.55]  # default produção</code></p>
+<p><code>binary_t = (GaussianBlur(P, k=3) &gt; t).astype(uint8)</code></p>
+<p>Para cada <code>t</code>, computa score baseado em componentes conectados utilizáveis. Seleciona o threshold com melhor score.</p>
+<p><strong>Observação empírica</strong>: threshold 0.65 (comum em papers) produz máscaras vazias em fotos mobile com logits calibrados para distribuição diferente do val set. Default de produção: <strong>0.40</strong>.</p>
+<h3><a href="#42-morfologia" aria-hidden="true" class="anchor" id="42-morfologia"></a><strong>4.2 Morfologia</strong></h3>
+<p>open:  kernel 3×3, 1 iteração  (remove ruído pontual)</p>
+<p>close: kernel 5×5, 1 iteração (fecha buracos internos)</p>
+<p>Parâmetros tunáveis via env (<code>MASK_OPEN_KERNEL</code>, <code>MASK_CLOSE_KERNEL</code>).</p>
+<h3><a href="#43-seleção-de-componentes-conectados" aria-hidden="true" class="anchor" id="43-seleção-de-componentes-conectados"></a><strong>4.3 Seleção de componentes conectados</strong></h3>
+<p><code>cv2.connectedComponentsWithStats</code> → filtros em cascata:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Filtro</strong></th>
+<th><strong>Default</strong></th>
+<th><strong>Função</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>max_area_fraction</code></td>
+<td>0.50</td>
+<td>Rejeita blob &gt; 50% da imagem</td>
+</tr>
+<tr>
+<td><code>max_aspect_ratio</code></td>
+<td>10.0</td>
+<td>Rejeita estruturas filamentares</td>
+</tr>
+<tr>
+<td><code>min_compactness</code></td>
+<td>0.04</td>
+<td><code>4π·A / P²</code> — rejeita formas irregulares demais</td>
+</tr>
+<tr>
+<td><code>min_solidity</code></td>
+<td>0.15</td>
+<td><code>A / A_convex_hull</code></td>
+</tr>
+<tr>
+<td><code>min_area_fraction</code></td>
+<td>0.0002</td>
+<td>Área mínima relativa</td>
+</tr>
+<tr>
+<td><code>min_dimension_px</code></td>
+<td>12</td>
+<td>Dimensão mínima do bbox</td>
+</tr>
+</tbody>
+</table>
+<p>Seleção em <strong>3 níveis</strong>:</p>
+<ol>
+<li><strong>Strict</strong> — passa todos os filtros</li>
+<li><strong>Relaxed</strong> — filtros parcialmente relaxados</li>
+<li><strong>Plausible fallback</strong> — se única candidata razoável, aceita região pequena (<code>MASK_ALLOW_PLAUSIBLE_FALLBACK=true</code>)</li>
+</ol>
+<p>Isso evita o cenário clássico: modelo acerta parcialmente a ferida, mas CC analysis descarta o único componente válido.</p>
+<h3><a href="#44-validação-pré-geometria" aria-hidden="true" class="anchor" id="44-validação-pré-geometria"></a><strong>4.4 Validação pré-geometria</strong></h3>
+<p>Antes de extrair contorno, <code>validate_wound_presence()</code> verifica se <code>prob_max</code> e <code>area_fraction@0.5</code> excedem limites mínimos. Falha → <code>WoundNotDetectedError</code> com <code>prob_max</code> no payload técnico.</p>
+<p>Aprendi que pós-processamento é metade do produto em segmentação médica. O modelo diz onde provavelmente está a ferida; o pipeline decide o que mostrar ao clínico.</p>
+<hr />
+<h3><a href="#5-clahe" aria-hidden="true" class="anchor" id="5-clahe"></a><strong>5 CLAHE</strong></h3>
+<p>O <strong>Contrast Limited Adaptive Histogram Equalization</strong> melhora contraste local em fotos com sombras ou pele escura/clara desigual. É processamento clássico de CV, mas faz diferença real antes da inferência neural.</p>
+<hr />
+<h2><a href="#6-análise-de-coloração-tecidual" aria-hidden="true" class="anchor" id="6-análise-de-coloração-tecidual"></a>6. Análise de coloração tecidual</h2>
+<p>Esta foi uma das partes mais interessantes do projeto: traduzir cor percebida em percentuais clínicos sem treinar um classificador de cor separado.</p>
+<h3><a href="#61-fundamentação-clínica" aria-hidden="true" class="anchor" id="61-fundamentação-clínica"></a>6.1 Fundamentação clínica</h3>
+<p>Na prática de curativos, a coloração do leito da ferida orienta conduta. O sistema mapeia pixels para seis categorias inspiradas na escala RYB (Red-Yellow-Black), estendida com roxo e branco:</p>
+<table>
+<thead>
+<tr>
+<th>Classe</th>
+<th>Interpretação clínica (heurística)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vermelho</td>
+<td>Granulação — tecido de cicatrização</td>
+</tr>
+<tr>
+<td>Amarelo</td>
+<td>Esfacelo — possível necessidade de desbridamento</td>
+</tr>
+<tr>
+<td>Preto</td>
+<td>Necrose/eschar — desbridamento</td>
+</tr>
+<tr>
+<td>Roxo</td>
+<td>Hematoma/equimose perilesional</td>
+</tr>
+<tr>
+<td>Branco</td>
+<td>Tecido pálido/isquêmico, biofilme</td>
+</tr>
+<tr>
+<td>Outros</td>
+<td>Pixels que não se encaixam nas regras</td>
+</tr>
+</tbody>
+</table>
+<p>A API retorna isso via WoundColorAnalysis (Pydantic), com valores em percentual (0–100) arredondados a 2 casas:</p>
+<pre class="marmite-code"><code class="marmite-code-inner">class WoundColorAnalysis(BaseModel):
+  vermelho: float   # granulação
+  amarelo: float    # esfacelo/infecção
+  preto: float      # necrose
+  roxo: float       # hematoma
+  branco: float     # isquêmico/biofilme
+  outros: float
+
+</code></pre>
+<p>No mobile, os percentuais alimentam a tela de nova ferida, o <code>TissueColorPieChart</code> e a seção de evolução temporal (<code>WoundEvolutionSection</code>), permitindo comparar coloração entre capturas do mesmo paciente.</p>
+<h3><a href="#62-pipeline-de-roi-para-coloração" aria-hidden="true" class="anchor" id="62-pipeline-de-roi-para-coloração"></a>6.2 Pipeline de ROI para coloração</h3>
+<p>Função: <code>analyze_wound_colors(image_rgb, mask_prob)</code>.</p>
+<p>Passo 1 — Alinhamento e binarização permissiva</p>
+<pre class="marmite-code"><code class="marmite-code-inner">mask_aligned = align_mask_to_image(image, mask, &quot;analyze_wound_colors&quot;)
+binary = (mask_aligned &gt; 0.20).astype(uint8)  # threshold baixo: incluir bordas difusas
+</code></pre>
+<p>A análise só é chamada após <code>validate_wound_presence()</code>, então o threshold de 0.20 (vs 0.40 da geometria) é intencional: captura toda a região provável de ferimento, incluindo halos de baixa confiança na borda.</p>
+<p>Passo 2 — Limpeza morfológica</p>
+<pre class="marmite-code"><code class="marmite-code-inner">MORPH_CLOSE(kernel 3×3, 1 iter)
+MORPH_OPEN(kernel 3×3, 1 iter)
+→ largest connected component
+</code></pre>
+<p>Passo 3 — Máscara de borda</p>
+<p>Remove 1% das margens da imagem para evitar contaminação por pele circundante ou artefatos de borda:</p>
+<pre class="marmite-code"><code class="marmite-code-inner">margin_h = max(1, int(h * 0.01))
+margin_w = max(1, int(w * 0.01))
+edge_mask[0:margin_h, :] = 0
+edge_mask[h-margin_h:, :] = 0
+# idem para colunas
+binary = binary * edge_mask
+</code></pre>
+<p>Passo 4 — Fallback</p>
+<p>Se <code>wound_pixels == 0</code> após filtros, reutiliza <code>mask &gt; 0.15</code> sem máscara de borda, evita retorno zerado em feridas pequenas ou próximas à borda do frame.</p>
+<h3><a href="#63-classificação-pixel-a-pixel-hsv--rgb" aria-hidden="true" class="anchor" id="63-classificação-pixel-a-pixel-hsv--rgb"></a>6.3 Classificação pixel a pixel (HSV + RGB)</h3>
+<p>Conversão para HSV OpenCV:</p>
+<pre class="marmite-code"><code class="marmite-code-inner">image_hsv = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2HSV)
+# H ∈ [0, 179], S ∈ [0, 255], V ∈ [0, 255]
+# Normalização: h/179, s/255, v/255
+</code></pre>
+<p>Para cada pixel <code>(r,g,b)</code> e <code>(h,s,v)</code> dentro da ROI:</p>
+<pre class="marmite-code"><code class="marmite-code-inner">intensity = (r + g + b) / 3
+max_rgb   = max(r, g, b)
+min_rgb   = min(r, g, b)
+</code></pre>
+<p>Ordem de decisão (first-match wins — evita ambiguidade):</p>
+<p><code>Preto → Branco → Roxo → Vermelho → Amarelo → Outros</code></p>
+<p>Preto (necrose)</p>
+<pre class="marmite-code"><code class="marmite-code-inner">if v &lt; 0.12 or (intensity &lt; 0.15 and max_rgb &lt; 0.2):
+    → preto
+elif v &lt; 0.18 and intensity &lt; 0.20 and s &lt; 0.25:
+    → preto
+
+</code></pre>
+<p>Prioridade máxima: sombras profundas e tecido necrótico têm valor HSV baixo.</p>
+<p>Branco (isquêmico / biofilme)</p>
+<pre class="marmite-code"><code class="marmite-code-inner">elif s &lt; 0.12 and v &gt; 0.65:
+    → branco
+elif s &lt; 0.18 and v &gt; 0.75 and max_rgb &gt; 0.7:
+    → branco
+elif s &lt; 0.20 and v &gt; 0.70 and |r-g| &lt; 0.1 and |g-b| &lt; 0.1:
+    → branco  # tons acinzentados claros
+</code></pre>
+<p>Baixa saturação + alto valor = tecido pálido ou esbranquiçado.</p>
+<p>Roxo (hematoma)
+Regras HSV e RGB combinadas:</p>
+<pre class="marmite-code"><code class="marmite-code-inner">elif 0.68 &lt;= h &lt;= 0.92 and s &gt; 0.25 and v &gt; 0.2:
+    → roxo
+elif r &gt; 0.35 and b &gt; 0.35 and g &lt; 0.35 and s &gt; 0.18:
+    → roxo  # R e B dominantes, G suprimido
+</code></pre>
+<p>Vermelho (granulação)</p>
+<pre class="marmite-code"><code class="marmite-code-inner">elif (h &lt; 0.04 or h &gt; 0.96) and s &gt; 0.35 and v &gt; 0.25:
+    → vermelho  # matiz no extremo do círculo H (vermelho puro)
+elif r &gt; 0.55 and r &gt; g*1.25 and r &gt; b*1.25 and s &gt; 0.25:
+    → vermelho  # dominância de R no RGB
+elif r &gt; 0.50 and r &gt; g*1.2 and s &gt; 0.30 and 0.2 &lt; v &lt; 0.5:
+    → vermelho  # granulação mais escura
+</code></pre>
+<p>Amarelo (esfacelo)</p>
+<pre class="marmite-code"><code class="marmite-code-inner">elif 0.12 &lt;= h &lt;= 0.28 and s &gt; 0.35 and v &gt; 0.3:
+    → amarelo
+elif r &gt; 0.45 and g &gt; 0.45 and b &lt; 0.35 and s &gt; 0.25:
+    → amarelo  # R+G altos, B baixo
+elif 0.28 &lt;= h &lt;= 0.40 and s &gt; 0.30 and g &gt; r and g &gt; b:
+    → amarelo  # amarelo-esverdeado (infecção)
+elif 0.10 &lt;= h &lt;= 0.25 and s &gt; 0.25 and 0.25 &lt; v &lt; 0.55:
+    → amarelo  # esfacelo âmbar/escuro
+</code></pre>
+<p>Outros
+Pixels que não satisfazem nenhuma regra acima.</p>
+<h3><a href="#64-agregação" aria-hidden="true" class="anchor" id="64-agregação"></a>6.4 Agregação</h3>
+<pre class="marmite-code"><code class="marmite-code-inner">total = len(wound_region)  # pixels na ROI filtrada
+color_percentages = {
+  'vermelho': (red_count   / total) * 100.0,
+  'amarelo':  (yellow_count / total) * 100.0,
+  'preto':    (black_count  / total) * 100.0,
+  'roxo':     (purple_count / total) * 100.0,
+  'branco':   (white_count  / total) * 100.0,
+  'outros':   (other_count  / total) * 100.0,
+}
+# Σ ≈ 100%
+</code></pre>
+<h3><a href="#65-limitações-e-aprendizados-técnicos" aria-hidden="true" class="anchor" id="65-limitações-e-aprendizados-técnicos"></a>6.5 Limitações e aprendizados técnicos</h3>
+<p>Iluminação domina crominância. Flash direto, sombra e pele circundante alteram <code>(h,s,v)</code> de forma não linear. O código detecta alta variação (<code>std(RGB) &gt; 40</code>) e loga aviso, mas ainda não aplica correção adaptativa de thresholds — ponto de melhoria.</p>
+<p>Segmentação ≠ coloração. Um pixel classificado como vermelho pode ser pele saudável se a máscara vazou. A máscara de borda (1%) e o largest CC mitigam, mas não eliminam o problema.</p>
+<p>Rule-based vs ML. Escolhi regras explícitas porque:</p>
+<ul>
+<li>Interpretabilidade clínica (cada threshold é auditável)</li>
+<li>Zero dependência de dataset rotulado por cor</li>
+<li>Latência desprezível (~O(n) por pixel na ROI)</li>
+</ul>
+<p>O custo: sensibilidade a white balance da câmera e calibração de cor do dispositivo. Um classificador treinado em LAB normalizado ou um modelo multi-classe por patch seria o próximo passo natural.</p>
+<p>Dual color space é necessário. HSV isola matiz (útil para vermelho/amarelo/roxo), mas falha em tons acromáticos (preto/branco) — daí as regras RGB complementares com dominância de canal.</p>
+<p>Threshold de máscara diferente da geometria. Geometria usa binarização conservadora (0.40 + CC strict); coloração usa 0.20 permissivo. Aprendi que otimizar uma única máscara para ambos os fins é subótimo.</p>
+<h2><a href="#7-calibração-espacial" aria-hidden="true" class="anchor" id="7-calibração-espacial"></a><strong>7. Calibração espacial</strong></h2>
+<p>Sem <code>pixels_per_cm</code>, área em px² não tem unidade clínica. Implementei duas fontes:</p>
+<h3><a href="#71-aruco-default" aria-hidden="true" class="anchor" id="71-aruco-default"></a><strong>7.1 ArUco (default)</strong></h3>
+<p>Dictionary: DICT_4X4_50</p>
+<p>Marker ID:  0 (estrito)</p>
+<p>Size:       2.0 cm (lado físico)</p>
+<p>Pipeline de detecção:</p>
+<ol>
+<li>Grayscale + CLAHE</li>
+<li><code>cv2.aruco.ArucoDetector</code> (compatível com API legada <code>detectMarkers</code>)</li>
+<li>Filtra <code>marker_id == 0</code>; se múltiplos, seleciona o de maior perímetro</li>
+<li>Ordena cantos: TL → TR → BR → BL</li>
+<li><code>pixels_per_cm = mean(side_lengths_px) / marker_size_cm</code></li>
+</ol>
+<p><strong>Correção de perspectiva</strong> (opcional, <code>ARUCO_APPLY_PERSPECTIVE_CORRECTION=true</code>):</p>
+<p><code>src = corners[4×2]  (quadrilátero detectado)</code></p>
+<p><code>side = max(edge)  (lado em px)</code></p>
+<p><code>dst = [[0,0], [side,0], [side,side], [0,side]]</code></p>
+<p><code>H = cv2.getPerspectiveTransform(src, dst)</code></p>
+<p><code>rectified = cv2.warpPerspective(image, H, (side, side))</code></p>
+<p><code>mask' = cv2.warpPerspective(mask, H, ..., INTER_NEAREST)</code></p>
+<p>Homografia planar assume superfície do marcador (e da ferida) aproximadamente coplanar.
+Violação → erro sistemático em área.</p>
+<p>Erros tipados:</p>
+<ul>
+<li><code>marker_not_detected</code></li>
+<li><code>invalid_marker</code> (ID errado)</li>
+<li><code>calibration_failed</code> (marcador muito pequeno, &lt; ~24 px de lado)</li>
+</ul>
+<p><strong>Retry inteligente</strong>: se ArUco falha na imagem inteira, re-detecta usando preview binário da máscara como ROI hint.</p>
+<h3><a href="#72-régua-clínica-alternativa" aria-hidden="true" class="anchor" id="72-régua-clínica-alternativa"></a><strong>7.2 Régua clínica (alternativa)</strong></h3>
+<p>Como alternativa, implementei detecção de régua clínica com CV clássica:</p>
+<ol>
+<li>CLAHE → Canny → contornos</li>
+<li>Filtra contornos com <code>aspect_ratio &gt; 4.0</code> (corpo alongado)</li>
+<li><code>minAreaRect</code> → eixo principal</li>
+<li>Extrai strip 1D ao longo do eixo (60% da largura)</li>
+<li>Perfil de gradiente → detecção de picos periódicos (marcações cm)</li>
+<li><code>pixels_per_cm = median(Δx_entre_picos) / RULER_CM_PER_MAJOR_TICK</code></li>
+</ol>
+<p>Foi fascinante ver que não precisa de deep learning para tudo. Análise de sinais 1D sobre contornos resolve um problema real com interpretabilidade e baixo custo computacional.</p>
+<p>Confiança: CV do espaçamento entre picos + número de ticks + aspect ratio.</p>
+<h3><a href="#73-fallback" aria-hidden="true" class="anchor" id="73-fallback"></a><strong>7.3 Fallback</strong></h3>
+<p>Se <code>ALLOW_ASSUMED_FOV_FALLBACK=true</code> e calibração falha, usa <code>default_assumed_calibration(image_side_px)</code> — escala heurística baseada no FOV. <strong>Não é escala clínica</strong>; flag <code>calibration.is_clinical_scale()</code> distingue.</p>
+<p>Aprendi que ArUco é elegante na teoria e exigente na prática: o marcador precisa estar visível, plano, bem iluminado e com tamanho mínimo em pixels. Por isso o sistema retorna erros específicos (marker_not_detected, invalid_marker, calibration_failed) em vez de falhar silenciosamente.</p>
+<hr />
+<h2><a href="#8-extração-geométrica" aria-hidden="true" class="anchor" id="8-extração-geométrica"></a><strong>8. Extração geométrica</strong></h2>
+<p>Com a máscara binária e a calibração, extraio métricas clínicas:</p>
+<ul>
+<li><strong>Área</strong> e <strong>perímetro</strong> a partir do contorno real.</li>
+<li><strong>Comprimento × largura</strong> via PCA sobre os pontos do contorno, mais robusto que <code>boundingRect</code> para formas irregulares.</li>
+<li>Referência cruzada com <code>minAreaRect</code> e <strong>Feret diameter</strong> no convex hull.</li>
+<li>Dimensão final como <strong>mediana robusta</strong> entre PCA e retângulo rotacionado.</li>
+</ul>
+<p>Entrada: contorno <code>C = {(x_i, y_i)}</code>, calibração <code>{pixel_to_cm, confidence}</code>.</p>
+<h3><a href="#81-métricas-primárias-contorno-real" aria-hidden="true" class="anchor" id="81-métricas-primárias-contorno-real"></a><strong>8.1 Métricas primárias (contorno real)</strong></h3>
+<pre class="marmite-code"><code class="marmite-code-inner">area_px       = cv2.contourArea(C)
+
+perimeter_px  = cv2.arcLength(C, closed=True)
+</code></pre>
+<h3><a href="#82-dimensões-clínicas--pca-2d" aria-hidden="true" class="anchor" id="82-dimensões-clínicas--pca-2d"></a><strong>8.2 Dimensões clínicas — PCA 2D</strong></h3>
+<p>Centro: <code>μ = mean(C)</code></p>
+<p>Matriz de covariância: <code>Σ = cov(C - μ)</code></p>
+<p>Decomposição: <code>Σ = V Λ Vᵀ</code> via <code>np.linalg.eigh</code></p>
+<p>Autovetor <code>v₁</code> (maior autovalor) = eixo principal:</p>
+<pre class="marmite-code"><code class="marmite-code-inner">proj_major = (C - μ) · v₁
+
+major_len  = max(proj_major) - min(proj_major)
+
+proj_minor = (C - μ) · v₂
+
+minor_len  = max(proj_minor) - min(proj_minor)
+
+angle_deg  = atan2(v₁_y, v₁_x) · 180/π
+</code></pre>
+<h3><a href="#83-referência-cruzada" aria-hidden="true" class="anchor" id="83-referência-cruzada"></a><strong>8.3 Referência cruzada</strong></h3>
+<ul>
+<li><code>minAreaRect(C)</code> → <code>(rect_major, rect_minor, rect_angle)</code></li>
+<li><strong>Feret diameter</strong> no convex hull: <code>(feret_max, feret_min)</code></li>
+</ul>
+<p>Dimensão final:</p>
+<pre class="marmite-code"><code class="marmite-code-inner">width_px  = median(pca_major, rect_major)
+
+height_px = median(pca_minor, rect_minor)
+</code></pre>
+<p><strong>Motivação</strong>: <code>cv2.boundingRect</code> superestima feridas alongadas e rotacionadas. PCA captura orientação; mediana entre PCA e minAreaRect reduz sensibilidade a outliers no contorno.</p>
+<h3><a href="#84-conversão-métrica" aria-hidden="true" class="anchor" id="84-conversão-métrica"></a><strong>8.4 Conversão métrica</strong></h3>
+<pre class="marmite-code"><code class="marmite-code-inner">area_cm²      = area_px       × pixel_to_cm²
+
+perimeter_cm  = perimeter_px   × pixel_to_cm
+
+width_cm      = width_px      × pixel_to_cm
+
+height_cm     = height_px     × pixel_to_cm
+
+diameter_cm   = max(width_cm, height_cm)
+</code></pre>
+<h3><a href="#85-validação-geométrica" aria-hidden="true" class="anchor" id="85-validação-geométrica"></a><strong>8.5 Validação geométrica</strong></h3>
+<p><code>geometry_confidence = min(calibration_confidence, mask_geometry_confidence)</code></p>
+<p>Checks de plausibilidade (<code>GEOMETRY_REQUIRE_VALID=true</code>):</p>
+<ul>
+<li>área mínima em cm²</li>
+<li>aspect ratio dentro de limites</li>
+<li>solidity/compactness acima de thresholds</li>
+</ul>
+<p>Falha → <code>InvalidGeometryError</code>.</p>
+<hr />
+<h2><a href="#9-taxonomia-de-erros" aria-hidden="true" class="anchor" id="9-taxonomia-de-erros"></a><strong>9. Taxonomia de erros</strong></h2>
+<p>O pipeline retorna erros estruturados (HTTP 422) com <code>message</code> (frontend) e <code>message_technical</code>:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Exception</strong></th>
+<th><strong>Código</strong></th>
+<th><strong>Trigger</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WoundNotDetectedError</code></td>
+<td><code>no_wound_detected</code></td>
+<td><code>prob_max</code> baixo, área @ 0.5 &lt; threshold</td>
+</tr>
+<tr>
+<td><code>MarkerNotDetectedError</code></td>
+<td><code>marker_not_detected</code></td>
+<td>ArUco ausente, <code>ARUCO_REQUIRED=true</code></td>
+</tr>
+<tr>
+<td><code>InvalidMarkerError</code></td>
+<td><code>invalid_marker</code></td>
+<td>ID ≠ 0</td>
+</tr>
+<tr>
+<td><code>CalibrationFailedError</code></td>
+<td><code>calibration_failed</code></td>
+<td>Marcador inválido / escala não clínica</td>
+</tr>
+<tr>
+<td><code>InvalidSegmentationError</code></td>
+<td><code>invalid_segmentation</code></td>
+<td>CC analysis falhou em todos os níveis</td>
+</tr>
+<tr>
+<td><code>GeometryExtractionError</code></td>
+<td><code>geometry_extraction_failed</code></td>
+<td>Contorno &lt; 5 pontos</td>
+</tr>
+<tr>
+<td><code>InvalidGeometryError</code></td>
+<td><code>invalid_geometry</code></td>
+<td>Validação geométrica falhou</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2><a href="#10-observabilidade-e-debug" aria-hidden="true" class="anchor" id="10-observabilidade-e-debug"></a>10. Observabilidade e Debug</h2>
+<p>O sistema possui um modo avançado de observabilidade para facilitar a inspeção de toda a pipeline de segmentação e análise de cores. Quando <code>DEBUG_SEGMENTATION=true</code>, são aplicadas configurações mais permissivas para facilitar a identificação de problemas durante o processamento:</p>
+<ul>
+<li>Filtros de Componentes Conectados (CC) relaxados:
+<ul>
+<li><code>min_solidity = 0.08</code></li>
+<li><code>max_aspect_ratio = 20</code></li>
+</ul>
+</li>
+<li><code>GEOMETRY_MIN_CONFIDENCE = 0.20</code></li>
+</ul>
+<p>Para cada requisição é criado o diretório <code>debug_outputs/{request_id}/</code>, contendo todos os artefatos intermediários da pipeline:</p>
+<ul>
+<li><code>01_original.png</code></li>
+<li><code>02_...</code></li>
+<li><code>...</code></li>
+<li><code>09_overlay.png</code></li>
+<li><code>meta.json</code></li>
+</ul>
+<p>O arquivo <code>meta.json</code> reúne informações detalhadas do processamento, incluindo:</p>
+<ul>
+<li>Dimensões de cada etapa da pipeline;</li>
+<li>Thresholds utilizados;</li>
+<li>Estatísticas da máscara de probabilidade;</li>
+<li>Métricas de segmentação;</li>
+<li>Diagnósticos completos utilizados pela API.</li>
+</ul>
+<p>Além disso, a resposta da API passa a incluir o campo <code>segmentation_debug</code>, contendo informações detalhadas para auxiliar na investigação de falhas.</p>
+<p>Cada requisição também propaga um <code>ImagePipelineContext</code>, que registra automaticamente as dimensões produzidas em cada etapa da pipeline (<code>shape_log</code>), permitindo identificar rapidamente desalinhamentos entre a imagem original, a inferência da U-Net e a máscara final.</p>
+<h3><a href="#101-exemplo-de-shape_log" aria-hidden="true" class="anchor" id="101-exemplo-de-shape_log"></a>10.1 Exemplo de <code>shape_log</code></h3>
+<pre class="marmite-code"><code class="marmite-code-inner language-text">original_loaded:           shape=(3024, 4032, 3)
+working_capped:            shape=(1152, 1536, 3)
+preprocessed_mobile:       shape=(1152, 1536, 3)
+inference_letterboxed:     shape=(512, 512, 3)
+predicted_mask_inference:  shape=(512, 512)
+mask_working_prob:         shape=(1152, 1536)
+</code></pre>
+<p>Esses registros são fundamentais para diagnosticar problemas como diferenças de escala, padding incorreto, redimensionamentos inadequados e desalinhamentos entre a máscara segmentada e a imagem original.</p>
+<h3><a href="#102-logs-da-análise-de-cores" aria-hidden="true" class="anchor" id="102-logs-da-análise-de-cores"></a>10.2 Logs da análise de cores</h3>
+<p>A etapa de análise de cores também possui observabilidade dedicada. Durante a execução são registrados:</p>
+<ul>
+<li>Quantidade de pixels analisados;</li>
+<li>Número de pixels classificados em cada cor;</li>
+<li>Percentuais finais de cada classe.</li>
+</ul>
+<p>Exemplo:</p>
+<pre class="marmite-code"><code class="marmite-code-inner language-text">🎨 [ColorAnalysis] Pixels analisados: 4821
+🎨 [ColorAnalysis] Color counts - Red: 2104, Yellow: 891, Black: 312, ...
+🎨 [ColorAnalysis] Final percentages:
+{
+  'vermelho': 43.6,
+  'amarelo': 18.5,
+  ...
+}
+</code></pre>
+<p>Esses logs permitem validar tanto a qualidade da segmentação quanto a consistência da classificação cromática, tornando o processo de depuração significativamente mais eficiente.</p>
+<hr />
+<h2><a href="#11-testes-automatizados" aria-hidden="true" class="anchor" id="11-testes-automatizados"></a><strong>11. Testes automatizados</strong></h2>
+<p>Cobertura unitária em:</p>
+<ul>
+<li><code>test_aruco_detection.py</code> — detecção, filtro de ID, cálculo de escala</li>
+<li><code>test_ruler_detection.py</code> — picos periódicos, aspect ratio</li>
+<li><code>test_measurement_geometry.py</code> — PCA, Feret, conversão cm</li>
+<li><code>test_segmentation_postprocess.py</code> — threshold sweep, CC fallback</li>
+<li><code>test_pipeline_validation.py</code> — presença de ferida, erros tipados</li>
+</ul>
+<hr />
+<h2><a href="#12-lições-técnicas-consolidadas" aria-hidden="true" class="anchor" id="12-lições-técnicas-consolidadas"></a><strong>12. Lições técnicas consolidadas</strong></h2>
+<p><strong>1. Domain shift mobile &gt;&gt; ganho de arquitetura</strong></p>
+<p>Val Dice/IoU em dataset limpo não prediz comportamento em fotos 12 MP com flash, JPEG agressivo e glare. O pipeline de inferência (CLAHE, threshold sweep, CC fallback) compensa mais do que trocar encoder de B3 para B4.</p>
+<p><strong>2. Threshold é parâmetro de produção, não de treino</strong></p>
+<p>O sweep <code>[0.35…0.55]</code> é configurável via env. Diferentes dispositivos/câmeras exigem calibração empírica do threshold sem retreinar.</p>
+<p><strong>3. DL + CV clássica são complementares</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Tarefa</strong></th>
+<th><strong>Abordagem</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Segmentação semântica</td>
+<td>U-Net (DL)</td>
+</tr>
+<tr>
+<td>Pré-processamento</td>
+<td>CLAHE, unsharp (CV clássica)</td>
+</tr>
+<tr>
+<td>Binarização robusta</td>
+<td>Threshold sweep + morfologia + CC</td>
+</tr>
+<tr>
+<td>Escala métrica</td>
+<td>ArUco / régua (CV clássica)</td>
+</tr>
+<tr>
+<td>Dimensões clínicas</td>
+<td>PCA + minAreaRect (álgebra linear)</td>
+</tr>
+<tr>
+<td>Correção de perspectiva</td>
+<td>Homografia (projective geometry)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>4. Propagação de coordenadas é a fonte #1 de bugs</strong></p>
+<p>Letterbox → inferência → unletterbox → homografia (opcional) → overlay. Cada transformação precisa de metadados reversíveis. <code>assert_image_mask_aligned()</code> valida shape/dtype antes de geometria.</p>
+<p><strong>5. Fail-fast com diagnóstico</strong></p>
+<p>Retornar <code>prob_max=0.12</code> em <code>WoundNotDetectedError</code> é mais útil que retornar máscara vazia silenciosamente. Permite tuning de threshold e detecção de model drift em produção.</p>
+<p><strong>6. Export ≠ treino</strong></p>
+<p>TorchScript trace congela o grafo para <code>(1,3,512,512)</code>. Qualquer mudança de input size ou normalização exige re-export. ONNX com <code>dynamic_axes</code> no batch é mais flexível para classificação.</p>
+<hr />
+<h2><a href="#stack" aria-hidden="true" class="anchor" id="stack"></a><strong>Stack</strong></h2>
+<ul>
+<li>PyTorch 2.x + segmentation_models_pytorch + timm</li>
+<li>OpenCV 4.7+ (aruco, morfologia, homografia)</li>
+<li>FastAPI + uvicorn</li>
+<li>TorchScript (seg) / ONNX opset 17 (cls)</li>
+<li>Redis (cache + rate limit)</li>
+<li>pytest (unit tests)</li>
+</ul>
+<h2><a href="#o-que-eu-faria-diferente-e-o-que-recomendo-estudar" aria-hidden="true" class="anchor" id="o-que-eu-faria-diferente-e-o-que-recomendo-estudar"></a><strong>O que eu faria diferente (e o que recomendo estudar)</strong></h2>
+<ol>
+<li><strong>Dataset mobile-first</strong> — incluir desde o início fotos com flash, blur, glare, fundos clínicos variados e exemplos negativos (pele sã, tatuagens).</li>
+<li><strong>Validar IoU em holdout exclusivamente mobile</strong> — métricas de desktop enganam.</li>
+<li><strong>Não subestimar CV clássica</strong> — ArUco, morfologia, CLAHE e análise de contornos são ferramentas maduras que complementam deep learning.</li>
+<li><strong>Pensar em falhas desde o design</strong> — o sistema precisa dizer <em>por que</em> falhou, não apenas <em>que</em> falhou.</li>
+<li><strong>Threshold não é hiperparâmetro de treino</strong> — é parâmetro de produto, ajustável por ambiente.</li>
+</ol>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>O caminho do iniciante</title><link>https://meus10centavos.vercel.app//o-caminho-do-iniciante.html</link><author>fabricio</author><category>carreira</category><guid>https://meus10centavos.vercel.app//o-caminho-do-iniciante.html</guid><pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
 <p>O pior momento na carreira de dev é o início onde você não sabe para onde quer ir e provavelmente irá perder muito tempo fazendo algo que no momento você acha que é o caminho certo, mas daqui alguns meses notará que foi apenas uma perda de tempo. Essa é minha tentativia de te poupar esse tempo explicando por onde começar.</p>
+<p>O primeiro passo é a faculdade, e eu já tenho um texto sobre isso, esse é o segundo.</p>
 <h2><a href="#qual-melhor-linguagem-para-começar" aria-hidden="true" class="anchor" id="qual-melhor-linguagem-para-começar"></a>Qual melhor linguagem para começar?</h2>
 <p>A principal dúvida dos iniciantes. Serei curto e grosso igual meu pé, a melhor linguagem para começar é a que você iriá seguir carreira. Por exemplo, não faz sentido aprender uma linguagem fácil e depois aprender a que você quer, isso é total perda de tempo. E tem até uns animais que já vi sugerir começar pela mais difícil e depois ir para sua principal.</p>
 <p>Deixe-me justificar minha ideia. Quando você aprende uma linguagem de programação, você não vai aprender apenas a linguagem, também é necessário aprender o ecossistema. O que eu quero dizer com isso? Aprender a linguagem e as tecnologias adjacentes, frameworks, libs, etc. Tendo em vista isso, quanto antes você focar em um ecossitema melhor.</p>
@@ -503,7 +1190,7 @@ O modelo de currículo que iriei te passar é <strong>otimizado para ATS.</stron
 <img src="/media/resumo.png" alt="resumo" width="700" height="500"></p>
 <p><strong>Observação:</strong> Não abuse do negrito, adicione apensas nas palavras que você quer que chame atenção. Negrito é apenas para as coisas importantes, se você colocar negrito em tudo então nada é importante.</p>
 <p>Prompt para gerar na IA:</p>
-<pre><code>Escreva um resumo profissional com no máximo 4 linhas de modo que me passe autoridade
+<pre class="marmite-code"><code class="marmite-code-inner">Escreva um resumo profissional com no máximo 4 linhas de modo que me passe autoridade
 
 - [cite sua stack]
 - [tempo de experiência]
@@ -560,55 +1247,55 @@ Porque seu SSD (ou pior, um HD) é muito mais lento que RAM. Se o sistema começ
 Swap em SSD não é o fim do mundo, mas se ela for usada o tempo todo, vai acelerar o desgaste. Por isso é bom manter a RAM &quot;limpa&quot; e limitar o uso da swap com <code>swappiness</code>.</p>
 <h2><a href="#configurando-swap" aria-hidden="true" class="anchor" id="configurando-swap"></a>Configurando SWAP</h2>
 <p>Rode o comando:</p>
-<pre><code>swapon --show
+<pre class="marmite-code"><code class="marmite-code-inner">swapon --show
 </code></pre>
 <p>Para verificar ter certeza se você tem uma swap, mas 90% de chance de não ter.<br />
 Se você não tem swap não terá nenhum retorno, mas se você tiver swap irá ter retorno semelhante a este:</p>
-<pre><code>NAME      TYPE SIZE USED PRIO
+<pre class="marmite-code"><code class="marmite-code-inner">NAME      TYPE SIZE USED PRIO
 /swapfile file   8G   3G   -2
 </code></pre>
 <h4><a href="#criarativar-swap-file-se-não-tiver" aria-hidden="true" class="anchor" id="criarativar-swap-file-se-não-tiver"></a>Criar/ativar SWAP file (se não tiver)</h4>
 <h5><a href="#comando-completo" aria-hidden="true" class="anchor" id="comando-completo"></a>Comando completo:</h5>
-<pre><code># Cria um swap de 4GB (ajuste se quiser)
+<pre class="marmite-code"><code class="marmite-code-inner"># Cria um swap de 4GB (ajuste se quiser)
 sudo fallocate -l 4G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 </code></pre>
 <p>Depois adicione no fstab para ativar automaticamente:</p>
-<pre><code>echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+<pre class="marmite-code"><code class="marmite-code-inner">echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 </code></pre>
 <h5><a href="#comando-com-explicações" aria-hidden="true" class="anchor" id="comando-com-explicações"></a>Comando com explicações:</h5>
 <p>Criar um arquivo de swap com 4 GB</p>
-<pre><code>sudo fallocate -l 4G /swapfile
+<pre class="marmite-code"><code class="marmite-code-inner">sudo fallocate -l 4G /swapfile
 </code></pre>
 <p>Criamos um arquivo especial de 4 GB chamado <code>/swapfile</code>, que será usado como “RAM falsa” quando a memória real estiver cheia.</p>
 <p>Restringir o acesso ao arquivo de swap</p>
-<pre><code>sudo chmod 600 /swapfile
+<pre class="marmite-code"><code class="marmite-code-inner">sudo chmod 600 /swapfile
 </code></pre>
 <p>Demos permissão de leitura/escrita só pro root, por segurança. Isso impede que outro processo leia ou altere esse arquivo diretamente.</p>
 <p>Formatar esse arquivo como uma área de swap</p>
-<pre><code>sudo mkswap /swapfile
+<pre class="marmite-code"><code class="marmite-code-inner">sudo mkswap /swapfile
 </code></pre>
 <p>Dizemos ao sistema:
 “Esse arquivo aqui é uma área de swap, tá ok? 👉👉 ”<br />
 Ele cria a estrutura de controle necessária.</p>
 <p>Ativar a swap agora</p>
-<pre><code>sudo swapon /swapfile
+<pre class="marmite-code"><code class="marmite-code-inner">sudo swapon /swapfile
 </code></pre>
 <p>Ligamos a swap imediatamente.<br />
 A partir desse momento, o sistema pode começar a usar esse arquivo como memória auxiliar.\</p>
 <p>Configurar para ativar automaticamente no boot</p>
-<pre><code>echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+<pre class="marmite-code"><code class="marmite-code-inner">echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 </code></pre>
 <p>Alteramos o arquivo <code>/etc/fstab</code> (que diz o que montar no boot), pra garantir que <strong>sempre que você reiniciar, a swap vai estar ativa.</strong></p>
 <p>Por padrão, o Linux só usa a swap quando a RAM já está no limite. Você pode mudar isso pra ele ser um pouco mais &quot;esperto&quot; e já ir aliviando antes de travar tudo.</p>
 <p>Rode:</p>
-<pre><code>cat /proc/sys/vm/swappiness
+<pre class="marmite-code"><code class="marmite-code-inner">cat /proc/sys/vm/swappiness
 </code></pre>
 <p>Para verificar o valor atual. Provavelmente <code>60</code></p>
 <p>Reduza o lag e evitar travamento total, coloca algo tipo <code>20</code>:</p>
-<pre><code>echo 'vm.swappiness=20' | sudo tee -a /etc/sysctl.conf
+<pre class="marmite-code"><code class="marmite-code-inner">echo 'vm.swappiness=20' | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
 </code></pre>
 <p>Isso faz o sistema usar a swap de forma mais equilibrada com a RAM. Se quiser testar o comportamento, você pode começar com <code>30</code> e ir ajustando depois.</p>
@@ -691,18 +1378,14 @@ sudo sysctl -p
 ]]></content:encoded></item><item><title>Como matar processos no linux</title><link>https://meus10centavos.vercel.app//como-matar-processos-no-linux.html</link><author>fabricio</author><category>tutorial</category><category>linux</category><guid>https://meus10centavos.vercel.app//como-matar-processos-no-linux.html</guid><pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
 <p>É um tutorial de algo besta, mas eu sempre acabo esquecendo como faz, então vou salvar aqui</p>
 <p>Lista todos os processo que estão rodando</p>
-<pre><code class="language-bash">sudo ss -tlpn
-</code></pre>
+<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>sudo</a-f> ss <a-co>-tlpn</a-co></code></pre>
 <p>Lista todos os processos que estão rodando na porta &lt;número&gt;</p>
-<pre><code class="language-bash">sudo ss -tlpn | grep &lt;número&gt;
-</code></pre>
+<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>sudo</a-f> ss <a-co>-tlpn</a-co> <a-o>|</a-o> <a-f>grep</a-f> <a-o>&lt;</a-o>número<a-o>&gt;</a-o></code></pre>
 <p>Exemplo:</p>
-<pre><code class="language-bash">sudo ss -tlpn | grep 8000
-</code></pre>
+<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>sudo</a-f> ss <a-co>-tlpn</a-co> <a-o>|</a-o> <a-f>grep</a-f> 8000</code></pre>
 <p>Mata processo que está rodando na porta 8000</p>
-<pre><code class="language-bash">sudo kill -9 `sudo lsof -t -i:&lt;número&gt;`
-sudo kill -9 $(lsof -t -i:&lt;número&gt;)
-</code></pre>
+<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>sudo</a-f> kill <a-co>-9</a-co> `<a-f>sudo</a-f> lsof <a-co>-t</a-co> <a-co>-i:</a-co><a-o>&lt;</a-o>número<a-o>&gt;</a-o>`
+<a-f>sudo</a-f> kill <a-co>-9</a-co> <a-eb>$(</a-eb><a-f>lsof</a-f><a-eb> </a-eb><a-co>-t</a-co><a-eb> </a-eb><a-co>-i:</a-co><a-o>&lt;</a-o><a-eb>número</a-eb><a-o>&gt;</a-o><a-eb>)</a-eb></code></pre>
 <p>obs.: &lt;número&gt; deve ser todo incluindo o &lt;&gt; ser torcado pelo número</p>
 <!-- Content Injected to every content markdown footer -->
 ]]></content:encoded></item><item><title>Como aprender um novo idioma</title><link>https://meus10centavos.vercel.app//como-aprender-um-novo-idioma.html</link><author>fabricio</author><category>tutorial</category><category>inglês</category><category>curso</category><guid>https://meus10centavos.vercel.app//como-aprender-um-novo-idioma.html</guid><pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-fabricio</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
@@ -815,47 +1498,40 @@ O linguista defende que um idioma é separado em duas partes: inputs e outputs (
 </ul>
 <h2><a href="#instalação" aria-hidden="true" class="anchor" id="instalação"></a>Instalação</h2>
 <p>A forma mais fácil de instalar é usando o script de instalação:</p>
-<pre><code class="language-bash">curl -sS https://marmite.blog/install.sh | sh
-</code></pre>
+<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>curl</a-f> <a-co>-sS</a-co> https://marmite.blog/install.sh <a-o>|</a-o> <a-f>sh</a-f></code></pre>
 <p>Ou se você tem Rust instalado:</p>
-<pre><code class="language-bash">cargo install marmite
-</code></pre>
+<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>cargo</a-f> install marmite</code></pre>
 <h2><a href="#criando-seu-primeiro-blog" aria-hidden="true" class="anchor" id="criando-seu-primeiro-blog"></a>Criando seu primeiro blog</h2>
 <ol>
 <li><strong>Crie uma pasta para o conteúdo:</strong></li>
 </ol>
-<pre><code class="language-bash">mkdir meu-blog
-cd meu-blog
-</code></pre>
+<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>mkdir</a-f> meu-blog
+<a-f>cd</a-f> meu-blog</code></pre>
 <ol start="2">
 <li><strong>Inicialize o blog:</strong></li>
 </ol>
-<pre><code class="language-bash">marmite . --init-site \
-    --name &quot;Meu Blog&quot; \
-    --tagline &quot;Minha descrição&quot; \
-    --enable-search true
-</code></pre>
+<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>marmite</a-f> . <a-co>--init-site</a-co> \
+    <a-co>--name</a-co> <a-s>&quot;Meu Blog&quot;</a-s> \
+    <a-co>--tagline</a-co> <a-s>&quot;Minha descrição&quot;</a-s> \
+    <a-co>--enable-search</a-co> true</code></pre>
 <ol start="3">
 <li><strong>Crie seu primeiro post:</strong></li>
 </ol>
-<pre><code class="language-bash">marmite . --new &quot;Meu Primeiro Post&quot; -t &quot;novo,post&quot;
-</code></pre>
+<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>marmite</a-f> . <a-co>--new</a-co> <a-s>&quot;Meu Primeiro Post&quot;</a-s> <a-co>-t</a-co> <a-s>&quot;novo,post&quot;</a-s></code></pre>
 <ol start="4">
 <li><strong>Gere e visualize o site:</strong></li>
 </ol>
-<pre><code class="language-bash">marmite . --serve
-</code></pre>
+<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>marmite</a-f> . <a-co>--serve</a-co></code></pre>
 <p>Acesse <code>http://localhost:8000</code> e veja seu blog funcionando!</p>
 <h2><a href="#estrutura-de-um-post" aria-hidden="true" class="anchor" id="estrutura-de-um-post"></a>Estrutura de um post</h2>
 <p>Os posts são arquivos Markdown com um frontmatter YAML:</p>
-<pre><code class="language-markdown">---
-title: &quot;Título do Post&quot;
-date: 2026-01-31
-tags: tag1, tag2
----
+<pre class="marmite-code"><code class="marmite-code-inner language-markdown"><a-p>---</a-p>
+<a-pr>title</a-pr><a-p>:</a-p> <a-s>&quot;Título do Post&quot;</a-s>
+<a-pr>date</a-pr><a-p>:</a-p> <a-s>2026-01-31</a-s>
+<a-pr>tags</a-pr><a-p>:</a-p> <a-s>tag1, tag2</a-s>
+<a-p>---</a-p>
 
-Conteúdo do post aqui...
-</code></pre>
+Conteúdo do post aqui...</code></pre>
 <h2><a href="#próximos-passos" aria-hidden="true" class="anchor" id="próximos-passos"></a>Próximos passos</h2>
 <ul>
 <li>Personalize o <code>marmite.yaml</code> com suas informações</li>

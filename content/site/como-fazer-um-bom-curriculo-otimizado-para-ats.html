@@ -57,6 +57,7 @@ Essa estrutura de currículo é principalmente para profissionais de T.I., mais 
 }
 </script>
 
+    
 
     <title>Como fazer um bom currículo otimizado para ATS | Meus 10 Centavos</title>
     <link rel="stylesheet" type="text/css" href="/static/pico.min.css">
@@ -64,24 +65,29 @@ Essa estrutura de currículo é principalmente para profissionais de T.I., mais 
     
     <link rel="stylesheet" type="text/css" href="/static/custom.css">
     
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github.min.css" id="highlightjs-theme" />
+    
+
+
+<link rel="stylesheet" href="/static/arborium.css" />
+
 
 
 
         <link rel="alternate" type="application/rss+xml" title="index" href="/index.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: tutorial" href="/tag-tutorial.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: linux" href="/tag-linux.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: carreira" href="/tag-carreira.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: linux" href="/tag-linux.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: guia" href="/tag-guia.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: curso" href="/tag-curso.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: blog" href="/tag-blog.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: guia" href="/tag-guia.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: marmite" href="/tag-marmite.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: rust" href="/tag-rust.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: inglês" href="/tag-ingles.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: versionamento" href="/tag-versionamento.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: ingles" href="/tag-ingles.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: inicio" href="/tag-inicio.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: rust" href="/tag-rust.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: pessoal" href="/tag-pessoal.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: computer vision" href="/tag-computer-vision.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: IA" href="/tag-ia.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: inicio" href="/tag-inicio.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: marmite" href="/tag-marmite.rss">
     <link rel="alternate" type="application/rss+xml" title="author: fabricio" href="/author-fabricio.rss">
     <link rel="alternate" type="application/rss+xml" title="author: carlos" href="/author-carlos.rss">
     <link rel="alternate" type="application/rss+xml" title="author: matheus" href="/author-matheus.rss">
@@ -91,18 +97,19 @@ Essa estrutura de currículo é principalmente para profissionais de T.I., mais 
     
     <link rel="alternate" type="application/feed+json" title="JSON index" href="/index.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: tutorial" href="/tag-tutorial.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: linux" href="/tag-linux.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: carreira" href="/tag-carreira.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: linux" href="/tag-linux.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: guia" href="/tag-guia.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: curso" href="/tag-curso.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: blog" href="/tag-blog.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: guia" href="/tag-guia.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: marmite" href="/tag-marmite.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: rust" href="/tag-rust.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: inglês" href="/tag-ingles.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: versionamento" href="/tag-versionamento.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: ingles" href="/tag-ingles.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: inicio" href="/tag-inicio.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: rust" href="/tag-rust.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: pessoal" href="/tag-pessoal.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: computer vision" href="/tag-computer-vision.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: IA" href="/tag-ia.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: inicio" href="/tag-inicio.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: marmite" href="/tag-marmite.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: fabricio" href="/author-fabricio.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: carlos" href="/author-carlos.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: matheus" href="/author-matheus.json">
@@ -186,7 +193,7 @@ Essa estrutura de currículo é principalmente para profissionais de T.I., mais 
             <div class="marmite-search-bar hidden">
                 <span>Buscar</span>
                 <button class="marmite-close-button" id="search-close">X</button>
-                <input placeholder="Search" id="marmite-search-input" />
+                <input placeholder="Search" id="marmite-search-input" data-show-matches="false" data-match-count="3" />
                 <div class="marmite-search-bar-result">
                     <ul id="marmite-search-bar-result"></ul>
                 </div>
@@ -217,11 +224,12 @@ Essa estrutura de currículo é principalmente para profissionais de T.I., mais 
 
 
 <span class="content-date">
-    <small> 03 Feb 2026 - &#10710; 3 min</small>
+    <small> 03 Feb 2026 - &#10710; 3.0 min</small>
 </span>
 
 </div>
 
+  
   
   
   <div class="content-toc">
@@ -265,7 +273,7 @@ O modelo de currículo que iriei te passar é <strong>otimizado para ATS.</stron
 <img src="/media/resumo.png" alt="resumo" width="700" height="500"></p>
 <p><strong>Observação:</strong> Não abuse do negrito, adicione apensas nas palavras que você quer que chame atenção. Negrito é apenas para as coisas importantes, se você colocar negrito em tudo então nada é importante.</p>
 <p>Prompt para gerar na IA:</p>
-<pre><code>Escreva um resumo profissional com no máximo 4 linhas de modo que me passe autoridade
+<pre class="marmite-code"><code class="marmite-code-inner">Escreva um resumo profissional com no máximo 4 linhas de modo que me passe autoridade
 
 - [cite sua stack]
 - [tempo de experiência]
@@ -340,7 +348,7 @@ Para vagas de T.I. o ideal é essa estrutura:</p>
 
 
 <span class="content-date">
-    <small> 03 Feb 2026 - &#10710; 3 min</small>
+    <small> 03 Feb 2026 - &#10710; 3.0 min</small>
 </span>
 
           
@@ -446,11 +454,6 @@ async>
     
     
     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
-<script>
-  hljs.highlightAll();
-</script>
-
 
 
 </body>

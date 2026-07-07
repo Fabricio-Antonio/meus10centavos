@@ -55,6 +55,7 @@ A swap é uma extensão temporária da sua memória RAM, feita usando o espaço 
 }
 </script>
 
+    
 
     <title>Como fazer SWAP | Meus 10 Centavos</title>
     <link rel="stylesheet" type="text/css" href="/static/pico.min.css">
@@ -62,24 +63,29 @@ A swap é uma extensão temporária da sua memória RAM, feita usando o espaço 
     
     <link rel="stylesheet" type="text/css" href="/static/custom.css">
     
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github.min.css" id="highlightjs-theme" />
+    
+
+
+<link rel="stylesheet" href="/static/arborium.css" />
+
 
 
 
         <link rel="alternate" type="application/rss+xml" title="index" href="/index.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: tutorial" href="/tag-tutorial.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: linux" href="/tag-linux.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: carreira" href="/tag-carreira.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: linux" href="/tag-linux.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: guia" href="/tag-guia.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: curso" href="/tag-curso.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: blog" href="/tag-blog.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: guia" href="/tag-guia.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: marmite" href="/tag-marmite.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: rust" href="/tag-rust.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: inglês" href="/tag-ingles.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: versionamento" href="/tag-versionamento.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: ingles" href="/tag-ingles.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: inicio" href="/tag-inicio.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: rust" href="/tag-rust.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: pessoal" href="/tag-pessoal.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: computer vision" href="/tag-computer-vision.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: IA" href="/tag-ia.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: inicio" href="/tag-inicio.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: marmite" href="/tag-marmite.rss">
     <link rel="alternate" type="application/rss+xml" title="author: fabricio" href="/author-fabricio.rss">
     <link rel="alternate" type="application/rss+xml" title="author: carlos" href="/author-carlos.rss">
     <link rel="alternate" type="application/rss+xml" title="author: matheus" href="/author-matheus.rss">
@@ -89,18 +95,19 @@ A swap é uma extensão temporária da sua memória RAM, feita usando o espaço 
     
     <link rel="alternate" type="application/feed+json" title="JSON index" href="/index.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: tutorial" href="/tag-tutorial.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: linux" href="/tag-linux.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: carreira" href="/tag-carreira.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: linux" href="/tag-linux.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: guia" href="/tag-guia.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: curso" href="/tag-curso.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: blog" href="/tag-blog.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: guia" href="/tag-guia.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: marmite" href="/tag-marmite.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: rust" href="/tag-rust.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: inglês" href="/tag-ingles.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: versionamento" href="/tag-versionamento.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: ingles" href="/tag-ingles.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: inicio" href="/tag-inicio.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: rust" href="/tag-rust.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: pessoal" href="/tag-pessoal.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: computer vision" href="/tag-computer-vision.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: IA" href="/tag-ia.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: inicio" href="/tag-inicio.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: marmite" href="/tag-marmite.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: fabricio" href="/author-fabricio.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: carlos" href="/author-carlos.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: matheus" href="/author-matheus.json">
@@ -184,7 +191,7 @@ A swap é uma extensão temporária da sua memória RAM, feita usando o espaço 
             <div class="marmite-search-bar hidden">
                 <span>Buscar</span>
                 <button class="marmite-close-button" id="search-close">X</button>
-                <input placeholder="Search" id="marmite-search-input" />
+                <input placeholder="Search" id="marmite-search-input" data-show-matches="false" data-match-count="3" />
                 <div class="marmite-search-bar-result">
                     <ul id="marmite-search-bar-result"></ul>
                 </div>
@@ -215,11 +222,12 @@ A swap é uma extensão temporária da sua memória RAM, feita usando o espaço 
 
 
 <span class="content-date">
-    <small> 02 Feb 2026 - &#10710; 4 min</small>
+    <small> 02 Feb 2026 - &#10710; 4.0 min</small>
 </span>
 
 </div>
 
+  
   
   
   <div class="content-toc">
@@ -266,55 +274,55 @@ Porque seu SSD (ou pior, um HD) é muito mais lento que RAM. Se o sistema começ
 Swap em SSD não é o fim do mundo, mas se ela for usada o tempo todo, vai acelerar o desgaste. Por isso é bom manter a RAM &quot;limpa&quot; e limitar o uso da swap com <code>swappiness</code>.</p>
 <h2><a href="#configurando-swap" aria-hidden="true" class="anchor" id="configurando-swap"></a>Configurando SWAP</h2>
 <p>Rode o comando:</p>
-<pre><code>swapon --show
+<pre class="marmite-code"><code class="marmite-code-inner">swapon --show
 </code></pre>
 <p>Para verificar ter certeza se você tem uma swap, mas 90% de chance de não ter.<br />
 Se você não tem swap não terá nenhum retorno, mas se você tiver swap irá ter retorno semelhante a este:</p>
-<pre><code>NAME      TYPE SIZE USED PRIO
+<pre class="marmite-code"><code class="marmite-code-inner">NAME      TYPE SIZE USED PRIO
 /swapfile file   8G   3G   -2
 </code></pre>
 <h4><a href="#criarativar-swap-file-se-não-tiver" aria-hidden="true" class="anchor" id="criarativar-swap-file-se-não-tiver"></a>Criar/ativar SWAP file (se não tiver)</h4>
 <h5><a href="#comando-completo" aria-hidden="true" class="anchor" id="comando-completo"></a>Comando completo:</h5>
-<pre><code># Cria um swap de 4GB (ajuste se quiser)
+<pre class="marmite-code"><code class="marmite-code-inner"># Cria um swap de 4GB (ajuste se quiser)
 sudo fallocate -l 4G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 </code></pre>
 <p>Depois adicione no fstab para ativar automaticamente:</p>
-<pre><code>echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+<pre class="marmite-code"><code class="marmite-code-inner">echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 </code></pre>
 <h5><a href="#comando-com-explicações" aria-hidden="true" class="anchor" id="comando-com-explicações"></a>Comando com explicações:</h5>
 <p>Criar um arquivo de swap com 4 GB</p>
-<pre><code>sudo fallocate -l 4G /swapfile
+<pre class="marmite-code"><code class="marmite-code-inner">sudo fallocate -l 4G /swapfile
 </code></pre>
 <p>Criamos um arquivo especial de 4 GB chamado <code>/swapfile</code>, que será usado como “RAM falsa” quando a memória real estiver cheia.</p>
 <p>Restringir o acesso ao arquivo de swap</p>
-<pre><code>sudo chmod 600 /swapfile
+<pre class="marmite-code"><code class="marmite-code-inner">sudo chmod 600 /swapfile
 </code></pre>
 <p>Demos permissão de leitura/escrita só pro root, por segurança. Isso impede que outro processo leia ou altere esse arquivo diretamente.</p>
 <p>Formatar esse arquivo como uma área de swap</p>
-<pre><code>sudo mkswap /swapfile
+<pre class="marmite-code"><code class="marmite-code-inner">sudo mkswap /swapfile
 </code></pre>
 <p>Dizemos ao sistema:
 “Esse arquivo aqui é uma área de swap, tá ok? 👉👉 ”<br />
 Ele cria a estrutura de controle necessária.</p>
 <p>Ativar a swap agora</p>
-<pre><code>sudo swapon /swapfile
+<pre class="marmite-code"><code class="marmite-code-inner">sudo swapon /swapfile
 </code></pre>
 <p>Ligamos a swap imediatamente.<br />
 A partir desse momento, o sistema pode começar a usar esse arquivo como memória auxiliar.\</p>
 <p>Configurar para ativar automaticamente no boot</p>
-<pre><code>echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+<pre class="marmite-code"><code class="marmite-code-inner">echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 </code></pre>
 <p>Alteramos o arquivo <code>/etc/fstab</code> (que diz o que montar no boot), pra garantir que <strong>sempre que você reiniciar, a swap vai estar ativa.</strong></p>
 <p>Por padrão, o Linux só usa a swap quando a RAM já está no limite. Você pode mudar isso pra ele ser um pouco mais &quot;esperto&quot; e já ir aliviando antes de travar tudo.</p>
 <p>Rode:</p>
-<pre><code>cat /proc/sys/vm/swappiness
+<pre class="marmite-code"><code class="marmite-code-inner">cat /proc/sys/vm/swappiness
 </code></pre>
 <p>Para verificar o valor atual. Provavelmente <code>60</code></p>
 <p>Reduza o lag e evitar travamento total, coloca algo tipo <code>20</code>:</p>
-<pre><code>echo 'vm.swappiness=20' | sudo tee -a /etc/sysctl.conf
+<pre class="marmite-code"><code class="marmite-code-inner">echo 'vm.swappiness=20' | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
 </code></pre>
 <p>Isso faz o sistema usar a swap de forma mais equilibrada com a RAM. Se quiser testar o comportamento, você pode começar com <code>30</code> e ir ajustando depois.</p>
@@ -353,7 +361,7 @@ sudo sysctl -p
 
 
 <span class="content-date">
-    <small> 02 Feb 2026 - &#10710; 4 min</small>
+    <small> 02 Feb 2026 - &#10710; 4.0 min</small>
 </span>
 
           
@@ -459,11 +467,6 @@ async>
     
     
     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
-<script>
-  hljs.highlightAll();
-</script>
-
 
 
 </body>
