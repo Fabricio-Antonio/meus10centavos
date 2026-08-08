@@ -1,1 +1,0 @@
-Siga-me nas redes: <a href="https://www.instagram.com/fabriciosantos.dev/" target="_blank">Instagram</a>, <a href="https://github.com/Fabricio-Antonio" target="_blank">GitHub</a> e <a href="https://www.linkedin.com/in/fabricio-ss/" target="_blank">LinkedIn</a>

@@ -1,6 +1,0 @@
-{
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cargo install --locked marmite && export PATH=\"$HOME/.cargo/bin:/rust/bin:$PATH\" && marmite content site",
-  "outputDirectory": "site",
-  "framework": null
-}
