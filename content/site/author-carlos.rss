@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate><lastBuildDate>Tue, 07 Jul 2026 23:45:19 GMT</lastBuildDate><generator>marmite</generator><item><title>Tudo sobre maquinas virtuais</title><link>https://meus10centavos.vercel.app//tudo-sobre-maquinas-virtuais.html</link><author>carlos</author><category>tutorial</category><category>linux</category><guid>https://meus10centavos.vercel.app//tudo-sobre-maquinas-virtuais.html</guid><pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-carlos</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate><lastBuildDate>Mon, 24 Aug 2026 23:49:24 GMT</lastBuildDate><generator>marmite</generator><item><title>Tudo sobre maquinas virtuais</title><link>https://meus10centavos.vercel.app//tudo-sobre-maquinas-virtuais.html</link><author>carlos</author><category>tutorial</category><category>linux</category><guid>https://meus10centavos.vercel.app//tudo-sobre-maquinas-virtuais.html</guid><pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-carlos</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
 <h2><a href="#introdução" aria-hidden="true" class="anchor" id="introdução"></a>Introdução</h2>
 <p>As máquinas virtuais (VMs) revolucionaram a forma como utilizamos recursos computacionais. Seja você um desenvolvedor, administrador de sistemas ou simplesmente um entusiasta de tecnologia, entender o funcionamento das VMs é essencial no cenário tecnológico atual. Neste guia completo, vamos explorar tudo o que você precisa saber sobre máquinas virtuais.</p>
 <h2><a href="#o-que-são-máquinas-virtuais" aria-hidden="true" class="anchor" id="o-que-são-máquinas-virtuais"></a>O Que São Máquinas Virtuais?</h2>
@@ -50,14 +50,15 @@ Exemplos: Docker, LXC, Podman</p>
 <li>Laboratórios de desenvolvimento profissional</li>
 </ul>
 <p><strong>Instalação básica:</strong></p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-c># Ubuntu/Debian</a-c>
-<a-f>sudo</a-f> apt install qemu-kvm libvirt-daemon-system virtinst virt-manager
+<pre><code class="language-bash"># Ubuntu/Debian
+sudo apt install qemu-kvm libvirt-daemon-system virtinst virt-manager
 
-<a-c># Fedora/RHEL/CentOS</a-c>
-<a-f>sudo</a-f> dnf install @virtualization
+# Fedora/RHEL/CentOS
+sudo dnf install @virtualization
 
-<a-c># Arch Linux</a-c>
-<a-f>sudo</a-f> pacman <a-co>-S</a-co> qemu libvirt virt-manager</code></pre>
+# Arch Linux
+sudo pacman -S qemu libvirt virt-manager
+</code></pre>
 <h4><a href="#virtualbox---para-facilidade-de-uso" aria-hidden="true" class="anchor" id="virtualbox---para-facilidade-de-uso"></a>VirtualBox - Para Facilidade de Uso</h4>
 <p>Embora KVM seja superior em performance, VirtualBox tem seu lugar no Linux por sua interface gráfica intuitiva e portabilidade. É ideal para usuários que migram do Windows ou Mac e querem algo familiar.</p>
 <p><strong>Vantagens:</strong></p>
@@ -106,8 +107,9 @@ Exemplos: Docker, LXC, Podman</p>
 <li>Desenvolve para ambientes Windows Server</li>
 </ul>
 <p><strong>Habilitação rápida:</strong></p>
-<pre class="marmite-code"><code class="marmite-code-inner language-powershell"><a-c># Execute como Administrador</a-c>
-<a-f>Enable-WindowsOptionalFeature</a-f> -Online -FeatureName Microsoft-Hyper-V -All</code></pre>
+<pre><code class="language-powershell"># Execute como Administrador
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+</code></pre>
 <h4><a href="#vmware-workstation-pro---para-profissionais-multiplataforma" aria-hidden="true" class="anchor" id="vmware-workstation-pro---para-profissionais-multiplataforma"></a>VMware Workstation Pro - Para Profissionais Multiplataforma</h4>
 <p>VMware Workstation oferece recursos avançados e melhor suporte para Linux guests no Windows.</p>
 <p><strong>Vantagens sobre Hyper-V:</strong></p>
@@ -668,7 +670,7 @@ Consulte a lista de hardware certificado para Ubuntu</p>
 <li>Atualize o Sistema
 Abra o terminal (Ctrl + Alt + T) e digite:</li>
 </ol>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo apt update &amp;&amp; sudo apt upgrade -y
+<pre><code>sudo apt update &amp;&amp; sudo apt upgrade -y
 </code></pre>
 <p>Isso atualiza todos os pacotes do sistema.</p>
 <ol start="2">
@@ -685,14 +687,14 @@ Abra o terminal (Ctrl + Alt + T) e digite:</li>
 <li>Linux Mint: Já vem instalado, apenas configure.</li>
 <li>ZorinOS/Ubuntu:</li>
 </ul>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo apt install timeshift -y
+<pre><code>sudo apt install timeshift -y
 </code></pre>
 <p>Crie snapshots antes de grandes mudanças no sistema.</p>
 <ol start="4">
 <li>Aprenda Comandos Básicos do Terminal
 Não tenha medo do terminal! Aqui estão os mais úteis:</li>
 </ol>
-<pre class="marmite-code"><code class="marmite-code-inner"># Atualizar sistema
+<pre><code># Atualizar sistema
 sudo apt update &amp;&amp; sudo apt upgrade
 
 # Instalar programa
@@ -776,41 +778,41 @@ X(antigo Twitter): <a href="https://x.com/kourge01">x.com/kourge01</a>\</p>
 </ul>
 <h2><a href="#arch-linux" aria-hidden="true" class="anchor" id="arch-linux"></a>Arch Linux</h2>
 <p>No Arch Linux temos o zram-generator. Certifique-se de que ele está instalado:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">
+<pre><code>
 sudo pacman -S zram-generator
 </code></pre>
 <p>Crie o arquivo de configuração em <code>/etc/systemd/zram-generator.conf</code>:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo vim /etc/systemd/zram-generator.conf
+<pre><code>sudo vim /etc/systemd/zram-generator.conf
 </code></pre>
 <p>Ou, se preferir o Nano:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo nano /etc/systemd/zram-generator.conf
+<pre><code>sudo nano /etc/systemd/zram-generator.conf
 </code></pre>
 <p>Dentro do arquivo zram-generator.conf, coloque:</p>
 <p>Para abordagem automática</p>
-<pre class="marmite-code"><code class="marmite-code-inner">[zram0]
+<pre><code>[zram0]
 </code></pre>
 <h2><a href="#sugestão-de-tamanhos-de-zram" aria-hidden="true" class="anchor" id="sugestão-de-tamanhos-de-zram"></a>Sugestão de tamanhos de Zram</h2>
 <p>Se você tem 4 GB de RAM, use 2,5 GB de Zram ou igual
 Se tem 8 GB de RAM, use 4 GB de swap ou igual
 Se tem 16 GB de RAM, use 8 GB ou 12 GB de Zram
 Se tem 32 GB de RAM, use 4 GB ou 8 GB, apenas para manter</p>
-<pre class="marmite-code"><code class="marmite-code-inner">Obs.: O Zram é útil em máquinas com mais de 16 GB de RAM, pois quando a RAM chega a 100%, o Zram ou swapfile entra em ação para evitar travamentos. Quando o sistema não tem swap, ele pode simplesmente travar e fechar processos.
+<pre><code>Obs.: O Zram é útil em máquinas com mais de 16 GB de RAM, pois quando a RAM chega a 100%, o Zram ou swapfile entra em ação para evitar travamentos. Quando o sistema não tem swap, ele pode simplesmente travar e fechar processos.
 </code></pre>
 <p>Exemplo de configuração manual:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">[zram0]
+<pre><code>[zram0]
 zram-size = 4096  # exemplo de 4 GB de swap
 </code></pre>
 <p>Sempre use:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">zram-size = {RAM} x 1024
+<pre><code>zram-size = {RAM} x 1024
 </code></pre>
 <p>Exemplo: <code>8 GB = 8192</code></p>
 <h2><a href="#50-da-ram" aria-hidden="true" class="anchor" id="50-da-ram"></a>50% da ram</h2>
 <p>No mesmo arquivo, use:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">zram-size = ram / 2
+<pre><code>zram-size = ram / 2
 </code></pre>
 <p>Isso define o Zram como 50% da RAM total.</p>
 <h2><a href="#config-recomendada" aria-hidden="true" class="anchor" id="config-recomendada"></a>Config recomendada</h2>
-<pre class="marmite-code"><code class="marmite-code-inner">[zram0]
+<pre><code>[zram0]
 zram-size = ram / 2
 compression-algorithm = zstd
 swap-priority = 100
@@ -818,11 +820,11 @@ swap-priority = 100
 </code></pre>
 <p>rapido e util</p>
 <h2><a href="#aplicar" aria-hidden="true" class="anchor" id="aplicar"></a>Aplicar</h2>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo systemctl daemon-reexec
+<pre><code>sudo systemctl daemon-reexec
 sudo systemctl start systemd-zram-setup@zram0.service
 </code></pre>
 <p>apos o reinicio execute:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">swapon --show
+<pre><code>swapon --show
 </code></pre>
 <h5><a href="#créditos" aria-hidden="true" class="anchor" id="créditos"></a>Créditos</h5>
 <p>Agradeço a contribuição do Carlos Souza.</p>

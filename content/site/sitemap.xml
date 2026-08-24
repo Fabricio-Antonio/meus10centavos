@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://meus10centavos.vercel.app/a-realidade-de-cybesec.html</loc>
+  </url>
+  <url>
     <loc>https://meus10centavos.vercel.app/cv-aplicada.html</loc>
   </url>
   <url>
@@ -76,16 +79,13 @@
     <loc>https://meus10centavos.vercel.app/tag-blog.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-rust.html</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-ingles.html</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-versionamento.html</loc>
-  </url>
-  <url>
     <loc>https://meus10centavos.vercel.app/tag-pessoal.html</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-inicio.html</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-marmite.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-computer-vision.html</loc>
@@ -94,10 +94,13 @@
     <loc>https://meus10centavos.vercel.app/tag-ia.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-inicio.html</loc>
+    <loc>https://meus10centavos.vercel.app/tag-versionamento.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-marmite.html</loc>
+    <loc>https://meus10centavos.vercel.app/tag-rust.html</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-ingles.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tags.html</loc>
@@ -124,9 +127,6 @@
     <loc>https://meus10centavos.vercel.app/archive.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/languages.html</loc>
-  </url>
-  <url>
     <loc>https://meus10centavos.vercel.app/index.rss</loc>
   </url>
   <url>
@@ -148,16 +148,13 @@
     <loc>https://meus10centavos.vercel.app/tag-blog.rss</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-rust.rss</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-ingles.rss</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-versionamento.rss</loc>
-  </url>
-  <url>
     <loc>https://meus10centavos.vercel.app/tag-pessoal.rss</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-inicio.rss</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-marmite.rss</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-computer-vision.rss</loc>
@@ -166,10 +163,13 @@
     <loc>https://meus10centavos.vercel.app/tag-ia.rss</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-inicio.rss</loc>
+    <loc>https://meus10centavos.vercel.app/tag-versionamento.rss</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-marmite.rss</loc>
+    <loc>https://meus10centavos.vercel.app/tag-rust.rss</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-ingles.rss</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/author-carlos.rss</loc>
@@ -205,16 +205,13 @@
     <loc>https://meus10centavos.vercel.app/tag-blog.json</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-rust.json</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-ingles.json</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-versionamento.json</loc>
-  </url>
-  <url>
     <loc>https://meus10centavos.vercel.app/tag-pessoal.json</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-inicio.json</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-marmite.json</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-computer-vision.json</loc>
@@ -223,10 +220,13 @@
     <loc>https://meus10centavos.vercel.app/tag-ia.json</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-inicio.json</loc>
+    <loc>https://meus10centavos.vercel.app/tag-versionamento.json</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-marmite.json</loc>
+    <loc>https://meus10centavos.vercel.app/tag-rust.json</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-ingles.json</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/author-carlos.json</loc>
@@ -262,16 +262,13 @@
     <loc>https://meus10centavos.vercel.app/tag-blog-1.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-rust-1.html</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-ingles-1.html</loc>
-  </url>
-  <url>
-    <loc>https://meus10centavos.vercel.app/tag-versionamento-1.html</loc>
-  </url>
-  <url>
     <loc>https://meus10centavos.vercel.app/tag-pessoal-1.html</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-inicio-1.html</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-marmite-1.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/tag-computer-vision-1.html</loc>
@@ -280,10 +277,13 @@
     <loc>https://meus10centavos.vercel.app/tag-ia-1.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-inicio-1.html</loc>
+    <loc>https://meus10centavos.vercel.app/tag-versionamento-1.html</loc>
   </url>
   <url>
-    <loc>https://meus10centavos.vercel.app/tag-marmite-1.html</loc>
+    <loc>https://meus10centavos.vercel.app/tag-rust-1.html</loc>
+  </url>
+  <url>
+    <loc>https://meus10centavos.vercel.app/tag-ingles-1.html</loc>
   </url>
   <url>
     <loc>https://meus10centavos.vercel.app/author-carlos-1.html</loc>

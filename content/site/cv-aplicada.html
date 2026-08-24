@@ -57,7 +57,6 @@ Este post documenta o que aprendi ao implementar um sist...",
 }
 </script>
 
-    
 
     <title>Computer Vision: notas técnicas de um pipeline completa | Meus 10 Centavos</title>
     <link rel="stylesheet" type="text/css" href="/static/pico.min.css">
@@ -65,11 +64,7 @@ Este post documenta o que aprendi ao implementar um sist...",
     
     <link rel="stylesheet" type="text/css" href="/static/custom.css">
     
-    
-
-
-<link rel="stylesheet" href="/static/arborium.css" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github.min.css" id="highlightjs-theme" />
 
 
 
@@ -77,17 +72,20 @@ Este post documenta o que aprendi ao implementar um sist...",
     <link rel="alternate" type="application/rss+xml" title="tag: tutorial" href="/tag-tutorial.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: carreira" href="/tag-carreira.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: linux" href="/tag-linux.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: guia" href="/tag-guia.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: blog" href="/tag-blog.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: curso" href="/tag-curso.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: marmite" href="/tag-marmite.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: blog" href="/tag-blog.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: guia" href="/tag-guia.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: computer-vision" href="/tag-computer-vision.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: ia" href="/tag-ia.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: pessoal" href="/tag-pessoal.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: inicio" href="/tag-inicio.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: versionamento" href="/tag-versionamento.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: computer vision" href="/tag-computer-vision.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: inglês" href="/tag-ingles.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: IA" href="/tag-ia.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: computer vision" href="/tag-computer-vision.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: marmite" href="/tag-marmite.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: rust" href="/tag-rust.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: versionamento" href="/tag-versionamento.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: ingles" href="/tag-ingles.rss">
     <link rel="alternate" type="application/rss+xml" title="author: fabricio" href="/author-fabricio.rss">
     <link rel="alternate" type="application/rss+xml" title="author: carlos" href="/author-carlos.rss">
     <link rel="alternate" type="application/rss+xml" title="author: matheus" href="/author-matheus.rss">
@@ -99,17 +97,20 @@ Este post documenta o que aprendi ao implementar um sist...",
     <link rel="alternate" type="application/feed+json" title="JSON tag: tutorial" href="/tag-tutorial.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: carreira" href="/tag-carreira.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: linux" href="/tag-linux.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: guia" href="/tag-guia.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: blog" href="/tag-blog.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: curso" href="/tag-curso.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: marmite" href="/tag-marmite.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: blog" href="/tag-blog.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: guia" href="/tag-guia.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: computer-vision" href="/tag-computer-vision.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: ia" href="/tag-ia.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: pessoal" href="/tag-pessoal.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: inicio" href="/tag-inicio.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: versionamento" href="/tag-versionamento.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: computer vision" href="/tag-computer-vision.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: inglês" href="/tag-ingles.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: IA" href="/tag-ia.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: computer vision" href="/tag-computer-vision.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: marmite" href="/tag-marmite.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: rust" href="/tag-rust.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: versionamento" href="/tag-versionamento.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: ingles" href="/tag-ingles.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: fabricio" href="/author-fabricio.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: carlos" href="/author-carlos.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: matheus" href="/author-matheus.json">
@@ -193,7 +194,7 @@ Este post documenta o que aprendi ao implementar um sist...",
             <div class="marmite-search-bar hidden">
                 <span>Buscar</span>
                 <button class="marmite-close-button" id="search-close">X</button>
-                <input placeholder="Search" id="marmite-search-input" data-show-matches="false" data-match-count="3" />
+                <input placeholder="Search" id="marmite-search-input" />
                 <div class="marmite-search-bar-result">
                     <ul id="marmite-search-bar-result"></ul>
                 </div>
@@ -224,12 +225,11 @@ Este post documenta o que aprendi ao implementar um sist...",
 
 
 <span class="content-date">
-    <small> 08 Jul 2026 - &#10710; 16.0 min</small>
+    <small> 08 Jul 2026 - &#10710; 16 min</small>
 </span>
 
 </div>
 
-  
   
   
   <div class="content-toc">
@@ -361,7 +361,7 @@ Este post documenta o que aprendi ao implementar um sist...",
 <h2><a href="#2-treinamento" aria-hidden="true" class="anchor" id="2-treinamento"></a><strong>2. Treinamento</strong></h2>
 <h3><a href="#21-segmentação" aria-hidden="true" class="anchor" id="21-segmentação"></a><strong>2.1 Segmentação</strong></h3>
 <p>Para segmentação, usei uma U-Net com encoder EfficientNet-B3, pré-treinado no ImageNet, via segmentation_models_pytorch. A escolha faz sentido: EfficientNet oferece um bom equilíbrio entre capacidade e eficiência, e a U-Net é o padrão de ouro para máscaras semânticas.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">smp.Unet(
+<pre><code>smp.Unet(
 
 encoder_name=&quot;efficientnet-b3&quot;,
 
@@ -408,7 +408,7 @@ classes=1,
 </tbody>
 </table>
 <p><strong>Augmentações</strong> (<code>albumentations</code>):</p>
-<pre class="marmite-code"><code class="marmite-code-inner">A.Resize(512, 512)
+<pre><code>A.Resize(512, 512)
 
 A.HorizontalFlip(p=0.5)
 
@@ -433,7 +433,7 @@ A.Normalize()
 <h3><a href="#22-classificação" aria-hidden="true" class="anchor" id="22-classificação"></a><strong>2.2 Classificação</strong></h3>
 <p>EfficientNet-B3 via <code>timm</code>, <code>BCEWithLogitsLoss</code>, lr = 3e-4, batch = 8, image size = 384. Métrica: F1.</p>
 <h3><a href="#23-export" aria-hidden="true" class="anchor" id="23-export"></a><strong>2.3 Export</strong></h3>
-<pre class="marmite-code"><code class="marmite-code-inner"># TorchScript (seg)
+<pre><code># TorchScript (seg)
 
 scripted = torch.jit.trace(model, dummy_input)  *# dummy: (1, 3, 512, 512)*
 
@@ -450,7 +450,7 @@ torch.onnx.export(..., opset_version=17, dynamic_axes={&quot;input&quot;: {0: &q
 <img src="/media/diagrama.png" alt="Diagrama de fluxo da análise de feridas" width="1000" height="1000">
 <h3><a href="#31-letterbox--unletterbox" aria-hidden="true" class="anchor" id="31-letterbox--unletterbox"></a><strong>3.1 Letterbox / Unletterbox</strong></h3>
 <p>Dado <code>target_size = 512</code>:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">scale = target_size / max(h, w)
+<pre><code>scale = target_size / max(h, w)
 
 content_w = round(w * scale)
 
@@ -584,7 +584,7 @@ pad_top  = (512 - content_h) // 2
 </tbody>
 </table>
 <p>A API retorna isso via WoundColorAnalysis (Pydantic), com valores em percentual (0–100) arredondados a 2 casas:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">class WoundColorAnalysis(BaseModel):
+<pre><code>class WoundColorAnalysis(BaseModel):
   vermelho: float   # granulação
   amarelo: float    # esfacelo/infecção
   preto: float      # necrose
@@ -597,18 +597,18 @@ pad_top  = (512 - content_h) // 2
 <h3><a href="#62-pipeline-de-roi-para-coloração" aria-hidden="true" class="anchor" id="62-pipeline-de-roi-para-coloração"></a>6.2 Pipeline de ROI para coloração</h3>
 <p>Função: <code>analyze_wound_colors(image_rgb, mask_prob)</code>.</p>
 <p>Passo 1 — Alinhamento e binarização permissiva</p>
-<pre class="marmite-code"><code class="marmite-code-inner">mask_aligned = align_mask_to_image(image, mask, &quot;analyze_wound_colors&quot;)
+<pre><code>mask_aligned = align_mask_to_image(image, mask, &quot;analyze_wound_colors&quot;)
 binary = (mask_aligned &gt; 0.20).astype(uint8)  # threshold baixo: incluir bordas difusas
 </code></pre>
 <p>A análise só é chamada após <code>validate_wound_presence()</code>, então o threshold de 0.20 (vs 0.40 da geometria) é intencional: captura toda a região provável de ferimento, incluindo halos de baixa confiança na borda.</p>
 <p>Passo 2 — Limpeza morfológica</p>
-<pre class="marmite-code"><code class="marmite-code-inner">MORPH_CLOSE(kernel 3×3, 1 iter)
+<pre><code>MORPH_CLOSE(kernel 3×3, 1 iter)
 MORPH_OPEN(kernel 3×3, 1 iter)
 → largest connected component
 </code></pre>
 <p>Passo 3 — Máscara de borda</p>
 <p>Remove 1% das margens da imagem para evitar contaminação por pele circundante ou artefatos de borda:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">margin_h = max(1, int(h * 0.01))
+<pre><code>margin_h = max(1, int(h * 0.01))
 margin_w = max(1, int(w * 0.01))
 edge_mask[0:margin_h, :] = 0
 edge_mask[h-margin_h:, :] = 0
@@ -619,19 +619,19 @@ binary = binary * edge_mask
 <p>Se <code>wound_pixels == 0</code> após filtros, reutiliza <code>mask &gt; 0.15</code> sem máscara de borda, evita retorno zerado em feridas pequenas ou próximas à borda do frame.</p>
 <h3><a href="#63-classificação-pixel-a-pixel-hsv--rgb" aria-hidden="true" class="anchor" id="63-classificação-pixel-a-pixel-hsv--rgb"></a>6.3 Classificação pixel a pixel (HSV + RGB)</h3>
 <p>Conversão para HSV OpenCV:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">image_hsv = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2HSV)
+<pre><code>image_hsv = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2HSV)
 # H ∈ [0, 179], S ∈ [0, 255], V ∈ [0, 255]
 # Normalização: h/179, s/255, v/255
 </code></pre>
 <p>Para cada pixel <code>(r,g,b)</code> e <code>(h,s,v)</code> dentro da ROI:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">intensity = (r + g + b) / 3
+<pre><code>intensity = (r + g + b) / 3
 max_rgb   = max(r, g, b)
 min_rgb   = min(r, g, b)
 </code></pre>
 <p>Ordem de decisão (first-match wins — evita ambiguidade):</p>
 <p><code>Preto → Branco → Roxo → Vermelho → Amarelo → Outros</code></p>
 <p>Preto (necrose)</p>
-<pre class="marmite-code"><code class="marmite-code-inner">if v &lt; 0.12 or (intensity &lt; 0.15 and max_rgb &lt; 0.2):
+<pre><code>if v &lt; 0.12 or (intensity &lt; 0.15 and max_rgb &lt; 0.2):
     → preto
 elif v &lt; 0.18 and intensity &lt; 0.20 and s &lt; 0.25:
     → preto
@@ -639,7 +639,7 @@ elif v &lt; 0.18 and intensity &lt; 0.20 and s &lt; 0.25:
 </code></pre>
 <p>Prioridade máxima: sombras profundas e tecido necrótico têm valor HSV baixo.</p>
 <p>Branco (isquêmico / biofilme)</p>
-<pre class="marmite-code"><code class="marmite-code-inner">elif s &lt; 0.12 and v &gt; 0.65:
+<pre><code>elif s &lt; 0.12 and v &gt; 0.65:
     → branco
 elif s &lt; 0.18 and v &gt; 0.75 and max_rgb &gt; 0.7:
     → branco
@@ -649,13 +649,13 @@ elif s &lt; 0.20 and v &gt; 0.70 and |r-g| &lt; 0.1 and |g-b| &lt; 0.1:
 <p>Baixa saturação + alto valor = tecido pálido ou esbranquiçado.</p>
 <p>Roxo (hematoma)
 Regras HSV e RGB combinadas:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">elif 0.68 &lt;= h &lt;= 0.92 and s &gt; 0.25 and v &gt; 0.2:
+<pre><code>elif 0.68 &lt;= h &lt;= 0.92 and s &gt; 0.25 and v &gt; 0.2:
     → roxo
 elif r &gt; 0.35 and b &gt; 0.35 and g &lt; 0.35 and s &gt; 0.18:
     → roxo  # R e B dominantes, G suprimido
 </code></pre>
 <p>Vermelho (granulação)</p>
-<pre class="marmite-code"><code class="marmite-code-inner">elif (h &lt; 0.04 or h &gt; 0.96) and s &gt; 0.35 and v &gt; 0.25:
+<pre><code>elif (h &lt; 0.04 or h &gt; 0.96) and s &gt; 0.35 and v &gt; 0.25:
     → vermelho  # matiz no extremo do círculo H (vermelho puro)
 elif r &gt; 0.55 and r &gt; g*1.25 and r &gt; b*1.25 and s &gt; 0.25:
     → vermelho  # dominância de R no RGB
@@ -663,7 +663,7 @@ elif r &gt; 0.50 and r &gt; g*1.2 and s &gt; 0.30 and 0.2 &lt; v &lt; 0.5:
     → vermelho  # granulação mais escura
 </code></pre>
 <p>Amarelo (esfacelo)</p>
-<pre class="marmite-code"><code class="marmite-code-inner">elif 0.12 &lt;= h &lt;= 0.28 and s &gt; 0.35 and v &gt; 0.3:
+<pre><code>elif 0.12 &lt;= h &lt;= 0.28 and s &gt; 0.35 and v &gt; 0.3:
     → amarelo
 elif r &gt; 0.45 and g &gt; 0.45 and b &lt; 0.35 and s &gt; 0.25:
     → amarelo  # R+G altos, B baixo
@@ -675,7 +675,7 @@ elif 0.10 &lt;= h &lt;= 0.25 and s &gt; 0.25 and 0.25 &lt; v &lt; 0.55:
 <p>Outros
 Pixels que não satisfazem nenhuma regra acima.</p>
 <h3><a href="#64-agregação" aria-hidden="true" class="anchor" id="64-agregação"></a>6.4 Agregação</h3>
-<pre class="marmite-code"><code class="marmite-code-inner">total = len(wound_region)  # pixels na ROI filtrada
+<pre><code>total = len(wound_region)  # pixels na ROI filtrada
 color_percentages = {
   'vermelho': (red_count   / total) * 100.0,
   'amarelo':  (yellow_count / total) * 100.0,
@@ -754,7 +754,7 @@ Violação → erro sistemático em área.</p>
 </ul>
 <p>Entrada: contorno <code>C = {(x_i, y_i)}</code>, calibração <code>{pixel_to_cm, confidence}</code>.</p>
 <h3><a href="#81-métricas-primárias-contorno-real" aria-hidden="true" class="anchor" id="81-métricas-primárias-contorno-real"></a><strong>8.1 Métricas primárias (contorno real)</strong></h3>
-<pre class="marmite-code"><code class="marmite-code-inner">area_px       = cv2.contourArea(C)
+<pre><code>area_px       = cv2.contourArea(C)
 
 perimeter_px  = cv2.arcLength(C, closed=True)
 </code></pre>
@@ -763,7 +763,7 @@ perimeter_px  = cv2.arcLength(C, closed=True)
 <p>Matriz de covariância: <code>Σ = cov(C - μ)</code></p>
 <p>Decomposição: <code>Σ = V Λ Vᵀ</code> via <code>np.linalg.eigh</code></p>
 <p>Autovetor <code>v₁</code> (maior autovalor) = eixo principal:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">proj_major = (C - μ) · v₁
+<pre><code>proj_major = (C - μ) · v₁
 
 major_len  = max(proj_major) - min(proj_major)
 
@@ -779,13 +779,13 @@ angle_deg  = atan2(v₁_y, v₁_x) · 180/π
 <li><strong>Feret diameter</strong> no convex hull: <code>(feret_max, feret_min)</code></li>
 </ul>
 <p>Dimensão final:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">width_px  = median(pca_major, rect_major)
+<pre><code>width_px  = median(pca_major, rect_major)
 
 height_px = median(pca_minor, rect_minor)
 </code></pre>
 <p><strong>Motivação</strong>: <code>cv2.boundingRect</code> superestima feridas alongadas e rotacionadas. PCA captura orientação; mediana entre PCA e minAreaRect reduz sensibilidade a outliers no contorno.</p>
 <h3><a href="#84-conversão-métrica" aria-hidden="true" class="anchor" id="84-conversão-métrica"></a><strong>8.4 Conversão métrica</strong></h3>
-<pre class="marmite-code"><code class="marmite-code-inner">area_cm²      = area_px       × pixel_to_cm²
+<pre><code>area_cm²      = area_px       × pixel_to_cm²
 
 perimeter_cm  = perimeter_px   × pixel_to_cm
 
@@ -884,7 +884,7 @@ diameter_cm   = max(width_cm, height_cm)
 <p>Além disso, a resposta da API passa a incluir o campo <code>segmentation_debug</code>, contendo informações detalhadas para auxiliar na investigação de falhas.</p>
 <p>Cada requisição também propaga um <code>ImagePipelineContext</code>, que registra automaticamente as dimensões produzidas em cada etapa da pipeline (<code>shape_log</code>), permitindo identificar rapidamente desalinhamentos entre a imagem original, a inferência da U-Net e a máscara final.</p>
 <h3><a href="#101-exemplo-de-shape_log" aria-hidden="true" class="anchor" id="101-exemplo-de-shape_log"></a>10.1 Exemplo de <code>shape_log</code></h3>
-<pre class="marmite-code"><code class="marmite-code-inner language-text">original_loaded:           shape=(3024, 4032, 3)
+<pre><code class="language-text">original_loaded:           shape=(3024, 4032, 3)
 working_capped:            shape=(1152, 1536, 3)
 preprocessed_mobile:       shape=(1152, 1536, 3)
 inference_letterboxed:     shape=(512, 512, 3)
@@ -900,7 +900,7 @@ mask_working_prob:         shape=(1152, 1536)
 <li>Percentuais finais de cada classe.</li>
 </ul>
 <p>Exemplo:</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-text">🎨 [ColorAnalysis] Pixels analisados: 4821
+<pre><code class="language-text">🎨 [ColorAnalysis] Pixels analisados: 4821
 🎨 [ColorAnalysis] Color counts - Red: 2104, Yellow: 891, Black: 312, ...
 🎨 [ColorAnalysis] Final percentages:
 {
@@ -1020,7 +1020,7 @@ mask_working_prob:         shape=(1152, 1536)
 
 
 <span class="content-date">
-    <small> 08 Jul 2026 - &#10710; 16.0 min</small>
+    <small> 08 Jul 2026 - &#10710; 16 min</small>
 </span>
 
           
@@ -1105,6 +1105,11 @@ async>
     
     
     
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script>
+
 
 
 </body>

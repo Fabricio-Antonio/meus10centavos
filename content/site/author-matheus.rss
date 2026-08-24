@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Wed, 11 Feb 2026 00:00:00 GMT</pubDate><lastBuildDate>Tue, 07 Jul 2026 23:45:19 GMT</lastBuildDate><generator>marmite</generator><item><title>Git prático para iniciantes - O início de um projeto</title><link>https://meus10centavos.vercel.app//git-pratico-para-iniciantes.html</link><author>matheus</author><category>versionamento</category><category>guia</category><guid>https://meus10centavos.vercel.app//git-pratico-para-iniciantes.html</guid><pubDate>Wed, 11 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-matheus</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Wed, 11 Feb 2026 00:00:00 GMT</pubDate><lastBuildDate>Mon, 24 Aug 2026 23:49:24 GMT</lastBuildDate><generator>marmite</generator><item><title>Git prático para iniciantes - O início de um projeto</title><link>https://meus10centavos.vercel.app//git-pratico-para-iniciantes.html</link><author>matheus</author><category>versionamento</category><category>guia</category><guid>https://meus10centavos.vercel.app//git-pratico-para-iniciantes.html</guid><pubDate>Wed, 11 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">author-matheus</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
 <h1><a href="#introdução" aria-hidden="true" class="anchor" id="introdução"></a>Introdução</h1>
 <p>Antes de começar, já devo avisar que o objetivo desta série não é ensinar git de A até Z como muitos fazem, pois eu não acho que conseguiria fazer algo melhor do que a <a href="https://git-scm.com/book/pt-br/v2">documentação do git</a>, que tem uma leitura fácil e entendível para quem está iniciando, além de ter uma boa parte já traduzida para o português brasileiro, caso tenha dificuldades com o inglês.</p>
 <p>Meu objetivo é simplificar seu aprendizado, abordando o essencial, destrinchando as entrelinhas e explicando de uma forma fácil para iniciantes.</p>
@@ -7,12 +7,12 @@
 </blockquote>
 <h1><a href="#inicializando-um-repositório-na-sua-máquina" aria-hidden="true" class="anchor" id="inicializando-um-repositório-na-sua-máquina"></a>Inicializando um repositório na sua máquina</h1>
 <p>Vamos supor que você já assistiu seu curso da Udemy ou do YouTube e já sabe o básico do funcionamento de git. Logo, caso tenha entendido corretamente, o primeiro passo é inicializar um repositório dentro do diretório do seu projeto com o comando <code>git init</code>.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">enzo@pc-do-enzo:~/projeto$ git init
+<pre><code>enzo@pc-do-enzo:~/projeto$ git init
 Initialized empty Git repository in /home/enzo/projeto/.git/
 enzo@pc-do-enzo:~/projeto$
 </code></pre>
 <p>O que você precisa entender agora é que, ao inicializar um repositório, um diretório chamado <code>.git</code> será criado no diretório do projeto e que por padrão, nenhum dos seus arquivos estará, mas o git já consegue vê-los. Além disso, todos seus arquivos começarão com o estado <code>untracked</code> ou &quot;não rastreado&quot;.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">enzo@pc-do-enzo:~/projeto$ git status
+<pre><code>enzo@pc-do-enzo:~/projeto$ git status
 On branch main
 
 No commits yet
@@ -43,7 +43,7 @@ enzo@pc-do-enzo:~/projeto$
 <li><code>git add foo/bar</code>: Adiciona todos os arquivos de um diretório</li>
 <li><code>git add .</code>: Adiciona todos os arquivos</li>
 </ul>
-<pre class="marmite-code"><code class="marmite-code-inner">enzo@pc-pc-do-enzo:~/projeto$ git add index.html style.css
+<pre><code>enzo@pc-pc-do-enzo:~/projeto$ git add index.html style.css
 enzo@pc-pc-do-enzo:~/projeto$ git status
 On branch main
 
@@ -69,7 +69,7 @@ enzo@pc-pc-do-enzo:~/projeto$
 <p>E aqui entramos em outro conceito importante que não se aplica somente ao git, mas em muitas ferramentas que você vai encontrar e ele se chama <em><strong>diffing</strong></em>.</p>
 <p>Em termos simples, <em><strong>diffing</strong></em> é o processo de comparação entre arquivos, para saber o que mudou de um arquivo para outro. Você pode pensar nisso como um &quot;jogo dos 7 erros&quot;, onde você tinha duas imagens e precisava encontrar a diferença entre elas.</p>
 <p>Graças ao <em><strong>diffing</strong></em>, o git consegue te dizer exatamente quais linhas foram adicionadas (+) e quais linhas foram removidas (-) na comparação de uma versão anterior de um arquivo a uma versão atual.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">enzo@pc-do-enzo:~/projeto$ git diff
+<pre><code>enzo@pc-do-enzo:~/projeto$ git diff
 diff --git a/index.html b/index.html
 index c3939a0..e60d682 100644
 --- a/index.html
@@ -92,7 +92,7 @@ index c3939a0..e60d682 100644
 enzo@pc-do-enzo:~/projeto$
 </code></pre>
 <p>Então, quando você realiza a modificação de um arquivo que já está na <em><strong>staging area</strong></em>, esse arquivo terá uma versão na <em><strong>staging area</strong></em> que irá para o próximo <em>commit</em> e uma versão em estado <em><strong>modified</strong></em> no <em><strong>working directory</strong></em>.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">enzo@pc-do-enzo:~/projeto$ git status
+<pre><code>enzo@pc-do-enzo:~/projeto$ git status
 On branch main
 
 No commits yet
@@ -132,7 +132,7 @@ enzo@pc-do-enzo:~/projeto$
 <p>Se você deseja realizar o commit com uma descrição simples e informar mais detalhes:
 <code>git commit</code></p>
 <p>Isso irá abrir o editor padrão configurado para o git, para que você possa escrever mais detalhes sobre o <em>commit</em>. Você terá instruções em forma de comentários, indicando como você deve estruturar a mensagem.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">GNU nano 7.2                                 /home/enzo/projeto/.git/COMMIT_EDITMSG *
+<pre><code>GNU nano 7.2                                 /home/enzo/projeto/.git/COMMIT_EDITMSG *
 
 feat: implementação da página inicial do projeto
 &lt;ENTER&gt;
@@ -156,7 +156,7 @@ feat: implementação da página inicial do projeto
 #
 </code></pre>
 <p>Ao salvar e sair, seu <em>commit</em> terá sido realizado.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">enzo@pc-pc-do-enzo:~/projeto$ git commit
+<pre><code>enzo@pc-pc-do-enzo:~/projeto$ git commit
 [main (root-commit) af17a38] feat: implementação da página inicial do projeto
  2 files changed, 32 insertions(+)
  create mode 100644 index.html
@@ -164,7 +164,7 @@ feat: implementação da página inicial do projeto
 enzo@pc-pc-do-enzo:~/projeto$
 </code></pre>
 <p>E você pode ver detalhes sobre esse <em>commit</em> e outros, obtendo seus logs, com o comando <code>git log</code>.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">commit af17a38bca106c5316239f9e209cc3c1d43fd5c5 (HEAD -&gt; main)
+<pre><code>commit af17a38bca106c5316239f9e209cc3c1d43fd5c5 (HEAD -&gt; main)
 Author: Enzo da Silva &lt;enzosilva@gmail.com&gt;
 Date:   Fri Feb 6 03:42:34 2026 -0300
 

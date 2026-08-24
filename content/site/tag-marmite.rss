@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate><lastBuildDate>Tue, 07 Jul 2026 23:45:19 GMT</lastBuildDate><generator>marmite</generator><item><title>Como criar um blog com Marmite</title><link>https://meus10centavos.vercel.app//como-criar-blog-marmite.html</link><author>fabricio</author><category>tutorial</category><category>marmite</category><category>rust</category><category>blog</category><guid>https://meus10centavos.vercel.app//como-criar-blog-marmite.html</guid><pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">tag-marmite</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate><lastBuildDate>Mon, 24 Aug 2026 23:49:24 GMT</lastBuildDate><generator>marmite</generator><item><title>Como criar um blog com Marmite</title><link>https://meus10centavos.vercel.app//como-criar-blog-marmite.html</link><author>fabricio</author><category>tutorial</category><category>marmite</category><category>rust</category><category>blog</category><guid>https://meus10centavos.vercel.app//como-criar-blog-marmite.html</guid><pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">tag-marmite</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
 <p>Neste tutorial, vou mostrar como criar seu próprio blog usando o <strong>Marmite</strong>, um gerador de sites estáticos escrito em Rust.</p>
 <h2><a href="#o-que-é-o-marmite" aria-hidden="true" class="anchor" id="o-que-é-o-marmite"></a>O que é o Marmite?</h2>
 <p><a href="https://marmite.blog/">Marmite</a> é um gerador de sites estáticos minimalista que transforma arquivos Markdown em um blog completo. Suas principais características são:</p>
@@ -12,40 +12,47 @@
 </ul>
 <h2><a href="#instalação" aria-hidden="true" class="anchor" id="instalação"></a>Instalação</h2>
 <p>A forma mais fácil de instalar é usando o script de instalação:</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>curl</a-f> <a-co>-sS</a-co> https://marmite.blog/install.sh <a-o>|</a-o> <a-f>sh</a-f></code></pre>
+<pre><code class="language-bash">curl -sS https://marmite.blog/install.sh | sh
+</code></pre>
 <p>Ou se você tem Rust instalado:</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>cargo</a-f> install marmite</code></pre>
+<pre><code class="language-bash">cargo install marmite
+</code></pre>
 <h2><a href="#criando-seu-primeiro-blog" aria-hidden="true" class="anchor" id="criando-seu-primeiro-blog"></a>Criando seu primeiro blog</h2>
 <ol>
 <li><strong>Crie uma pasta para o conteúdo:</strong></li>
 </ol>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>mkdir</a-f> meu-blog
-<a-f>cd</a-f> meu-blog</code></pre>
+<pre><code class="language-bash">mkdir meu-blog
+cd meu-blog
+</code></pre>
 <ol start="2">
 <li><strong>Inicialize o blog:</strong></li>
 </ol>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>marmite</a-f> . <a-co>--init-site</a-co> \
-    <a-co>--name</a-co> <a-s>&quot;Meu Blog&quot;</a-s> \
-    <a-co>--tagline</a-co> <a-s>&quot;Minha descrição&quot;</a-s> \
-    <a-co>--enable-search</a-co> true</code></pre>
+<pre><code class="language-bash">marmite . --init-site \
+    --name &quot;Meu Blog&quot; \
+    --tagline &quot;Minha descrição&quot; \
+    --enable-search true
+</code></pre>
 <ol start="3">
 <li><strong>Crie seu primeiro post:</strong></li>
 </ol>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>marmite</a-f> . <a-co>--new</a-co> <a-s>&quot;Meu Primeiro Post&quot;</a-s> <a-co>-t</a-co> <a-s>&quot;novo,post&quot;</a-s></code></pre>
+<pre><code class="language-bash">marmite . --new &quot;Meu Primeiro Post&quot; -t &quot;novo,post&quot;
+</code></pre>
 <ol start="4">
 <li><strong>Gere e visualize o site:</strong></li>
 </ol>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>marmite</a-f> . <a-co>--serve</a-co></code></pre>
+<pre><code class="language-bash">marmite . --serve
+</code></pre>
 <p>Acesse <code>http://localhost:8000</code> e veja seu blog funcionando!</p>
 <h2><a href="#estrutura-de-um-post" aria-hidden="true" class="anchor" id="estrutura-de-um-post"></a>Estrutura de um post</h2>
 <p>Os posts são arquivos Markdown com um frontmatter YAML:</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-markdown"><a-p>---</a-p>
-<a-pr>title</a-pr><a-p>:</a-p> <a-s>&quot;Título do Post&quot;</a-s>
-<a-pr>date</a-pr><a-p>:</a-p> <a-s>2026-01-31</a-s>
-<a-pr>tags</a-pr><a-p>:</a-p> <a-s>tag1, tag2</a-s>
-<a-p>---</a-p>
+<pre><code class="language-markdown">---
+title: &quot;Título do Post&quot;
+date: 2026-01-31
+tags: tag1, tag2
+---
 
-Conteúdo do post aqui...</code></pre>
+Conteúdo do post aqui...
+</code></pre>
 <h2><a href="#próximos-passos" aria-hidden="true" class="anchor" id="próximos-passos"></a>Próximos passos</h2>
 <ul>
 <li>Personalize o <code>marmite.yaml</code> com suas informações</li>

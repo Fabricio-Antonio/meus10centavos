@@ -1,303 +1,10 @@
 {
-  "marmite_version": "0.4.0",
-  "posts": [
-    {
-      "title": "Computer Vision: notas técnicas de um pipeline completa",
-      "slug": "cv-aplicada",
-      "url": "/cv-aplicada.html",
-      "source_path": "content/2026-07-08-cv-aplicada.md",
-      "date": "2026-07-07",
-      "tags": [
-        "IA",
-        "computer vision"
-      ],
-      "authors": [
-        "fabricio"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "O caminho do iniciante",
-      "slug": "o-caminho-do-iniciante",
-      "url": "/o-caminho-do-iniciante.html",
-      "source_path": "content/2026-07-07-o-caminho-do-iniciante.md",
-      "date": "2026-07-07",
-      "tags": [
-        "carreira"
-      ],
-      "authors": [
-        "fabricio"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "O guia de LinkedIn",
-      "slug": "guia-de-linkedin",
-      "url": "/guia-de-linkedin.html",
-      "source_path": "content/2026-07-01-guia-de-linkedin.md",
-      "date": "2026-07-01",
-      "tags": [
-        "carreira",
-        "tutorial",
-        "guia"
-      ],
-      "authors": [
-        "fabricio"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "A faculdade perfeita",
-      "slug": "a-faculdade-perfeita",
-      "url": "/a-faculdade-perfeita.html",
-      "source_path": "content/2026-03-23-faculdade.md",
-      "date": "2026-03-23",
-      "tags": [
-        "carreira"
-      ],
-      "authors": [
-        "fabricio"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "Tudo sobre maquinas virtuais",
-      "slug": "tudo-sobre-maquinas-virtuais",
-      "url": "/tudo-sobre-maquinas-virtuais.html",
-      "source_path": "content/2025-02-15-tudo-sobre-maquinas-virtuais.md",
-      "date": "2026-02-15",
-      "tags": [
-        "tutorial",
-        "linux"
-      ],
-      "authors": [
-        "carlos"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "Git prático para iniciantes - O início de um projeto",
-      "slug": "git-pratico-para-iniciantes",
-      "url": "/git-pratico-para-iniciantes.html",
-      "source_path": "content/2026-04-02-git-pratico-para-iniciantes-ch1.md",
-      "date": "2026-02-11",
-      "tags": [
-        "versionamento",
-        "guia"
-      ],
-      "authors": [
-        "matheus"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "Faz sentido ser Full-Stack?",
-      "slug": "faz-sentido-ser-fullstack",
-      "url": "/faz-sentido-ser-fullstack.html",
-      "source_path": "content/2026-02-04-faz-sentido-ser-fullstack.md",
-      "date": "2026-02-04",
-      "tags": [
-        "carreira"
-      ],
-      "authors": [
-        "fabricio"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "Dicas para iniciantes no linux",
-      "slug": "dicas-para-iniciantes-no-linux",
-      "url": "/dicas-para-iniciantes-no-linux.html",
-      "source_path": "content/2026-02-03-dicas-para-iniciantes-no-linux.md",
-      "date": "2026-02-03",
-      "tags": [
-        "tutorial",
-        "linux"
-      ],
-      "authors": [
-        "carlos"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "Como fazer um bom currículo otimizado para ATS",
-      "slug": "como-fazer-um-bom-curriculo-otimizado-para-ats",
-      "url": "/como-fazer-um-bom-curriculo-otimizado-para-ats.html",
-      "source_path": "content/2026-02-03-como-fazer-um-bom-curriculo.md",
-      "date": "2026-02-03",
-      "tags": [
-        "tutorial",
-        "carreira"
-      ],
-      "authors": [
-        "fabricio"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "Como fazer swap em Zram",
-      "slug": "como-fazer-swap-em-zram",
-      "url": "/como-fazer-swap-em-zram.html",
-      "source_path": "content/2026-02-02-como-fazer-swap-em-zram.md",
-      "date": "2026-02-02",
-      "tags": [
-        "linux",
-        "tutorial"
-      ],
-      "authors": [
-        "carlos"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "Como fazer SWAP",
-      "slug": "como-fazer-swap",
-      "url": "/como-fazer-swap.html",
-      "source_path": "content/2026-02-02-como-fazer-swap.md",
-      "date": "2026-02-02",
-      "tags": [
-        "tutorial",
-        "linux"
-      ],
-      "authors": [
-        "fabricio"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "Cursos grátis",
-      "slug": "cursos-gratis",
-      "url": "/cursos-gratis.html",
-      "source_path": "content/2026-02-01-cursos-gratis.md",
-      "date": "2026-02-01",
-      "tags": [
-        "curso"
-      ],
-      "authors": [
-        "fabricio"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "Como matar processos no linux",
-      "slug": "como-matar-processos-no-linux",
-      "url": "/como-matar-processos-no-linux.html",
-      "source_path": "content/2026-02-01-como-matar-processos-no-linux.md",
-      "date": "2026-02-01",
-      "tags": [
-        "tutorial",
-        "linux"
-      ],
-      "authors": [
-        "fabricio"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "Como aprender um novo idioma",
-      "slug": "como-aprender-um-novo-idioma",
-      "url": "/como-aprender-um-novo-idioma.html",
-      "source_path": "content/2026-02-01-como-aprender-um-novo-idioma.md",
-      "date": "2026-02-01",
-      "tags": [
-        "tutorial",
-        "inglês",
-        "curso"
-      ],
-      "authors": [
-        "fabricio"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "Como criar um blog com Marmite",
-      "slug": "como-criar-blog-marmite",
-      "url": "/como-criar-blog-marmite.html",
-      "source_path": "content/2026-01-31-primeiro-tutorial.md",
-      "date": "2026-01-31",
-      "tags": [
-        "tutorial",
-        "marmite",
-        "rust",
-        "blog"
-      ],
-      "authors": [
-        "fabricio"
-      ],
-      "stream": "index",
-      "pinned": false
-    },
-    {
-      "title": "Bem-vindo(a) ao Meus 10 Centavos!",
-      "slug": "bem-vindo",
-      "url": "/bem-vindo.html",
-      "source_path": "content/2026-01-31-welcome.md",
-      "date": "2026-01-31",
-      "tags": [
-        "blog",
-        "pessoal",
-        "inicio"
-      ],
-      "authors": [
-        "fabricio"
-      ],
-      "stream": "index",
-      "pinned": false
-    }
-  ],
-  "pages": [
-    {
-      "title": "Sobre o Autor",
-      "slug": "about",
-      "url": "/about.html",
-      "source_path": "content/about.md",
-      "authors": [
-        "fabricio"
-      ],
-      "pinned": false
-    },
-    {
-      "title": "Clean Theme Documentation",
-      "slug": "README",
-      "url": "/README.html",
-      "source_path": "content/default/README.md",
-      "authors": [
-        "fabricio"
-      ],
-      "pinned": false
-    }
-  ],
-  "shortcodes": [
-    "authors",
-    "card",
-    "gallery",
-    "pages",
-    "posts",
-    "series",
-    "socials",
-    "spotify",
-    "streams",
-    "tags",
-    "toc",
-    "youtube"
-  ],
-  "generated_at": "2026-07-07 20:15:23.807231715 -03:00",
-  "timestamp": 1783466123,
-  "elapsed_time": 24.799570156,
+  "marmite_version": "0.2.7",
+  "posts": 17,
+  "pages": 2,
+  "generated_at": "2026-08-24 20:49:25.118082187 -03:00",
+  "timestamp": 1787615365,
+  "elapsed_time": 0.672380742,
   "config": {
     "name": "Meus 10 Centavos",
     "tagline": "Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião",
@@ -317,10 +24,7 @@
     "series_content_title": "Série “$series”",
     "default_author": "fabricio",
     "authors_title": "Autores",
-    "languages_title": "Languages",
     "enable_search": true,
-    "search_show_matches": false,
-    "search_match_count": 3,
     "enable_related_content": true,
     "search_title": "Buscar",
     "content_path": "content",
@@ -352,16 +56,16 @@
     ],
     "extra": null,
     "authors": {
-      "fabricio": {
-        "name": "Fabrício Santos",
-        "avatar": "https://avatars.githubusercontent.com/u/90152237?v=4",
-        "bio": "Não sou ninguém revelante, apenas um Fabrício entre os outros 167.869 FABRÍCIOs que existem no Brasil. Sou desenvolvedor Full-Esterco, faço m€rd4 no front e no back.",
-        "links": null
-      },
       "carlos": {
         "name": "Carlos Souza",
         "avatar": "https://avatars.githubusercontent.com/u/219468948?v=4",
         "bio": "IT enthusiast. I'm from Pernambuco, Brazil, currently studying to develop open source projects as a hobby.",
+        "links": null
+      },
+      "fabricio": {
+        "name": "Fabrício Santos",
+        "avatar": "https://avatars.githubusercontent.com/u/90152237?v=4",
+        "bio": "Não sou ninguém revelante, apenas um Fabrício entre os outros 167.869 FABRÍCIOs que existem no Brasil. Sou desenvolvedor Full-Esterco, faço m€rd4 no front e no back.",
         "links": null
       },
       "matheus": {
@@ -372,7 +76,6 @@
       }
     },
     "streams": {},
-    "languages": {},
     "series": {},
     "toc": true,
     "json_feed": true,
@@ -381,7 +84,6 @@
     "source_repository": null,
     "image_provider": null,
     "markdown_parser": null,
-    "code_highlight": null,
     "theme": null,
     "file_mapping": [],
     "enable_shortcodes": true,
@@ -391,10 +93,6 @@
     "gallery_path": "gallery",
     "gallery_create_thumbnails": true,
     "gallery_thumb_size": 200,
-    "skip_image_resize": false,
-    "check_internal_links": false,
-    "strict_internal_links": false,
-    "native_mermaid_render": true,
-    "mermaid_config": null
+    "skip_image_resize": false
   }
 }

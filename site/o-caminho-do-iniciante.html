@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark" />
+    <meta name="generator" content="Marmite" />
+    
+<meta property="og:title" content="O caminho do iniciante">
+
+<meta property="og:description" content="
+O pior momento na carreira de dev é o início onde você não sabe para onde quer ir e provavelmente i...">
+
+
+<meta property="og:url" content="https://meus10centavos.vercel.app/o-caminho-do-iniciante.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Meus 10 Centavos">
+
+<meta property="article:published_time" content=" 2026-07-07T00:00:00+00:00">
+
+
+<meta property="article:author" content="https://meus10centavos.vercel.app/author-fabricio.html">
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://meus10centavos.vercel.app/o-caminho-do-iniciante.html"
+    },
+    "url": "https://meus10centavos.vercel.app/o-caminho-do-iniciante.html",
+    "headline": "O caminho do iniciante",
+    "description": "O pior momento na carreira de dev é o início onde você não sabe para onde quer ir e provavelmente irá perder muito tempo fazendo algo que no...",
+    
+    "author": {
+        "@type": "Person",
+        "name": "Fabrício Santos",
+        "url": "https://meus10centavos.vercel.app/author-fabricio.html",
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Meus 10 Centavos",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://meus10centavos.vercel.app/"
+        }
+    },
+    "datePublished": "2026-07-07T00:00:00+00:00"
+}
+</script>
+
+
+    <title>O caminho do iniciante | Meus 10 Centavos</title>
+    <link rel="stylesheet" type="text/css" href="/static/pico.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/marmite.css">
+    
+    <link rel="stylesheet" type="text/css" href="/static/custom.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github.min.css" id="highlightjs-theme" />
+
+
+
+        <link rel="alternate" type="application/rss+xml" title="index" href="/index.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: tutorial" href="/tag-tutorial.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: carreira" href="/tag-carreira.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: linux" href="/tag-linux.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: guia" href="/tag-guia.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: curso" href="/tag-curso.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: blog" href="/tag-blog.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: ia" href="/tag-ia.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: inicio" href="/tag-inicio.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: pessoal" href="/tag-pessoal.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: ingles" href="/tag-ingles.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: computer-vision" href="/tag-computer-vision.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: IA" href="/tag-ia.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: computer vision" href="/tag-computer-vision.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: marmite" href="/tag-marmite.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: rust" href="/tag-rust.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: versionamento" href="/tag-versionamento.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: inglês" href="/tag-ingles.rss">
+    <link rel="alternate" type="application/rss+xml" title="author: fabricio" href="/author-fabricio.rss">
+    <link rel="alternate" type="application/rss+xml" title="author: carlos" href="/author-carlos.rss">
+    <link rel="alternate" type="application/rss+xml" title="author: matheus" href="/author-matheus.rss">
+    <link rel="alternate" type="application/rss+xml" title="year: 2026" href="/archive-2026.rss">
+    
+
+    
+    <link rel="alternate" type="application/feed+json" title="JSON index" href="/index.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: tutorial" href="/tag-tutorial.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: carreira" href="/tag-carreira.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: linux" href="/tag-linux.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: guia" href="/tag-guia.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: curso" href="/tag-curso.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: blog" href="/tag-blog.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: ia" href="/tag-ia.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: inicio" href="/tag-inicio.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: pessoal" href="/tag-pessoal.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: ingles" href="/tag-ingles.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: computer-vision" href="/tag-computer-vision.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: IA" href="/tag-ia.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: computer vision" href="/tag-computer-vision.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: marmite" href="/tag-marmite.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: rust" href="/tag-rust.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: versionamento" href="/tag-versionamento.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: inglês" href="/tag-ingles.json">
+    <link rel="alternate" type="application/feed+json" title="JSON author: fabricio" href="/author-fabricio.json">
+    <link rel="alternate" type="application/feed+json" title="JSON author: carlos" href="/author-carlos.json">
+    <link rel="alternate" type="application/feed+json" title="JSON author: matheus" href="/author-matheus.json">
+    <link rel="alternate" type="application/feed+json" title="JSON year: 2026" href="/archive-2026.json">
+    
+    
+
+    
+    
+</head>
+<body>
+    
+    <div class="container-fluid announcement-wrapper">
+        <div class="announcement"><p>Siga-me nas redes: <a href="https://www.instagram.com/fabriciosantos.dev/" target="_blank">Instagram</a>, <a href="https://github.com/Fabricio-Antonio" target="_blank">GitHub</a> e <a href="https://www.linkedin.com/in/fabricio-ss/" target="_blank">LinkedIn</a></p>
+</div>
+    </div>
+    
+    <main class="container">
+        
+        <header class="header-content">
+            <nav class="header-nav">
+                <ul class="header-name">
+                    <li>
+                        <hgroup class="h-card">
+                            <h2>
+                                <a href="/" class="contrast p-name u-url">
+                                    
+                                        Meus 10 Centavos
+                                    
+                                </a>
+                            </h2>
+                             <p class="p-note">Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</p> 
+                        </hgroup>
+                    </li>
+                </ul>
+                <button id="menu-toggle" class="hamburger">&#9776;</button>
+
+                <ul class="header-menu" id="header-menu">
+                    
+                      
+                      
+                    <li>
+                        
+                        <a class="menu-item secondary"  href="/index.html">Início</a>
+                        
+                    </li>
+                    
+                      
+                      
+                    <li>
+                        
+                        <a class="menu-item secondary"  href="/tags.html">Tags</a>
+                        
+                    </li>
+                    
+                      
+                      
+                    <li>
+                        
+                        <a class="menu-item secondary"  href="/archive.html">Arquivo</a>
+                        
+                    </li>
+                    
+                      
+                      
+                    <li>
+                        
+                        <a class="menu-item secondary"  href="/about.html">Sobre</a>
+                        
+                    </li>
+                    
+                    
+                    
+                    <li><a href="#" id="search-toggle" class="secondary" title="Search (Ctrl + Shift + F)"> <span class="search-txt">Search</span><span class="search-magnifier"></span></a></li>
+                    
+                    <div class="underline"></div>
+                </ul>
+            </nav>
+            
+            <div class="marmite-background-overlay" id="overlay-close"></div>
+            <div class="marmite-search-bar hidden">
+                <span>Buscar</span>
+                <button class="marmite-close-button" id="search-close">X</button>
+                <input placeholder="Search" id="marmite-search-input" />
+                <div class="marmite-search-bar-result">
+                    <ul id="marmite-search-bar-result"></ul>
+                </div>
+            </div>
+            
+        </header>
+        
+        <section class="main-content">
+            
+
+
+
+<article class="h-entry">
+  <data class="p-name" value="O caminho do iniciante"></data>
+  <a class="u-url" href="/o-caminho-do-iniciante.html" style="display: none;"></a>
+  
+  <time class="dt-published" datetime="2026-07-07T00:00:00+00:00" style="display: none;">07 Jul 2026</time>
+  
+
+  
+
+  
+
+
+<div class="content-title" id="title">
+    <h1>O caminho do iniciante</h1> 
+    
+
+
+<span class="content-date">
+    <small> 07 Jul 2026 - &#10710; 8 min</small>
+</span>
+
+</div>
+
+  
+  
+  <div class="content-toc">
+    <a href="#" id="toc"></a>
+    <details>
+    <summary>🗒️</summary>
+    <ul>
+<ul>
+<li><a href="#qual-melhor-linguagem-para-começar">Qual melhor linguagem para começar?</a></li>
+<li><a href="#como-escolher-minha-linguagem">Como escolher minha linguagem?</a></li>
+<ul>
+<li><a href="#área-de-interesse">Área de interesse</a></li>
+<li><a href="#mercado">Mercado</a></li>
+<li><a href="#sênior">Sênior</a></li>
+</ul>
+<li><a href="#tabela">Tabela</a></li>
+</ul>
+</ul>
+
+    </details>
+  </div>
+  
+
+  <div class="content-html e-content"><!-- Content Injected to every content markdown header -->
+<p>O pior momento na carreira de dev é o início onde você não sabe para onde quer ir e provavelmente irá perder muito tempo fazendo algo que no momento você acha que é o caminho certo, mas daqui alguns meses notará que foi apenas uma perda de tempo. Essa é minha tentativia de te poupar esse tempo explicando por onde começar.</p>
+<p>O primeiro passo é a faculdade, e eu já tenho um texto sobre isso, esse é o segundo.</p>
+<h2><a href="#qual-melhor-linguagem-para-começar" aria-hidden="true" class="anchor" id="qual-melhor-linguagem-para-começar"></a>Qual melhor linguagem para começar?</h2>
+<p>A principal dúvida dos iniciantes. Serei curto e grosso igual meu pé, a melhor linguagem para começar é a que você iriá seguir carreira. Por exemplo, não faz sentido aprender uma linguagem fácil e depois aprender a que você quer, isso é total perda de tempo. E tem até uns animais que já vi sugerir começar pela mais difícil e depois ir para sua principal.</p>
+<p>Deixe-me justificar minha ideia. Quando você aprende uma linguagem de programação, você não vai aprender apenas a linguagem, também é necessário aprender o ecossistema. O que eu quero dizer com isso? Aprender a linguagem e as tecnologias adjacentes, frameworks, libs, etc. Tendo em vista isso, quanto antes você focar em um ecossitema melhor.</p>
+<p>Dito isso...</p>
+<h2><a href="#como-escolher-minha-linguagem" aria-hidden="true" class="anchor" id="como-escolher-minha-linguagem"></a>Como escolher minha linguagem?</h2>
+<p>Eu vejo três principais caminhos para escolher uma linguagem de programação:</p>
+<ul>
+<li>Interesse</li>
+<li>Mercado</li>
+<li>Sênior</li>
+</ul>
+<h3><a href="#área-de-interesse" aria-hidden="true" class="anchor" id="área-de-interesse"></a>Área de interesse</h3>
+<p>Aprenda o que te interessa. Eu acredito também que essa seja o caminho mais gratificante de aprendizado. Mas não é todo mundo que tem o privilégio de procurar uma linguagem apenas por interesse, né? É algo mais voltado para quem ainda é adolescente, para quem ainda está no ensino médio, não ingressou de fato numa faculdade, nem no mercado de trabalho, ainda está experimentando.</p>
+<p>Eu acho que escolher a linguagem de programação com base em interesse é muito legal e também muito gratificante. Mas aí entra outra questão, interesse em que exatamente? No caso, seria interesse em áreas. Ah, se tu quer aprender sobre machine learning, aprendizado de máquina, o mais indicado aí é estudar o famoso Python.</p>
+<p>Ah, mas meu interesse é, por exemplo, low level, linguagem de baixo nível, tu vai procurar sobre C, vai procurar sobre Zig, vai procurar aprender Rust. Seria com foco em interesse.</p>
+<h3><a href="#mercado" aria-hidden="true" class="anchor" id="mercado"></a>Mercado</h3>
+<p>Mas aí tem aquele ponto, né? Nem todo mundo tem esse privilégio. Às vezes, a pessoa tem que entrar no mercado o quanto antes. Aí, não pode olhar tanto a parte de interesse, né?</p>
+<p>Tu poderia escolher tua linguagem de programação com base no mercado, com base, por exemplo, no que está em alta.</p>
+<p>É ir no Google, procurar o que é que está em alta de linguagem de programação. Linguagens em alta, aí vamos ver aqui no Google. Aqui é uma pesquisada rápida no Google.</p>
+<p>As mais populares: Rust, Go, Java, JavaScript, Kotlin, TypeScript. Enfim, por aqui você já tira, né? Com base em mercado. Olhando as linguagens que estão em alta, daí tu já consegue achar um norte para seus estudos. Outra fonte muito boa é procurar pela vaga que lhe interessa no LinkedIn e busca pelas palavras que se repetem nas vagas.</p>
+<p>Mas ainda tem uma ressalva nessa questão de escolher linguagem com base no que está em alta. Seria basicamente o que está em alta hoje, pode não estar em alta amanhã.</p>
+<p>Essas daqui foram as linguagens em alta para agora, 2026. amanhã, em 2027, já pode ser outra, em 2028 pode ser outra. Enfim, isso muda.</p>
+<p>Obviamente que tu não vai ficar preso a uma linguagem só, né? Tipo, uma linguagem é uma ferramenta. Tu vai se adaptar conforme a necessidade, conforme o mercado, conforme o projeto que tu estiver fazendo. Tu vai se adaptar, obviamente.</p>
+<p>Mas, principalmente para a primeira linguagem de programação, tem uma curva de aprendizado muito grande. Enquanto para a tua segunda, tua terceira linguagem, já começa a perceber muitos padrões, tu fica mais fácil o aprendizado, tu pega as coisas mais rápido. Sem contar que algumas algumas linguagens também têm suas particularidades. Por exemplo, o Java é um bom exemplo. É uma linguagem fortemente tipada, enquanto o JavaScript não é fortemente tipado. Enfim, todas elas tem suas particularidades. Aí eu acredito que para a primeira linguagem deveria ser uma escolha, assim, bem feita com calma, entendeu? Porque você tem que levar em consideração vários fatores.</p>
+<p>Sobre mercado, ainda tem outro ponto. Você também poderia, ainda dentro de mercado,escolher uma linguagem com base no segmento, no setor de atuação.</p>
+<p>Então, os principais setores que eu lembrei aqui rapidamente foram esses, o setor bancário, mobile, web, embarcados. O setor bancário é muito forte o Java. Se tu quiser trabalhar e em banco, por exemplo, o Itaú, Nanobank, banco no geral, banco, fintech, é bom tu focar em Java.</p>
+<p>Já se tua ideia é ir para o mobile, pô, aí tu vai para o Kotlin, que é um filho do Java. Tu vai para o Swift, se for o desenvolvimento para iOS. Também tem o React Native para o desenvolvimento, para ambas as plataformas, né, o desenvolvimento Android e desenvolvimento iOS.</p>
+<p>Para o web, muito forte na web é o JavaScript, o TypeScript, né, e também o PHP. Se tu quer ir para a web, não tem muito o que fugir, tipo, sempre vai andar nessa linha aqui.</p>
+<p>Setor de embradados. Quem é grande nos embarcados é a família do C: C, C++, que são grandes para embarcados.</p>
+<p>Para a parte de jogos, C#, Unity. Tem o C# em grandes partes dos jogos. Se tu tá escolhendo a linguagem com base em mercado, eu não acho que jogos não seria o melhor segmento para tu seguir profissionalmente, eu acho que jogos eu acabaria enquadrando ali dentro de interesses também, o segmento de jogo é muito ruim no Brasil.</p>
+<h3><a href="#sênior" aria-hidden="true" class="anchor" id="sênior"></a>Sênior</h3>
+<p>A terceira via que eu imagino, seria tu escolher tua linguagem com base num sênior. Aí o que seria isso, exatamente? Por exemplo, tu tem um amigo que ele já é desenvolvedor, ele já trabalha com programação, e te passa o caminho das pedras.</p>
+<p>Por exemplo, ele trabalha com o Java no setor bancário, aí tu começando com o Java, ele já pode te passar as dicas do caminho a ser trilhado com o Java, porque cada linguagem meio que tem ali seu conjunto de ferramentas, frameworks, e no começo, às vezes, tu vai perder muito tempo pensando nesse caminho, tá entendendo?</p>
+<p>Tem vários frameworks do Java, eu vou citar aqui o Spring Boot e eu vou citar o Quarkus, esses dois frameworks são os principais para Java. Aí tu lá, iniciante, aí pode ser que tu acabe fazendo uma escolha entre aspas erradas, né, de ir pro Quarkus, enquanto o que tem mais adesão de mercado é o Spring Boot. Quando tu tiver interesse em ir pro mercado, tu tem um pouco mais de dificuldade, compreende?</p>
+<p>Então por isso eu acredito que também seria um bom caminho tu escolher uma linguagem de programação com base num sênior, não necessariamente um sênior, mas um amigo, uma pessoa próxima que já tem experiência prévia com alguma coisa e que possa te passar o caminho das pedras, ao invés de tu ter que ir lá do zero, pesquisar tudinho qual é melhor framework pra tal linguagem, com quais ferramentas aprender, a pessoa já pode ir te passando os toques.</p>
+<p>Ele vai te guiar com base num que é mais aceito pelo mercado, porque também é uma pessoa com mais experiência e tem mais visão.</p>
+<h2><a href="#tabela" aria-hidden="true" class="anchor" id="tabela"></a>Tabela</h2>
+<p>Irei te apresentar algumas subáreas que você pode ser como dev. Muito comum no início sequer imaginarmos que há essa diversidade.</p>
+<table>
+<thead>
+<tr>
+<th>Áreas</th>
+<th>Linguagens mais relevantes</th>
+<th>Principais aplicações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desenvolvimento Web (Front-end)</td>
+<td>JavaScript, TypeScript</td>
+<td>Interfaces web, SPAs, SSR, aplicações modernas</td>
+</tr>
+<tr>
+<td>Desenvolvimento Web (Back-end)</td>
+<td>JavaScript (Node.js), TypeScript, Java, C#, Go, PHP, Python</td>
+<td>APIs, microsserviços, sistemas web</td>
+</tr>
+<tr>
+<td>Desenvolvimento Mobile (Android)</td>
+<td>Kotlin, Java</td>
+<td>Aplicativos nativos para Android</td>
+</tr>
+<tr>
+<td>Desenvolvimento Mobile (iOS)</td>
+<td>Swift</td>
+<td>Aplicativos nativos para iPhone e iPad</td>
+</tr>
+<tr>
+<td>Desenvolvimento Mobile Multiplataforma</td>
+<td>TypeScript (React Native), Dart (Flutter)</td>
+<td>Apps para Android e iOS com uma única base de código</td>
+</tr>
+<tr>
+<td>Inteligência Artificial / Machine Learning</td>
+<td>Python, R, Julia</td>
+<td>IA, Deep Learning, Ciência de Dados</td>
+</tr>
+<tr>
+<td>Ciência de Dados / Análise de Dados</td>
+<td>Python, R, SQL</td>
+<td>Análise estatística, visualização e processamento de dados</td>
+</tr>
+<tr>
+<td>Engenharia de Dados</td>
+<td>Python, Java, Scala, SQL</td>
+<td>ETL, Big Data, pipelines de dados</td>
+</tr>
+<tr>
+<td>Computação em Nuvem (Cloud)</td>
+<td>Python, Go, Java, TypeScript</td>
+<td>Automação, infraestrutura, microsserviços</td>
+</tr>
+<tr>
+<td>DevOps / Automação</td>
+<td>Python, Bash, Go</td>
+<td>Scripts, CI/CD, infraestrutura como código</td>
+</tr>
+<tr>
+<td>Cibersegurança / Pentest</td>
+<td>Python, C, C++, Bash</td>
+<td>Ferramentas de segurança, análise e automação</td>
+</tr>
+<tr>
+<td>Sistemas Embarcados / IoT</td>
+<td>C, C++, Rust</td>
+<td>Microcontroladores, firmware, dispositivos eletrônicos</td>
+</tr>
+<tr>
+<td>Sistemas Operacionais</td>
+<td>C, C++, Rust</td>
+<td>Kernel, drivers e software de baixo nível</td>
+</tr>
+<tr>
+<td>Sistemas Militares e Aeroespaciais</td>
+<td>Ada, C, C++, Rust</td>
+<td>Sistemas de defesa, aviônica, radares, mísseis, satélites e software de missão crítica</td>
+</tr>
+<tr>
+<td>Programação de Baixo Nível</td>
+<td>C, C++, Assembly, Rust</td>
+<td>Hardware, sistemas críticos e otimização</td>
+</tr>
+<tr>
+<td>Desenvolvimento de Jogos</td>
+<td>C# (Unity), C++ (Unreal Engine), GDScript (Godot)</td>
+<td>Jogos 2D, 3D e engines de jogos</td>
+</tr>
+<tr>
+<td>Blockchain / Web3</td>
+<td>Solidity, Rust, Go, JavaScript</td>
+<td>Smart contracts, DeFi, criptomoedas</td>
+</tr>
+<tr>
+<td>Finanças / Bancos / Fintechs</td>
+<td>Java, Kotlin, C#, Go</td>
+<td>Sistemas bancários, meios de pagamento e alta disponibilidade</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>C#, Java, C++, Electron (JavaScript/TypeScript)</td>
+<td>Aplicações para Windows, Linux e macOS</td>
+</tr>
+<tr>
+<td>Automação de Testes (QA)</td>
+<td>Java, Python, JavaScript, TypeScript</td>
+<td>Testes automatizados e qualidade de software</td>
+</tr>
+<tr>
+<td>Low Code / No Code</td>
+<td>JavaScript, TypeScript (para extensões), Power Fx</td>
+<td>Power Platform, OutSystems, Mendix e automações</td>
+</tr>
+<tr>
+<td>Computação Científica</td>
+<td>Python, Julia, MATLAB, Fortran</td>
+<td>Simulações, pesquisa e cálculos científicos</td>
+</tr>
+<tr>
+<td>Robótica</td>
+<td>C++, Python, Rust</td>
+<td>Robôs industriais e autônomos</td>
+</tr>
+<tr>
+<td>Visão Computacional</td>
+<td>Python, C++</td>
+<td>Reconhecimento de imagens e vídeos</td>
+</tr>
+<tr>
+<td>Processamento de Linguagem Natural (NLP)</td>
+<td>Python</td>
+<td>Chatbots, tradução e IA de texto</td>
+</tr>
+<tr>
+<td>Realidade Virtual (VR) e Aumentada (AR)</td>
+<td>C#, C++</td>
+<td>Experiências imersivas</td>
+</tr>
+<tr>
+<td>Computação Gráfica</td>
+<td>C++, C#, GLSL</td>
+<td>Renderização e motores gráficos</td>
+</tr>
+<tr>
+<td>CAD / Engenharia</td>
+<td>C++, C#, Python</td>
+<td>Softwares de engenharia e modelagem</td>
+</tr>
+<tr>
+<td>Bioinformática</td>
+<td>Python, R</td>
+<td>Genômica e análise biológica</td>
+</tr>
+<tr>
+<td>Saúde / Tecnologia Médica</td>
+<td>Java, C#, Python, C++</td>
+<td>Sistemas hospitalares e equipamentos médicos</td>
+</tr>
+<tr>
+<td>Telecomunicações</td>
+<td>C, C++, Erlang, Go</td>
+<td>Redes, centrais telefônicas e protocolos</td>
+</tr>
+<tr>
+<td>Sistemas Distribuídos</td>
+<td>Go, Java, Rust</td>
+<td>Serviços escaláveis e alta disponibilidade</td>
+</tr>
+<tr>
+<td>Computação de Alto Desempenho (HPC)</td>
+<td>C++, Fortran, Julia</td>
+<td>Supercomputadores e simulações</td>
+</tr>
+<tr>
+<td>Automação Industrial</td>
+<td>C, C++, Structured Text (IEC 61131-3), Python</td>
+<td>PLCs, fábricas inteligentes e controle industrial</td>
+</tr>
+<tr>
+<td>Trading Algorítmico</td>
+<td>Python, C++, Java</td>
+<td>Robôs de investimento e mercado financeiro</td>
+</tr>
+<tr>
+<td>Desenvolvimento de Compiladores</td>
+<td>C++, Rust, OCaml</td>
+<td>Compiladores, interpretadores e ferramentas de linguagem</td>
+</tr>
+<tr>
+<td>Bancos de Dados</td>
+<td>SQL, PL/SQL, T-SQL</td>
+<td>Administração e otimização de bancos de dados</td>
+</tr>
+<tr>
+<td>Engenharia Reversa</td>
+<td>C, C++, Python, Assembly</td>
+<td>Análise de binários e softwares</td>
+</tr>
+<tr>
+<td>Sistemas em Tempo Real</td>
+<td>Ada, C, C++, Rust</td>
+<td>Controle industrial, defesa e dispositivos críticos</td>
+</tr>
+</tbody>
+</table>
+<!-- Content Injected to every content markdown footer -->
+</div>
+  
+  <footer class="data-tags-footer">
+
+    <div class="content-authors-flex">
+      <div class="content-authors-full">
+        
+<div class="content-authors">
+    <ul>
+        
+            
+            
+            <li class="h-card p-author">
+                
+                
+                <a href="/author-fabricio.html" class="u-url">
+                    <img src="https://avatars.githubusercontent.com/u/90152237?v=4" alt="Fabrício Santos" class="avatar u-photo">
+                    <span class="p-name">Fabrício Santos</span>
+                </a>
+            </li>
+            
+        
+    </ul>
+</div>
+
+
+      </div>
+
+      <div class="date-tags-container">
+        <div class="content-date">
+          
+
+
+<span class="content-date">
+    <small> 07 Jul 2026 - &#10710; 8 min</small>
+</span>
+
+          
+        </div>
+
+        <ul class="content-tags">
+          
+          
+          
+          <li><a href="/tag-carreira.html" class="p-category">carreira</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+</article>
+
+
+
+
+
+  
+  
+  
+  
+  
+  <article>
+    Related carreira content
+    <ul>
+      
+      
+      
+      
+      <li><a href="/guia-de-linkedin.html">O guia de LinkedIn</a></li>
+      
+      
+      <li><a href="/a-realidade-de-cybesec.html">A Realidade de CyberSec</a></li>
+      
+      
+      <li><a href="/a-faculdade-perfeita.html">A faculdade perfeita</a></li>
+      
+      
+      <li><a href="/faz-sentido-ser-fullstack.html">Faz sentido ser Full-Stack?</a></li>
+      
+    </ul>
+  </article>
+  
+
+
+
+
+<article>
+  <nav style="display: flex; justify-content: space-between;">
+    <div>
+      <a href="/a-realidade-de-cybesec.html">← A Realidade de CyberSec</a>
+    </div>
+    <div>
+      <a href="/cv-aplicada.html">Computer Vision: notas técnicas de um pipeline completa →</a>
+    </div>
+  </nav>
+</article>
+
+
+
+    <article><h5><a href="#comentários" aria-hidden="true" class="anchor" id="comentários"></a>Comentários</h5>
+<script src='https://utteranc.es/client.js'
+repo='Fabricio-Antonio/meus10centavos'
+issue-term='pathname'
+theme='github-dark'
+crossorigin='anonymous'
+async>
+</script>
+</article>
+
+
+
+
+
+
+        </section>
+        
+        <footer class="footer-content grid">
+            <div>
+  © 2026 · Meus 10 Centavos by <a href="https://www.linkedin.com/in/fabricio-ss/">Fabrício Santos</a> ·
+  <a href="https://github.com/rochacbruno/marmite">Marmite</a>
+</div>
+
+            
+        </footer>
+        
+    </main>
+
+    <script src="/static/marmite.js"></script>
+    <script src="/static/custom.js"></script>
+    
+    <script type="module" src="/static/search.js"></script>
+    
+    
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script>
+
+
+
+</body>
+</html>

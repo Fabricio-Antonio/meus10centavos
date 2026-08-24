@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate><lastBuildDate>Tue, 07 Jul 2026 23:45:19 GMT</lastBuildDate><generator>marmite</generator><item><title>Tudo sobre maquinas virtuais</title><link>https://meus10centavos.vercel.app//tudo-sobre-maquinas-virtuais.html</link><author>carlos</author><category>tutorial</category><category>linux</category><guid>https://meus10centavos.vercel.app//tudo-sobre-maquinas-virtuais.html</guid><pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">tag-linux</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate><lastBuildDate>Mon, 24 Aug 2026 23:49:24 GMT</lastBuildDate><generator>marmite</generator><item><title>Tudo sobre maquinas virtuais</title><link>https://meus10centavos.vercel.app//tudo-sobre-maquinas-virtuais.html</link><author>carlos</author><category>tutorial</category><category>linux</category><guid>https://meus10centavos.vercel.app//tudo-sobre-maquinas-virtuais.html</guid><pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">tag-linux</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
 <h2><a href="#introdução" aria-hidden="true" class="anchor" id="introdução"></a>Introdução</h2>
 <p>As máquinas virtuais (VMs) revolucionaram a forma como utilizamos recursos computacionais. Seja você um desenvolvedor, administrador de sistemas ou simplesmente um entusiasta de tecnologia, entender o funcionamento das VMs é essencial no cenário tecnológico atual. Neste guia completo, vamos explorar tudo o que você precisa saber sobre máquinas virtuais.</p>
 <h2><a href="#o-que-são-máquinas-virtuais" aria-hidden="true" class="anchor" id="o-que-são-máquinas-virtuais"></a>O Que São Máquinas Virtuais?</h2>
@@ -50,14 +50,15 @@ Exemplos: Docker, LXC, Podman</p>
 <li>Laboratórios de desenvolvimento profissional</li>
 </ul>
 <p><strong>Instalação básica:</strong></p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-c># Ubuntu/Debian</a-c>
-<a-f>sudo</a-f> apt install qemu-kvm libvirt-daemon-system virtinst virt-manager
+<pre><code class="language-bash"># Ubuntu/Debian
+sudo apt install qemu-kvm libvirt-daemon-system virtinst virt-manager
 
-<a-c># Fedora/RHEL/CentOS</a-c>
-<a-f>sudo</a-f> dnf install @virtualization
+# Fedora/RHEL/CentOS
+sudo dnf install @virtualization
 
-<a-c># Arch Linux</a-c>
-<a-f>sudo</a-f> pacman <a-co>-S</a-co> qemu libvirt virt-manager</code></pre>
+# Arch Linux
+sudo pacman -S qemu libvirt virt-manager
+</code></pre>
 <h4><a href="#virtualbox---para-facilidade-de-uso" aria-hidden="true" class="anchor" id="virtualbox---para-facilidade-de-uso"></a>VirtualBox - Para Facilidade de Uso</h4>
 <p>Embora KVM seja superior em performance, VirtualBox tem seu lugar no Linux por sua interface gráfica intuitiva e portabilidade. É ideal para usuários que migram do Windows ou Mac e querem algo familiar.</p>
 <p><strong>Vantagens:</strong></p>
@@ -106,8 +107,9 @@ Exemplos: Docker, LXC, Podman</p>
 <li>Desenvolve para ambientes Windows Server</li>
 </ul>
 <p><strong>Habilitação rápida:</strong></p>
-<pre class="marmite-code"><code class="marmite-code-inner language-powershell"><a-c># Execute como Administrador</a-c>
-<a-f>Enable-WindowsOptionalFeature</a-f> -Online -FeatureName Microsoft-Hyper-V -All</code></pre>
+<pre><code class="language-powershell"># Execute como Administrador
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+</code></pre>
 <h4><a href="#vmware-workstation-pro---para-profissionais-multiplataforma" aria-hidden="true" class="anchor" id="vmware-workstation-pro---para-profissionais-multiplataforma"></a>VMware Workstation Pro - Para Profissionais Multiplataforma</h4>
 <p>VMware Workstation oferece recursos avançados e melhor suporte para Linux guests no Windows.</p>
 <p><strong>Vantagens sobre Hyper-V:</strong></p>
@@ -668,7 +670,7 @@ Consulte a lista de hardware certificado para Ubuntu</p>
 <li>Atualize o Sistema
 Abra o terminal (Ctrl + Alt + T) e digite:</li>
 </ol>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo apt update &amp;&amp; sudo apt upgrade -y
+<pre><code>sudo apt update &amp;&amp; sudo apt upgrade -y
 </code></pre>
 <p>Isso atualiza todos os pacotes do sistema.</p>
 <ol start="2">
@@ -685,14 +687,14 @@ Abra o terminal (Ctrl + Alt + T) e digite:</li>
 <li>Linux Mint: Já vem instalado, apenas configure.</li>
 <li>ZorinOS/Ubuntu:</li>
 </ul>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo apt install timeshift -y
+<pre><code>sudo apt install timeshift -y
 </code></pre>
 <p>Crie snapshots antes de grandes mudanças no sistema.</p>
 <ol start="4">
 <li>Aprenda Comandos Básicos do Terminal
 Não tenha medo do terminal! Aqui estão os mais úteis:</li>
 </ol>
-<pre class="marmite-code"><code class="marmite-code-inner"># Atualizar sistema
+<pre><code># Atualizar sistema
 sudo apt update &amp;&amp; sudo apt upgrade
 
 # Instalar programa
@@ -776,41 +778,41 @@ X(antigo Twitter): <a href="https://x.com/kourge01">x.com/kourge01</a>\</p>
 </ul>
 <h2><a href="#arch-linux" aria-hidden="true" class="anchor" id="arch-linux"></a>Arch Linux</h2>
 <p>No Arch Linux temos o zram-generator. Certifique-se de que ele está instalado:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">
+<pre><code>
 sudo pacman -S zram-generator
 </code></pre>
 <p>Crie o arquivo de configuração em <code>/etc/systemd/zram-generator.conf</code>:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo vim /etc/systemd/zram-generator.conf
+<pre><code>sudo vim /etc/systemd/zram-generator.conf
 </code></pre>
 <p>Ou, se preferir o Nano:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo nano /etc/systemd/zram-generator.conf
+<pre><code>sudo nano /etc/systemd/zram-generator.conf
 </code></pre>
 <p>Dentro do arquivo zram-generator.conf, coloque:</p>
 <p>Para abordagem automática</p>
-<pre class="marmite-code"><code class="marmite-code-inner">[zram0]
+<pre><code>[zram0]
 </code></pre>
 <h2><a href="#sugestão-de-tamanhos-de-zram" aria-hidden="true" class="anchor" id="sugestão-de-tamanhos-de-zram"></a>Sugestão de tamanhos de Zram</h2>
 <p>Se você tem 4 GB de RAM, use 2,5 GB de Zram ou igual
 Se tem 8 GB de RAM, use 4 GB de swap ou igual
 Se tem 16 GB de RAM, use 8 GB ou 12 GB de Zram
 Se tem 32 GB de RAM, use 4 GB ou 8 GB, apenas para manter</p>
-<pre class="marmite-code"><code class="marmite-code-inner">Obs.: O Zram é útil em máquinas com mais de 16 GB de RAM, pois quando a RAM chega a 100%, o Zram ou swapfile entra em ação para evitar travamentos. Quando o sistema não tem swap, ele pode simplesmente travar e fechar processos.
+<pre><code>Obs.: O Zram é útil em máquinas com mais de 16 GB de RAM, pois quando a RAM chega a 100%, o Zram ou swapfile entra em ação para evitar travamentos. Quando o sistema não tem swap, ele pode simplesmente travar e fechar processos.
 </code></pre>
 <p>Exemplo de configuração manual:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">[zram0]
+<pre><code>[zram0]
 zram-size = 4096  # exemplo de 4 GB de swap
 </code></pre>
 <p>Sempre use:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">zram-size = {RAM} x 1024
+<pre><code>zram-size = {RAM} x 1024
 </code></pre>
 <p>Exemplo: <code>8 GB = 8192</code></p>
 <h2><a href="#50-da-ram" aria-hidden="true" class="anchor" id="50-da-ram"></a>50% da ram</h2>
 <p>No mesmo arquivo, use:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">zram-size = ram / 2
+<pre><code>zram-size = ram / 2
 </code></pre>
 <p>Isso define o Zram como 50% da RAM total.</p>
 <h2><a href="#config-recomendada" aria-hidden="true" class="anchor" id="config-recomendada"></a>Config recomendada</h2>
-<pre class="marmite-code"><code class="marmite-code-inner">[zram0]
+<pre><code>[zram0]
 zram-size = ram / 2
 compression-algorithm = zstd
 swap-priority = 100
@@ -818,11 +820,11 @@ swap-priority = 100
 </code></pre>
 <p>rapido e util</p>
 <h2><a href="#aplicar" aria-hidden="true" class="anchor" id="aplicar"></a>Aplicar</h2>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo systemctl daemon-reexec
+<pre><code>sudo systemctl daemon-reexec
 sudo systemctl start systemd-zram-setup@zram0.service
 </code></pre>
 <p>apos o reinicio execute:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">swapon --show
+<pre><code>swapon --show
 </code></pre>
 <h5><a href="#créditos" aria-hidden="true" class="anchor" id="créditos"></a>Créditos</h5>
 <p>Agradeço a contribuição do Carlos Souza.</p>
@@ -846,55 +848,55 @@ Porque seu SSD (ou pior, um HD) é muito mais lento que RAM. Se o sistema começ
 Swap em SSD não é o fim do mundo, mas se ela for usada o tempo todo, vai acelerar o desgaste. Por isso é bom manter a RAM &quot;limpa&quot; e limitar o uso da swap com <code>swappiness</code>.</p>
 <h2><a href="#configurando-swap" aria-hidden="true" class="anchor" id="configurando-swap"></a>Configurando SWAP</h2>
 <p>Rode o comando:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">swapon --show
+<pre><code>swapon --show
 </code></pre>
 <p>Para verificar ter certeza se você tem uma swap, mas 90% de chance de não ter.<br />
 Se você não tem swap não terá nenhum retorno, mas se você tiver swap irá ter retorno semelhante a este:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">NAME      TYPE SIZE USED PRIO
+<pre><code>NAME      TYPE SIZE USED PRIO
 /swapfile file   8G   3G   -2
 </code></pre>
 <h4><a href="#criarativar-swap-file-se-não-tiver" aria-hidden="true" class="anchor" id="criarativar-swap-file-se-não-tiver"></a>Criar/ativar SWAP file (se não tiver)</h4>
 <h5><a href="#comando-completo" aria-hidden="true" class="anchor" id="comando-completo"></a>Comando completo:</h5>
-<pre class="marmite-code"><code class="marmite-code-inner"># Cria um swap de 4GB (ajuste se quiser)
+<pre><code># Cria um swap de 4GB (ajuste se quiser)
 sudo fallocate -l 4G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 </code></pre>
 <p>Depois adicione no fstab para ativar automaticamente:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+<pre><code>echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 </code></pre>
 <h5><a href="#comando-com-explicações" aria-hidden="true" class="anchor" id="comando-com-explicações"></a>Comando com explicações:</h5>
 <p>Criar um arquivo de swap com 4 GB</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo fallocate -l 4G /swapfile
+<pre><code>sudo fallocate -l 4G /swapfile
 </code></pre>
 <p>Criamos um arquivo especial de 4 GB chamado <code>/swapfile</code>, que será usado como “RAM falsa” quando a memória real estiver cheia.</p>
 <p>Restringir o acesso ao arquivo de swap</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo chmod 600 /swapfile
+<pre><code>sudo chmod 600 /swapfile
 </code></pre>
 <p>Demos permissão de leitura/escrita só pro root, por segurança. Isso impede que outro processo leia ou altere esse arquivo diretamente.</p>
 <p>Formatar esse arquivo como uma área de swap</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo mkswap /swapfile
+<pre><code>sudo mkswap /swapfile
 </code></pre>
 <p>Dizemos ao sistema:
 “Esse arquivo aqui é uma área de swap, tá ok? 👉👉 ”<br />
 Ele cria a estrutura de controle necessária.</p>
 <p>Ativar a swap agora</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo swapon /swapfile
+<pre><code>sudo swapon /swapfile
 </code></pre>
 <p>Ligamos a swap imediatamente.<br />
 A partir desse momento, o sistema pode começar a usar esse arquivo como memória auxiliar.\</p>
 <p>Configurar para ativar automaticamente no boot</p>
-<pre class="marmite-code"><code class="marmite-code-inner">echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+<pre><code>echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 </code></pre>
 <p>Alteramos o arquivo <code>/etc/fstab</code> (que diz o que montar no boot), pra garantir que <strong>sempre que você reiniciar, a swap vai estar ativa.</strong></p>
 <p>Por padrão, o Linux só usa a swap quando a RAM já está no limite. Você pode mudar isso pra ele ser um pouco mais &quot;esperto&quot; e já ir aliviando antes de travar tudo.</p>
 <p>Rode:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">cat /proc/sys/vm/swappiness
+<pre><code>cat /proc/sys/vm/swappiness
 </code></pre>
 <p>Para verificar o valor atual. Provavelmente <code>60</code></p>
 <p>Reduza o lag e evitar travamento total, coloca algo tipo <code>20</code>:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">echo 'vm.swappiness=20' | sudo tee -a /etc/sysctl.conf
+<pre><code>echo 'vm.swappiness=20' | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
 </code></pre>
 <p>Isso faz o sistema usar a swap de forma mais equilibrada com a RAM. Se quiser testar o comportamento, você pode começar com <code>30</code> e ir ajustando depois.</p>
@@ -902,14 +904,18 @@ sudo sysctl -p
 ]]></content:encoded></item><item><title>Como matar processos no linux</title><link>https://meus10centavos.vercel.app//como-matar-processos-no-linux.html</link><author>fabricio</author><category>tutorial</category><category>linux</category><guid>https://meus10centavos.vercel.app//como-matar-processos-no-linux.html</guid><pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">tag-linux</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
 <p>É um tutorial de algo besta, mas eu sempre acabo esquecendo como faz, então vou salvar aqui</p>
 <p>Lista todos os processo que estão rodando</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>sudo</a-f> ss <a-co>-tlpn</a-co></code></pre>
+<pre><code class="language-bash">sudo ss -tlpn
+</code></pre>
 <p>Lista todos os processos que estão rodando na porta &lt;número&gt;</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>sudo</a-f> ss <a-co>-tlpn</a-co> <a-o>|</a-o> <a-f>grep</a-f> <a-o>&lt;</a-o>número<a-o>&gt;</a-o></code></pre>
+<pre><code class="language-bash">sudo ss -tlpn | grep &lt;número&gt;
+</code></pre>
 <p>Exemplo:</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>sudo</a-f> ss <a-co>-tlpn</a-co> <a-o>|</a-o> <a-f>grep</a-f> 8000</code></pre>
+<pre><code class="language-bash">sudo ss -tlpn | grep 8000
+</code></pre>
 <p>Mata processo que está rodando na porta 8000</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>sudo</a-f> kill <a-co>-9</a-co> `<a-f>sudo</a-f> lsof <a-co>-t</a-co> <a-co>-i:</a-co><a-o>&lt;</a-o>número<a-o>&gt;</a-o>`
-<a-f>sudo</a-f> kill <a-co>-9</a-co> <a-eb>$(</a-eb><a-f>lsof</a-f><a-eb> </a-eb><a-co>-t</a-co><a-eb> </a-eb><a-co>-i:</a-co><a-o>&lt;</a-o><a-eb>número</a-eb><a-o>&gt;</a-o><a-eb>)</a-eb></code></pre>
+<pre><code class="language-bash">sudo kill -9 `sudo lsof -t -i:&lt;número&gt;`
+sudo kill -9 $(lsof -t -i:&lt;número&gt;)
+</code></pre>
 <p>obs.: &lt;número&gt; deve ser todo incluindo o &lt;&gt; ser torcado pelo número</p>
 <!-- Content Injected to every content markdown footer -->
 ]]></content:encoded></item></channel></rss>

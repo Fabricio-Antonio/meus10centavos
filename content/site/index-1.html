@@ -25,29 +25,30 @@
       "url": "https://meus10centavos.vercel.app/"
     }
 </script>
-    
     <title>Page - 1 | Meus 10 Centavos</title>
     <link rel="stylesheet" type="text/css" href="/static/pico.min.css">
     <link rel="stylesheet" type="text/css" href="/static/marmite.css">
     
     <link rel="stylesheet" type="text/css" href="/static/custom.css">
     
-    
         <link rel="alternate" type="application/rss+xml" title="index" href="/index.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: tutorial" href="/tag-tutorial.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: carreira" href="/tag-carreira.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: linux" href="/tag-linux.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: guia" href="/tag-guia.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: blog" href="/tag-blog.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: curso" href="/tag-curso.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: marmite" href="/tag-marmite.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: blog" href="/tag-blog.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: pessoal" href="/tag-pessoal.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: inicio" href="/tag-inicio.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: inglês" href="/tag-ingles.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: IA" href="/tag-ia.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: computer vision" href="/tag-computer-vision.rss">
-    <link rel="alternate" type="application/rss+xml" title="tag: rust" href="/tag-rust.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: marmite" href="/tag-marmite.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: computer-vision" href="/tag-computer-vision.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: ia" href="/tag-ia.rss">
     <link rel="alternate" type="application/rss+xml" title="tag: versionamento" href="/tag-versionamento.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: rust" href="/tag-rust.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: ingles" href="/tag-ingles.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: IA" href="/tag-ia.rss">
+    <link rel="alternate" type="application/rss+xml" title="tag: inglês" href="/tag-ingles.rss">
     <link rel="alternate" type="application/rss+xml" title="author: fabricio" href="/author-fabricio.rss">
     <link rel="alternate" type="application/rss+xml" title="author: carlos" href="/author-carlos.rss">
     <link rel="alternate" type="application/rss+xml" title="author: matheus" href="/author-matheus.rss">
@@ -60,16 +61,19 @@
     <link rel="alternate" type="application/feed+json" title="JSON tag: carreira" href="/tag-carreira.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: linux" href="/tag-linux.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: guia" href="/tag-guia.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: blog" href="/tag-blog.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: curso" href="/tag-curso.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: marmite" href="/tag-marmite.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: blog" href="/tag-blog.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: pessoal" href="/tag-pessoal.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: inicio" href="/tag-inicio.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: inglês" href="/tag-ingles.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: IA" href="/tag-ia.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: computer vision" href="/tag-computer-vision.json">
-    <link rel="alternate" type="application/feed+json" title="JSON tag: rust" href="/tag-rust.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: marmite" href="/tag-marmite.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: computer-vision" href="/tag-computer-vision.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: ia" href="/tag-ia.json">
     <link rel="alternate" type="application/feed+json" title="JSON tag: versionamento" href="/tag-versionamento.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: rust" href="/tag-rust.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: ingles" href="/tag-ingles.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: IA" href="/tag-ia.json">
+    <link rel="alternate" type="application/feed+json" title="JSON tag: inglês" href="/tag-ingles.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: fabricio" href="/author-fabricio.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: carlos" href="/author-carlos.json">
     <link rel="alternate" type="application/feed+json" title="JSON author: matheus" href="/author-matheus.json">
@@ -153,7 +157,7 @@
             <div class="marmite-search-bar hidden">
                 <span>Buscar</span>
                 <button class="marmite-close-button" id="search-close">X</button>
-                <input placeholder="Search" id="marmite-search-input" data-show-matches="false" data-match-count="3" />
+                <input placeholder="Search" id="marmite-search-input" />
                 <div class="marmite-search-bar-result">
                     <ul id="marmite-search-bar-result"></ul>
                 </div>
@@ -176,6 +180,34 @@
 <div class="content-list  h-feed">
     <h1 class="p-name" style="display: none;">Page - 1</h1>
     <div class="left">
+    <article class="content-list-item h-entry">
+        <h2 class="p-name" style="display: none;">A Realidade de CyberSec</h2>
+        <a class="u-url" href="/a-realidade-de-cybesec.html" style="display: none;"></a>
+        <time class="dt-published" datetime="2026-08-28T00:00:00+00:00" style="display: none;">28 Aug 2026</time>
+        
+        <div class="content-title-wrapper">
+            <h2 class="content-title"><a href="/a-realidade-de-cybesec.html">A Realidade de CyberSec</a></h2>
+             
+        </div>
+        <p class="content-excerpt p-summary">
+            
+            
+Recentemente o que mais tenho ouvido é:
+&quot;Estou estudando para área de segurança&quot; 
+&quot;Acho que vou para CyberSec&quot; 
+&quot;Será que vale a pena ir para Cyber?&quot;
+O uso indiscriminado de I.A. acabou gerando uma falha grande... hoje  ...
+            <a class="secondary" href="/a-realidade-de-cybesec.html">read more &rarr;</a>
+        </p>
+        <footer class="data-tags-footer">
+            <span class="content-date"><a class="secondary" href="/a-realidade-de-cybesec.html">28 Aug 2026</a></span>
+            <ul class="content-tags overflow-auto">
+                
+                
+                <li><a href="/tag-carreira.html" class="p-category">carreira</a></li>
+            </ul>
+        </footer>
+    </article>
     <article class="content-list-item h-entry">
         <h2 class="p-name" style="display: none;">Computer Vision: notas técnicas de um pipeline completa</h2>
         <a class="u-url" href="/cv-aplicada.html" style="display: none;"></a>
@@ -415,34 +447,6 @@ O modelo de currículo que iriei te pa ...
                 <li><a href="/tag-tutorial.html" class="p-category">tutorial</a></li>
                 
                 <li><a href="/tag-carreira.html" class="p-category">carreira</a></li>
-            </ul>
-        </footer>
-    </article>
-    <article class="content-list-item h-entry">
-        <h2 class="p-name" style="display: none;">Como fazer swap em Zram</h2>
-        <a class="u-url" href="/como-fazer-swap-em-zram.html" style="display: none;"></a>
-        <time class="dt-published" datetime="2026-02-02T00:00:00+00:00" style="display: none;">02 Feb 2026</time>
-        
-        <div class="content-title-wrapper">
-            <h2 class="content-title"><a href="/como-fazer-swap-em-zram.html">Como fazer swap em Zram</a></h2>
-             
-        </div>
-        <p class="content-excerpt p-summary">
-            
-            
-Como Fazer Swap em Zram
-Swap é muito útil no mundo Linux. Como dito em Como fazer swap
-, do Fabrício, o artigo apenas ensina como fazer swap via swapfile em distribuições médias. Porém, aqui serei mais complexo no ramo de swap. Sugiro que vejam prim ...
-            <a class="secondary" href="/como-fazer-swap-em-zram.html">read more &rarr;</a>
-        </p>
-        <footer class="data-tags-footer">
-            <span class="content-date"><a class="secondary" href="/como-fazer-swap-em-zram.html">02 Feb 2026</a></span>
-            <ul class="content-tags overflow-auto">
-                
-                
-                <li><a href="/tag-linux.html" class="p-category">linux</a></li>
-                
-                <li><a href="/tag-tutorial.html" class="p-category">tutorial</a></li>
             </ul>
         </footer>
     </article>

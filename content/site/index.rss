@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate><lastBuildDate>Tue, 07 Jul 2026 23:45:19 GMT</lastBuildDate><generator>marmite</generator><item><title>Computer Vision: notas técnicas de um pipeline completa</title><link>https://meus10centavos.vercel.app//cv-aplicada.html</link><author>fabricio</author><category>IA</category><category>computer vision</category><guid>https://meus10centavos.vercel.app//cv-aplicada.html</guid><pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">index</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Meus 10 Centavos</title><link>https://meus10centavos.vercel.app/</link><description>Meus 10 centavos de contribuição para uma discussão que ninguém pediu minha opinião</description><pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate><lastBuildDate>Mon, 24 Aug 2026 23:49:24 GMT</lastBuildDate><generator>marmite</generator><item><title>A Realidade de CyberSec</title><link>https://meus10centavos.vercel.app//a-realidade-de-cybesec.html</link><author>fabricio</author><category>carreira</category><guid>https://meus10centavos.vercel.app//a-realidade-de-cybesec.html</guid><pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">index</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
+<p>Recentemente o que mais tenho ouvido é:</p>
+<p>&quot;Estou estudando para área de segurança&quot; <br />
+&quot;Acho que vou para CyberSec&quot; <br />
+&quot;Será que vale a pena ir para Cyber?&quot;</p>
+<p>O uso indiscriminado de I.A. acabou gerando uma falha grande... hoje dezenas de problemas de segurança são criados todos os dias em centenas de apps e sistemas por causa do uso de I.A para gereação de código, não falo apanas do <em>vibe coding</em> , a geração de código sem revisão está incluso.</p>
+<p>Esse mal hábito acabou criando um terreno fértil para a área de CyberSec, e está cada vez mais comum pessoas estarem interessadas nela, mas há uma realidade que não amplamente é falada.</p>
+<h2><a href="#júnior-de-cybersec" aria-hidden="true" class="anchor" id="júnior-de-cybersec"></a>Júnior de CyberSec</h2>
+<p>Não existe vaga de estário/Júnior para CyberSec! É importante que você tenha isso em mente, pois a maioria das pessoas que já vi demonstrar interesse nessa área foram os Enzos chorões e frustrados que não conseguiram uma vaga como dev. Se você está migrando para CyberSec por não conseguir uma vaga de dev nem perca sua energia.</p>
+<p>Já ouvi muito: &quot;As vagas de dev estão pedindo muito, acho que vou para segurança que está crescendo&quot;</p>
+<p>Pois se você pensa asssim aqui vai algumas coisas que você precisa saber para dizer que você tem a introdução de CyberSec:</p>
+<p><strong>Fundamentos de Redes de Computadores:</strong> Entenda como os dados transitam na rede estudando os modelos OSI e TCP/IP, além dos protocolos vitais como HTTP/HTTPS, DNS, DHCP, SSH, FTP e TLS/SSL. Domine o conceito de endereçamento IP (IPv4/IPv6), sub-redes, funcionamento de roteadores, switches, portas de rede e análise de tráfego com ferramentas como Wireshark.</p>
+<p><strong>Sistemas Operacionais e Linha de Comando:</strong> Obtenha fluência no terminal Linux (distribuições como Ubuntu, Debian ou Kali) para navegação, gestão de permissões, usuários, processos e autoinstalação de dependências. Em paralelo, entenda a arquitetura do Windows, incluindo Registry, Active Directory, PowerShell, logs de evento e modelo de permissões NTFS.</p>
+<p><strong>Programação e Automação:</strong> Aprenda Python como linguagem principal para criação de scripts, automação de tarefas e análise de dados. Complemente com Bash para scripts em Linux e conhecimentos básicos de HTML, JavaScript, SQL e PHP para compreender como aplicações web processam dados e interagem com bancos de dados.</p>
+<p><strong>Conceitos Fundamentais de Segurança e Criptografia:</strong> Familiarize-se com a Tríade CIA (Confidencialidade, Integridade e Disponibilidade) e entenda o funcionamento de criptografia simétrica e assimétrica, funções de hash e certificados digitais. Estude também a gestão de identidades e acessos (IAM), controle de acesso (RBAC, MAC, DAC) e o conceito de defesa em profundidade (Defense in Depth).</p>
+<p><strong>Fundamentos de Segurança Operacional (Offensive e Defensive):</strong> Do lado defensivo (Blue Team), aprenda sobre Firewalls, sistemas de detecção e prevenção de intrusão (IDS/IPS), antivírus, EDRs e análise de logs (SIEM). Do lado ofensivo (Red Team), compreenda a OWASP Top 10 para vulnerabilidades web (como SQL Injection e XSS), técnicas de engenharia social (phishing), recon/varredura com Nmap e as fases do ciclo de invasão (Cyber Kill Chain).</p>
+<p>As vagas são 10x mais exigentes, ou seja, uma pessoa da área de segurança tem que saber tanto quanto um dev! Mas se você realmeente quer seguir esse caminho aí está sua trilha inicial de estudos.</p>
+<p>Quando digo que não há vaga de estágio/júnior, não merefiro a nomenclatura, estou falndo da quantidade de conhecimento. Ou você sabe, ou não sabe. Não há o sei pouco (júnior), em CybrSec não há brecha para erros, que é algo natural do aprendizado.</p>
+<p>Recntemente tive oportunidade de conversar com uma Senior Technical Account Manager da AWS, 8x certificada AWS que me contou sobre a trajetória dela na área de seguranção, ela fez migração depois de 10 anos de expriência em infra e devops, então ela conseguiu uma vaga como estagiária. Pense bem, uma pessoa com 10 anos de expriência em TI conseguiu entrar apenas como estagiária. Então você que tem pouco contexto de TI, não tenha altas expectativas.</p>
+<h2><a href="#surf-do-mercado" aria-hidden="true" class="anchor" id="surf-do-mercado"></a>Surf do mercado</h2>
+<p>Se você quer surfar a onda da área de segurança, você está atrasado!</p>
+<p>O mercado funciona em ondas.</p>
+<p>Imagine uma onda no mar: primeiro ela começa a se formar, depois cresce, chega ao pico e, por fim, perde força. No mercado acontece algo parecido. Uma nova tecnologia ou área surge, poucas pessoas percebem a oportunidade e começam a estudar. Conforme a demanda aumenta, mais empresas investem, os salários sobem e mais profissionais entram. Quando todo mundo começa a falar sobre aquela área, surgem cursos, propagandas e promessas de carreira. É quando a onda está chegando ao pico.</p>
+<p>Quem começa a surfar no início da onda tem tempo para se preparar enquanto ela cresce. Quando o mercado chega ao pico, essa pessoa já tem conhecimento e experiência suficientes para aproveitar as melhores oportunidades. Mas quem começa a surfar apenas no pico ainda pode aproveitar alguma coisa, só que provavelmente pegará o final da onda.</p>
+<p>Um bom exemplo é a programação. Quem começou a estudar entre 2017 e 2018 teve tempo para construir experiência antes da grande explosão da demanda por desenvolvedores em 2020 e 2021. Quando a onda chegou ao pico, essas pessoas já estavam posicionadas.</p>
+<p>Por isso, se você está vendo propaganda de cursos de segurança em todo lugar, influenciadores falando sobre cibersegurança e cada vez mais pessoas dizendo que querem entrar na área, isso não significa necessariamente que você encontrou uma oportunidade no começo. Pode ser justamente o sinal de que a onda já está avançada.</p>
+<p>O objetivo não é descobrir qual área está em alta hoje. É identificar qual será a próxima área a ficar em alta e começar a se preparar antes de todo mundo.</p>
+<!-- Content Injected to every content markdown footer -->
+]]></content:encoded></item><item><title>Computer Vision: notas técnicas de um pipeline completa</title><link>https://meus10centavos.vercel.app//cv-aplicada.html</link><author>fabricio</author><category>IA</category><category>computer vision</category><guid>https://meus10centavos.vercel.app//cv-aplicada.html</guid><pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">index</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
 <h2><a href="#computer-vision-para-avaliação-de-feridas-notas-técnicas-de-um-pipeline-end-to-end" aria-hidden="true" class="anchor" id="computer-vision-para-avaliação-de-feridas-notas-técnicas-de-um-pipeline-end-to-end"></a><strong>Computer Vision para avaliação de feridas: notas técnicas de um pipeline end-to-end</strong></h2>
 <p>Este post documenta o que aprendi ao implementar um sistema de inferência CV para segmentação, classificação e mensuração métrica de feridas crônicas. O foco é arquitetura, algoritmos e decisões de engenharia.</p>
 <p>Este post resume o que estudei, aprendi, e apliquei ao longo desse caminho.</p>
@@ -59,7 +87,7 @@
 <h2><a href="#2-treinamento" aria-hidden="true" class="anchor" id="2-treinamento"></a><strong>2. Treinamento</strong></h2>
 <h3><a href="#21-segmentação" aria-hidden="true" class="anchor" id="21-segmentação"></a><strong>2.1 Segmentação</strong></h3>
 <p>Para segmentação, usei uma U-Net com encoder EfficientNet-B3, pré-treinado no ImageNet, via segmentation_models_pytorch. A escolha faz sentido: EfficientNet oferece um bom equilíbrio entre capacidade e eficiência, e a U-Net é o padrão de ouro para máscaras semânticas.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">smp.Unet(
+<pre><code>smp.Unet(
 
 encoder_name=&quot;efficientnet-b3&quot;,
 
@@ -106,7 +134,7 @@ classes=1,
 </tbody>
 </table>
 <p><strong>Augmentações</strong> (<code>albumentations</code>):</p>
-<pre class="marmite-code"><code class="marmite-code-inner">A.Resize(512, 512)
+<pre><code>A.Resize(512, 512)
 
 A.HorizontalFlip(p=0.5)
 
@@ -131,7 +159,7 @@ A.Normalize()
 <h3><a href="#22-classificação" aria-hidden="true" class="anchor" id="22-classificação"></a><strong>2.2 Classificação</strong></h3>
 <p>EfficientNet-B3 via <code>timm</code>, <code>BCEWithLogitsLoss</code>, lr = 3e-4, batch = 8, image size = 384. Métrica: F1.</p>
 <h3><a href="#23-export" aria-hidden="true" class="anchor" id="23-export"></a><strong>2.3 Export</strong></h3>
-<pre class="marmite-code"><code class="marmite-code-inner"># TorchScript (seg)
+<pre><code># TorchScript (seg)
 
 scripted = torch.jit.trace(model, dummy_input)  *# dummy: (1, 3, 512, 512)*
 
@@ -148,7 +176,7 @@ torch.onnx.export(..., opset_version=17, dynamic_axes={&quot;input&quot;: {0: &q
 <img src="/media/diagrama.png" alt="Diagrama de fluxo da análise de feridas" width="1000" height="1000">
 <h3><a href="#31-letterbox--unletterbox" aria-hidden="true" class="anchor" id="31-letterbox--unletterbox"></a><strong>3.1 Letterbox / Unletterbox</strong></h3>
 <p>Dado <code>target_size = 512</code>:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">scale = target_size / max(h, w)
+<pre><code>scale = target_size / max(h, w)
 
 content_w = round(w * scale)
 
@@ -282,7 +310,7 @@ pad_top  = (512 - content_h) // 2
 </tbody>
 </table>
 <p>A API retorna isso via WoundColorAnalysis (Pydantic), com valores em percentual (0–100) arredondados a 2 casas:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">class WoundColorAnalysis(BaseModel):
+<pre><code>class WoundColorAnalysis(BaseModel):
   vermelho: float   # granulação
   amarelo: float    # esfacelo/infecção
   preto: float      # necrose
@@ -295,18 +323,18 @@ pad_top  = (512 - content_h) // 2
 <h3><a href="#62-pipeline-de-roi-para-coloração" aria-hidden="true" class="anchor" id="62-pipeline-de-roi-para-coloração"></a>6.2 Pipeline de ROI para coloração</h3>
 <p>Função: <code>analyze_wound_colors(image_rgb, mask_prob)</code>.</p>
 <p>Passo 1 — Alinhamento e binarização permissiva</p>
-<pre class="marmite-code"><code class="marmite-code-inner">mask_aligned = align_mask_to_image(image, mask, &quot;analyze_wound_colors&quot;)
+<pre><code>mask_aligned = align_mask_to_image(image, mask, &quot;analyze_wound_colors&quot;)
 binary = (mask_aligned &gt; 0.20).astype(uint8)  # threshold baixo: incluir bordas difusas
 </code></pre>
 <p>A análise só é chamada após <code>validate_wound_presence()</code>, então o threshold de 0.20 (vs 0.40 da geometria) é intencional: captura toda a região provável de ferimento, incluindo halos de baixa confiança na borda.</p>
 <p>Passo 2 — Limpeza morfológica</p>
-<pre class="marmite-code"><code class="marmite-code-inner">MORPH_CLOSE(kernel 3×3, 1 iter)
+<pre><code>MORPH_CLOSE(kernel 3×3, 1 iter)
 MORPH_OPEN(kernel 3×3, 1 iter)
 → largest connected component
 </code></pre>
 <p>Passo 3 — Máscara de borda</p>
 <p>Remove 1% das margens da imagem para evitar contaminação por pele circundante ou artefatos de borda:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">margin_h = max(1, int(h * 0.01))
+<pre><code>margin_h = max(1, int(h * 0.01))
 margin_w = max(1, int(w * 0.01))
 edge_mask[0:margin_h, :] = 0
 edge_mask[h-margin_h:, :] = 0
@@ -317,19 +345,19 @@ binary = binary * edge_mask
 <p>Se <code>wound_pixels == 0</code> após filtros, reutiliza <code>mask &gt; 0.15</code> sem máscara de borda, evita retorno zerado em feridas pequenas ou próximas à borda do frame.</p>
 <h3><a href="#63-classificação-pixel-a-pixel-hsv--rgb" aria-hidden="true" class="anchor" id="63-classificação-pixel-a-pixel-hsv--rgb"></a>6.3 Classificação pixel a pixel (HSV + RGB)</h3>
 <p>Conversão para HSV OpenCV:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">image_hsv = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2HSV)
+<pre><code>image_hsv = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2HSV)
 # H ∈ [0, 179], S ∈ [0, 255], V ∈ [0, 255]
 # Normalização: h/179, s/255, v/255
 </code></pre>
 <p>Para cada pixel <code>(r,g,b)</code> e <code>(h,s,v)</code> dentro da ROI:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">intensity = (r + g + b) / 3
+<pre><code>intensity = (r + g + b) / 3
 max_rgb   = max(r, g, b)
 min_rgb   = min(r, g, b)
 </code></pre>
 <p>Ordem de decisão (first-match wins — evita ambiguidade):</p>
 <p><code>Preto → Branco → Roxo → Vermelho → Amarelo → Outros</code></p>
 <p>Preto (necrose)</p>
-<pre class="marmite-code"><code class="marmite-code-inner">if v &lt; 0.12 or (intensity &lt; 0.15 and max_rgb &lt; 0.2):
+<pre><code>if v &lt; 0.12 or (intensity &lt; 0.15 and max_rgb &lt; 0.2):
     → preto
 elif v &lt; 0.18 and intensity &lt; 0.20 and s &lt; 0.25:
     → preto
@@ -337,7 +365,7 @@ elif v &lt; 0.18 and intensity &lt; 0.20 and s &lt; 0.25:
 </code></pre>
 <p>Prioridade máxima: sombras profundas e tecido necrótico têm valor HSV baixo.</p>
 <p>Branco (isquêmico / biofilme)</p>
-<pre class="marmite-code"><code class="marmite-code-inner">elif s &lt; 0.12 and v &gt; 0.65:
+<pre><code>elif s &lt; 0.12 and v &gt; 0.65:
     → branco
 elif s &lt; 0.18 and v &gt; 0.75 and max_rgb &gt; 0.7:
     → branco
@@ -347,13 +375,13 @@ elif s &lt; 0.20 and v &gt; 0.70 and |r-g| &lt; 0.1 and |g-b| &lt; 0.1:
 <p>Baixa saturação + alto valor = tecido pálido ou esbranquiçado.</p>
 <p>Roxo (hematoma)
 Regras HSV e RGB combinadas:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">elif 0.68 &lt;= h &lt;= 0.92 and s &gt; 0.25 and v &gt; 0.2:
+<pre><code>elif 0.68 &lt;= h &lt;= 0.92 and s &gt; 0.25 and v &gt; 0.2:
     → roxo
 elif r &gt; 0.35 and b &gt; 0.35 and g &lt; 0.35 and s &gt; 0.18:
     → roxo  # R e B dominantes, G suprimido
 </code></pre>
 <p>Vermelho (granulação)</p>
-<pre class="marmite-code"><code class="marmite-code-inner">elif (h &lt; 0.04 or h &gt; 0.96) and s &gt; 0.35 and v &gt; 0.25:
+<pre><code>elif (h &lt; 0.04 or h &gt; 0.96) and s &gt; 0.35 and v &gt; 0.25:
     → vermelho  # matiz no extremo do círculo H (vermelho puro)
 elif r &gt; 0.55 and r &gt; g*1.25 and r &gt; b*1.25 and s &gt; 0.25:
     → vermelho  # dominância de R no RGB
@@ -361,7 +389,7 @@ elif r &gt; 0.50 and r &gt; g*1.2 and s &gt; 0.30 and 0.2 &lt; v &lt; 0.5:
     → vermelho  # granulação mais escura
 </code></pre>
 <p>Amarelo (esfacelo)</p>
-<pre class="marmite-code"><code class="marmite-code-inner">elif 0.12 &lt;= h &lt;= 0.28 and s &gt; 0.35 and v &gt; 0.3:
+<pre><code>elif 0.12 &lt;= h &lt;= 0.28 and s &gt; 0.35 and v &gt; 0.3:
     → amarelo
 elif r &gt; 0.45 and g &gt; 0.45 and b &lt; 0.35 and s &gt; 0.25:
     → amarelo  # R+G altos, B baixo
@@ -373,7 +401,7 @@ elif 0.10 &lt;= h &lt;= 0.25 and s &gt; 0.25 and 0.25 &lt; v &lt; 0.55:
 <p>Outros
 Pixels que não satisfazem nenhuma regra acima.</p>
 <h3><a href="#64-agregação" aria-hidden="true" class="anchor" id="64-agregação"></a>6.4 Agregação</h3>
-<pre class="marmite-code"><code class="marmite-code-inner">total = len(wound_region)  # pixels na ROI filtrada
+<pre><code>total = len(wound_region)  # pixels na ROI filtrada
 color_percentages = {
   'vermelho': (red_count   / total) * 100.0,
   'amarelo':  (yellow_count / total) * 100.0,
@@ -452,7 +480,7 @@ Violação → erro sistemático em área.</p>
 </ul>
 <p>Entrada: contorno <code>C = {(x_i, y_i)}</code>, calibração <code>{pixel_to_cm, confidence}</code>.</p>
 <h3><a href="#81-métricas-primárias-contorno-real" aria-hidden="true" class="anchor" id="81-métricas-primárias-contorno-real"></a><strong>8.1 Métricas primárias (contorno real)</strong></h3>
-<pre class="marmite-code"><code class="marmite-code-inner">area_px       = cv2.contourArea(C)
+<pre><code>area_px       = cv2.contourArea(C)
 
 perimeter_px  = cv2.arcLength(C, closed=True)
 </code></pre>
@@ -461,7 +489,7 @@ perimeter_px  = cv2.arcLength(C, closed=True)
 <p>Matriz de covariância: <code>Σ = cov(C - μ)</code></p>
 <p>Decomposição: <code>Σ = V Λ Vᵀ</code> via <code>np.linalg.eigh</code></p>
 <p>Autovetor <code>v₁</code> (maior autovalor) = eixo principal:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">proj_major = (C - μ) · v₁
+<pre><code>proj_major = (C - μ) · v₁
 
 major_len  = max(proj_major) - min(proj_major)
 
@@ -477,13 +505,13 @@ angle_deg  = atan2(v₁_y, v₁_x) · 180/π
 <li><strong>Feret diameter</strong> no convex hull: <code>(feret_max, feret_min)</code></li>
 </ul>
 <p>Dimensão final:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">width_px  = median(pca_major, rect_major)
+<pre><code>width_px  = median(pca_major, rect_major)
 
 height_px = median(pca_minor, rect_minor)
 </code></pre>
 <p><strong>Motivação</strong>: <code>cv2.boundingRect</code> superestima feridas alongadas e rotacionadas. PCA captura orientação; mediana entre PCA e minAreaRect reduz sensibilidade a outliers no contorno.</p>
 <h3><a href="#84-conversão-métrica" aria-hidden="true" class="anchor" id="84-conversão-métrica"></a><strong>8.4 Conversão métrica</strong></h3>
-<pre class="marmite-code"><code class="marmite-code-inner">area_cm²      = area_px       × pixel_to_cm²
+<pre><code>area_cm²      = area_px       × pixel_to_cm²
 
 perimeter_cm  = perimeter_px   × pixel_to_cm
 
@@ -582,7 +610,7 @@ diameter_cm   = max(width_cm, height_cm)
 <p>Além disso, a resposta da API passa a incluir o campo <code>segmentation_debug</code>, contendo informações detalhadas para auxiliar na investigação de falhas.</p>
 <p>Cada requisição também propaga um <code>ImagePipelineContext</code>, que registra automaticamente as dimensões produzidas em cada etapa da pipeline (<code>shape_log</code>), permitindo identificar rapidamente desalinhamentos entre a imagem original, a inferência da U-Net e a máscara final.</p>
 <h3><a href="#101-exemplo-de-shape_log" aria-hidden="true" class="anchor" id="101-exemplo-de-shape_log"></a>10.1 Exemplo de <code>shape_log</code></h3>
-<pre class="marmite-code"><code class="marmite-code-inner language-text">original_loaded:           shape=(3024, 4032, 3)
+<pre><code class="language-text">original_loaded:           shape=(3024, 4032, 3)
 working_capped:            shape=(1152, 1536, 3)
 preprocessed_mobile:       shape=(1152, 1536, 3)
 inference_letterboxed:     shape=(512, 512, 3)
@@ -598,7 +626,7 @@ mask_working_prob:         shape=(1152, 1536)
 <li>Percentuais finais de cada classe.</li>
 </ul>
 <p>Exemplo:</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-text">🎨 [ColorAnalysis] Pixels analisados: 4821
+<pre><code class="language-text">🎨 [ColorAnalysis] Pixels analisados: 4821
 🎨 [ColorAnalysis] Color counts - Red: 2104, Yellow: 891, Black: 312, ...
 🎨 [ColorAnalysis] Final percentages:
 {
@@ -1186,14 +1214,15 @@ Exemplos: Docker, LXC, Podman</p>
 <li>Laboratórios de desenvolvimento profissional</li>
 </ul>
 <p><strong>Instalação básica:</strong></p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-c># Ubuntu/Debian</a-c>
-<a-f>sudo</a-f> apt install qemu-kvm libvirt-daemon-system virtinst virt-manager
+<pre><code class="language-bash"># Ubuntu/Debian
+sudo apt install qemu-kvm libvirt-daemon-system virtinst virt-manager
 
-<a-c># Fedora/RHEL/CentOS</a-c>
-<a-f>sudo</a-f> dnf install @virtualization
+# Fedora/RHEL/CentOS
+sudo dnf install @virtualization
 
-<a-c># Arch Linux</a-c>
-<a-f>sudo</a-f> pacman <a-co>-S</a-co> qemu libvirt virt-manager</code></pre>
+# Arch Linux
+sudo pacman -S qemu libvirt virt-manager
+</code></pre>
 <h4><a href="#virtualbox---para-facilidade-de-uso" aria-hidden="true" class="anchor" id="virtualbox---para-facilidade-de-uso"></a>VirtualBox - Para Facilidade de Uso</h4>
 <p>Embora KVM seja superior em performance, VirtualBox tem seu lugar no Linux por sua interface gráfica intuitiva e portabilidade. É ideal para usuários que migram do Windows ou Mac e querem algo familiar.</p>
 <p><strong>Vantagens:</strong></p>
@@ -1242,8 +1271,9 @@ Exemplos: Docker, LXC, Podman</p>
 <li>Desenvolve para ambientes Windows Server</li>
 </ul>
 <p><strong>Habilitação rápida:</strong></p>
-<pre class="marmite-code"><code class="marmite-code-inner language-powershell"><a-c># Execute como Administrador</a-c>
-<a-f>Enable-WindowsOptionalFeature</a-f> -Online -FeatureName Microsoft-Hyper-V -All</code></pre>
+<pre><code class="language-powershell"># Execute como Administrador
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+</code></pre>
 <h4><a href="#vmware-workstation-pro---para-profissionais-multiplataforma" aria-hidden="true" class="anchor" id="vmware-workstation-pro---para-profissionais-multiplataforma"></a>VMware Workstation Pro - Para Profissionais Multiplataforma</h4>
 <p>VMware Workstation oferece recursos avançados e melhor suporte para Linux guests no Windows.</p>
 <p><strong>Vantagens sobre Hyper-V:</strong></p>
@@ -1510,12 +1540,12 @@ Reddit: <a href="https://www.reddit.com/user/csouzape/">reddit.com/user/csouzape
 </blockquote>
 <h1><a href="#inicializando-um-repositório-na-sua-máquina" aria-hidden="true" class="anchor" id="inicializando-um-repositório-na-sua-máquina"></a>Inicializando um repositório na sua máquina</h1>
 <p>Vamos supor que você já assistiu seu curso da Udemy ou do YouTube e já sabe o básico do funcionamento de git. Logo, caso tenha entendido corretamente, o primeiro passo é inicializar um repositório dentro do diretório do seu projeto com o comando <code>git init</code>.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">enzo@pc-do-enzo:~/projeto$ git init
+<pre><code>enzo@pc-do-enzo:~/projeto$ git init
 Initialized empty Git repository in /home/enzo/projeto/.git/
 enzo@pc-do-enzo:~/projeto$
 </code></pre>
 <p>O que você precisa entender agora é que, ao inicializar um repositório, um diretório chamado <code>.git</code> será criado no diretório do projeto e que por padrão, nenhum dos seus arquivos estará, mas o git já consegue vê-los. Além disso, todos seus arquivos começarão com o estado <code>untracked</code> ou &quot;não rastreado&quot;.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">enzo@pc-do-enzo:~/projeto$ git status
+<pre><code>enzo@pc-do-enzo:~/projeto$ git status
 On branch main
 
 No commits yet
@@ -1546,7 +1576,7 @@ enzo@pc-do-enzo:~/projeto$
 <li><code>git add foo/bar</code>: Adiciona todos os arquivos de um diretório</li>
 <li><code>git add .</code>: Adiciona todos os arquivos</li>
 </ul>
-<pre class="marmite-code"><code class="marmite-code-inner">enzo@pc-pc-do-enzo:~/projeto$ git add index.html style.css
+<pre><code>enzo@pc-pc-do-enzo:~/projeto$ git add index.html style.css
 enzo@pc-pc-do-enzo:~/projeto$ git status
 On branch main
 
@@ -1572,7 +1602,7 @@ enzo@pc-pc-do-enzo:~/projeto$
 <p>E aqui entramos em outro conceito importante que não se aplica somente ao git, mas em muitas ferramentas que você vai encontrar e ele se chama <em><strong>diffing</strong></em>.</p>
 <p>Em termos simples, <em><strong>diffing</strong></em> é o processo de comparação entre arquivos, para saber o que mudou de um arquivo para outro. Você pode pensar nisso como um &quot;jogo dos 7 erros&quot;, onde você tinha duas imagens e precisava encontrar a diferença entre elas.</p>
 <p>Graças ao <em><strong>diffing</strong></em>, o git consegue te dizer exatamente quais linhas foram adicionadas (+) e quais linhas foram removidas (-) na comparação de uma versão anterior de um arquivo a uma versão atual.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">enzo@pc-do-enzo:~/projeto$ git diff
+<pre><code>enzo@pc-do-enzo:~/projeto$ git diff
 diff --git a/index.html b/index.html
 index c3939a0..e60d682 100644
 --- a/index.html
@@ -1595,7 +1625,7 @@ index c3939a0..e60d682 100644
 enzo@pc-do-enzo:~/projeto$
 </code></pre>
 <p>Então, quando você realiza a modificação de um arquivo que já está na <em><strong>staging area</strong></em>, esse arquivo terá uma versão na <em><strong>staging area</strong></em> que irá para o próximo <em>commit</em> e uma versão em estado <em><strong>modified</strong></em> no <em><strong>working directory</strong></em>.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">enzo@pc-do-enzo:~/projeto$ git status
+<pre><code>enzo@pc-do-enzo:~/projeto$ git status
 On branch main
 
 No commits yet
@@ -1635,7 +1665,7 @@ enzo@pc-do-enzo:~/projeto$
 <p>Se você deseja realizar o commit com uma descrição simples e informar mais detalhes:
 <code>git commit</code></p>
 <p>Isso irá abrir o editor padrão configurado para o git, para que você possa escrever mais detalhes sobre o <em>commit</em>. Você terá instruções em forma de comentários, indicando como você deve estruturar a mensagem.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">GNU nano 7.2                                 /home/enzo/projeto/.git/COMMIT_EDITMSG *
+<pre><code>GNU nano 7.2                                 /home/enzo/projeto/.git/COMMIT_EDITMSG *
 
 feat: implementação da página inicial do projeto
 &lt;ENTER&gt;
@@ -1659,7 +1689,7 @@ feat: implementação da página inicial do projeto
 #
 </code></pre>
 <p>Ao salvar e sair, seu <em>commit</em> terá sido realizado.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">enzo@pc-pc-do-enzo:~/projeto$ git commit
+<pre><code>enzo@pc-pc-do-enzo:~/projeto$ git commit
 [main (root-commit) af17a38] feat: implementação da página inicial do projeto
  2 files changed, 32 insertions(+)
  create mode 100644 index.html
@@ -1667,7 +1697,7 @@ feat: implementação da página inicial do projeto
 enzo@pc-pc-do-enzo:~/projeto$
 </code></pre>
 <p>E você pode ver detalhes sobre esse <em>commit</em> e outros, obtendo seus logs, com o comando <code>git log</code>.</p>
-<pre class="marmite-code"><code class="marmite-code-inner">commit af17a38bca106c5316239f9e209cc3c1d43fd5c5 (HEAD -&gt; main)
+<pre><code>commit af17a38bca106c5316239f9e209cc3c1d43fd5c5 (HEAD -&gt; main)
 Author: Enzo da Silva &lt;enzosilva@gmail.com&gt;
 Date:   Fri Feb 6 03:42:34 2026 -0300
 
@@ -2041,7 +2071,7 @@ Consulte a lista de hardware certificado para Ubuntu</p>
 <li>Atualize o Sistema
 Abra o terminal (Ctrl + Alt + T) e digite:</li>
 </ol>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo apt update &amp;&amp; sudo apt upgrade -y
+<pre><code>sudo apt update &amp;&amp; sudo apt upgrade -y
 </code></pre>
 <p>Isso atualiza todos os pacotes do sistema.</p>
 <ol start="2">
@@ -2058,14 +2088,14 @@ Abra o terminal (Ctrl + Alt + T) e digite:</li>
 <li>Linux Mint: Já vem instalado, apenas configure.</li>
 <li>ZorinOS/Ubuntu:</li>
 </ul>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo apt install timeshift -y
+<pre><code>sudo apt install timeshift -y
 </code></pre>
 <p>Crie snapshots antes de grandes mudanças no sistema.</p>
 <ol start="4">
 <li>Aprenda Comandos Básicos do Terminal
 Não tenha medo do terminal! Aqui estão os mais úteis:</li>
 </ol>
-<pre class="marmite-code"><code class="marmite-code-inner"># Atualizar sistema
+<pre><code># Atualizar sistema
 sudo apt update &amp;&amp; sudo apt upgrade
 
 # Instalar programa
@@ -2151,7 +2181,7 @@ O modelo de currículo que iriei te passar é <strong>otimizado para ATS.</stron
 <img src="/media/resumo.png" alt="resumo" width="700" height="500"></p>
 <p><strong>Observação:</strong> Não abuse do negrito, adicione apensas nas palavras que você quer que chame atenção. Negrito é apenas para as coisas importantes, se você colocar negrito em tudo então nada é importante.</p>
 <p>Prompt para gerar na IA:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">Escreva um resumo profissional com no máximo 4 linhas de modo que me passe autoridade
+<pre><code>Escreva um resumo profissional com no máximo 4 linhas de modo que me passe autoridade
 
 - [cite sua stack]
 - [tempo de experiência]
@@ -2209,41 +2239,41 @@ Para vagas de T.I. o ideal é essa estrutura:</p>
 </ul>
 <h2><a href="#arch-linux" aria-hidden="true" class="anchor" id="arch-linux"></a>Arch Linux</h2>
 <p>No Arch Linux temos o zram-generator. Certifique-se de que ele está instalado:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">
+<pre><code>
 sudo pacman -S zram-generator
 </code></pre>
 <p>Crie o arquivo de configuração em <code>/etc/systemd/zram-generator.conf</code>:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo vim /etc/systemd/zram-generator.conf
+<pre><code>sudo vim /etc/systemd/zram-generator.conf
 </code></pre>
 <p>Ou, se preferir o Nano:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo nano /etc/systemd/zram-generator.conf
+<pre><code>sudo nano /etc/systemd/zram-generator.conf
 </code></pre>
 <p>Dentro do arquivo zram-generator.conf, coloque:</p>
 <p>Para abordagem automática</p>
-<pre class="marmite-code"><code class="marmite-code-inner">[zram0]
+<pre><code>[zram0]
 </code></pre>
 <h2><a href="#sugestão-de-tamanhos-de-zram" aria-hidden="true" class="anchor" id="sugestão-de-tamanhos-de-zram"></a>Sugestão de tamanhos de Zram</h2>
 <p>Se você tem 4 GB de RAM, use 2,5 GB de Zram ou igual
 Se tem 8 GB de RAM, use 4 GB de swap ou igual
 Se tem 16 GB de RAM, use 8 GB ou 12 GB de Zram
 Se tem 32 GB de RAM, use 4 GB ou 8 GB, apenas para manter</p>
-<pre class="marmite-code"><code class="marmite-code-inner">Obs.: O Zram é útil em máquinas com mais de 16 GB de RAM, pois quando a RAM chega a 100%, o Zram ou swapfile entra em ação para evitar travamentos. Quando o sistema não tem swap, ele pode simplesmente travar e fechar processos.
+<pre><code>Obs.: O Zram é útil em máquinas com mais de 16 GB de RAM, pois quando a RAM chega a 100%, o Zram ou swapfile entra em ação para evitar travamentos. Quando o sistema não tem swap, ele pode simplesmente travar e fechar processos.
 </code></pre>
 <p>Exemplo de configuração manual:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">[zram0]
+<pre><code>[zram0]
 zram-size = 4096  # exemplo de 4 GB de swap
 </code></pre>
 <p>Sempre use:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">zram-size = {RAM} x 1024
+<pre><code>zram-size = {RAM} x 1024
 </code></pre>
 <p>Exemplo: <code>8 GB = 8192</code></p>
 <h2><a href="#50-da-ram" aria-hidden="true" class="anchor" id="50-da-ram"></a>50% da ram</h2>
 <p>No mesmo arquivo, use:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">zram-size = ram / 2
+<pre><code>zram-size = ram / 2
 </code></pre>
 <p>Isso define o Zram como 50% da RAM total.</p>
 <h2><a href="#config-recomendada" aria-hidden="true" class="anchor" id="config-recomendada"></a>Config recomendada</h2>
-<pre class="marmite-code"><code class="marmite-code-inner">[zram0]
+<pre><code>[zram0]
 zram-size = ram / 2
 compression-algorithm = zstd
 swap-priority = 100
@@ -2251,11 +2281,11 @@ swap-priority = 100
 </code></pre>
 <p>rapido e util</p>
 <h2><a href="#aplicar" aria-hidden="true" class="anchor" id="aplicar"></a>Aplicar</h2>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo systemctl daemon-reexec
+<pre><code>sudo systemctl daemon-reexec
 sudo systemctl start systemd-zram-setup@zram0.service
 </code></pre>
 <p>apos o reinicio execute:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">swapon --show
+<pre><code>swapon --show
 </code></pre>
 <h5><a href="#créditos" aria-hidden="true" class="anchor" id="créditos"></a>Créditos</h5>
 <p>Agradeço a contribuição do Carlos Souza.</p>
@@ -2279,55 +2309,55 @@ Porque seu SSD (ou pior, um HD) é muito mais lento que RAM. Se o sistema começ
 Swap em SSD não é o fim do mundo, mas se ela for usada o tempo todo, vai acelerar o desgaste. Por isso é bom manter a RAM &quot;limpa&quot; e limitar o uso da swap com <code>swappiness</code>.</p>
 <h2><a href="#configurando-swap" aria-hidden="true" class="anchor" id="configurando-swap"></a>Configurando SWAP</h2>
 <p>Rode o comando:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">swapon --show
+<pre><code>swapon --show
 </code></pre>
 <p>Para verificar ter certeza se você tem uma swap, mas 90% de chance de não ter.<br />
 Se você não tem swap não terá nenhum retorno, mas se você tiver swap irá ter retorno semelhante a este:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">NAME      TYPE SIZE USED PRIO
+<pre><code>NAME      TYPE SIZE USED PRIO
 /swapfile file   8G   3G   -2
 </code></pre>
 <h4><a href="#criarativar-swap-file-se-não-tiver" aria-hidden="true" class="anchor" id="criarativar-swap-file-se-não-tiver"></a>Criar/ativar SWAP file (se não tiver)</h4>
 <h5><a href="#comando-completo" aria-hidden="true" class="anchor" id="comando-completo"></a>Comando completo:</h5>
-<pre class="marmite-code"><code class="marmite-code-inner"># Cria um swap de 4GB (ajuste se quiser)
+<pre><code># Cria um swap de 4GB (ajuste se quiser)
 sudo fallocate -l 4G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 </code></pre>
 <p>Depois adicione no fstab para ativar automaticamente:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+<pre><code>echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 </code></pre>
 <h5><a href="#comando-com-explicações" aria-hidden="true" class="anchor" id="comando-com-explicações"></a>Comando com explicações:</h5>
 <p>Criar um arquivo de swap com 4 GB</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo fallocate -l 4G /swapfile
+<pre><code>sudo fallocate -l 4G /swapfile
 </code></pre>
 <p>Criamos um arquivo especial de 4 GB chamado <code>/swapfile</code>, que será usado como “RAM falsa” quando a memória real estiver cheia.</p>
 <p>Restringir o acesso ao arquivo de swap</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo chmod 600 /swapfile
+<pre><code>sudo chmod 600 /swapfile
 </code></pre>
 <p>Demos permissão de leitura/escrita só pro root, por segurança. Isso impede que outro processo leia ou altere esse arquivo diretamente.</p>
 <p>Formatar esse arquivo como uma área de swap</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo mkswap /swapfile
+<pre><code>sudo mkswap /swapfile
 </code></pre>
 <p>Dizemos ao sistema:
 “Esse arquivo aqui é uma área de swap, tá ok? 👉👉 ”<br />
 Ele cria a estrutura de controle necessária.</p>
 <p>Ativar a swap agora</p>
-<pre class="marmite-code"><code class="marmite-code-inner">sudo swapon /swapfile
+<pre><code>sudo swapon /swapfile
 </code></pre>
 <p>Ligamos a swap imediatamente.<br />
 A partir desse momento, o sistema pode começar a usar esse arquivo como memória auxiliar.\</p>
 <p>Configurar para ativar automaticamente no boot</p>
-<pre class="marmite-code"><code class="marmite-code-inner">echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+<pre><code>echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 </code></pre>
 <p>Alteramos o arquivo <code>/etc/fstab</code> (que diz o que montar no boot), pra garantir que <strong>sempre que você reiniciar, a swap vai estar ativa.</strong></p>
 <p>Por padrão, o Linux só usa a swap quando a RAM já está no limite. Você pode mudar isso pra ele ser um pouco mais &quot;esperto&quot; e já ir aliviando antes de travar tudo.</p>
 <p>Rode:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">cat /proc/sys/vm/swappiness
+<pre><code>cat /proc/sys/vm/swappiness
 </code></pre>
 <p>Para verificar o valor atual. Provavelmente <code>60</code></p>
 <p>Reduza o lag e evitar travamento total, coloca algo tipo <code>20</code>:</p>
-<pre class="marmite-code"><code class="marmite-code-inner">echo 'vm.swappiness=20' | sudo tee -a /etc/sysctl.conf
+<pre><code>echo 'vm.swappiness=20' | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
 </code></pre>
 <p>Isso faz o sistema usar a swap de forma mais equilibrada com a RAM. Se quiser testar o comportamento, você pode começar com <code>30</code> e ir ajustando depois.</p>
@@ -2410,14 +2440,18 @@ sudo sysctl -p
 ]]></content:encoded></item><item><title>Como matar processos no linux</title><link>https://meus10centavos.vercel.app//como-matar-processos-no-linux.html</link><author>fabricio</author><category>tutorial</category><category>linux</category><guid>https://meus10centavos.vercel.app//como-matar-processos-no-linux.html</guid><pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">index</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
 <p>É um tutorial de algo besta, mas eu sempre acabo esquecendo como faz, então vou salvar aqui</p>
 <p>Lista todos os processo que estão rodando</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>sudo</a-f> ss <a-co>-tlpn</a-co></code></pre>
+<pre><code class="language-bash">sudo ss -tlpn
+</code></pre>
 <p>Lista todos os processos que estão rodando na porta &lt;número&gt;</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>sudo</a-f> ss <a-co>-tlpn</a-co> <a-o>|</a-o> <a-f>grep</a-f> <a-o>&lt;</a-o>número<a-o>&gt;</a-o></code></pre>
+<pre><code class="language-bash">sudo ss -tlpn | grep &lt;número&gt;
+</code></pre>
 <p>Exemplo:</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>sudo</a-f> ss <a-co>-tlpn</a-co> <a-o>|</a-o> <a-f>grep</a-f> 8000</code></pre>
+<pre><code class="language-bash">sudo ss -tlpn | grep 8000
+</code></pre>
 <p>Mata processo que está rodando na porta 8000</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>sudo</a-f> kill <a-co>-9</a-co> `<a-f>sudo</a-f> lsof <a-co>-t</a-co> <a-co>-i:</a-co><a-o>&lt;</a-o>número<a-o>&gt;</a-o>`
-<a-f>sudo</a-f> kill <a-co>-9</a-co> <a-eb>$(</a-eb><a-f>lsof</a-f><a-eb> </a-eb><a-co>-t</a-co><a-eb> </a-eb><a-co>-i:</a-co><a-o>&lt;</a-o><a-eb>número</a-eb><a-o>&gt;</a-o><a-eb>)</a-eb></code></pre>
+<pre><code class="language-bash">sudo kill -9 `sudo lsof -t -i:&lt;número&gt;`
+sudo kill -9 $(lsof -t -i:&lt;número&gt;)
+</code></pre>
 <p>obs.: &lt;número&gt; deve ser todo incluindo o &lt;&gt; ser torcado pelo número</p>
 <!-- Content Injected to every content markdown footer -->
 ]]></content:encoded></item><item><title>Como aprender um novo idioma</title><link>https://meus10centavos.vercel.app//como-aprender-um-novo-idioma.html</link><author>fabricio</author><category>tutorial</category><category>inglês</category><category>curso</category><guid>https://meus10centavos.vercel.app//como-aprender-um-novo-idioma.html</guid><pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">index</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
@@ -2515,62 +2549,5 @@ O linguista defende que um idioma é separado em duas partes: inputs e outputs (
 <p>Videos<br />
 <a href="https://youtu.be/T8ej2DfMnvQ?si=wLNTPQF_hruLoJaq">Os poderes de saber mais de uma língua</a><br />
 <a href="https://www.youtube.com/watch?v=_fmqo8p-57Q">Como seu cérebro muda ao falar outros idiomas</a></p>
-<!-- Content Injected to every content markdown footer -->
-]]></content:encoded></item><item><title>Como criar um blog com Marmite</title><link>https://meus10centavos.vercel.app//como-criar-blog-marmite.html</link><author>fabricio</author><category>tutorial</category><category>marmite</category><category>rust</category><category>blog</category><guid>https://meus10centavos.vercel.app//como-criar-blog-marmite.html</guid><pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate><source url="https://meus10centavos.vercel.app/">index</source><content:encoded><![CDATA[<!-- Content Injected to every content markdown header -->
-<p>Neste tutorial, vou mostrar como criar seu próprio blog usando o <strong>Marmite</strong>, um gerador de sites estáticos escrito em Rust.</p>
-<h2><a href="#o-que-é-o-marmite" aria-hidden="true" class="anchor" id="o-que-é-o-marmite"></a>O que é o Marmite?</h2>
-<p><a href="https://marmite.blog/">Marmite</a> é um gerador de sites estáticos minimalista que transforma arquivos Markdown em um blog completo. Suas principais características são:</p>
-<ul>
-<li><strong>Zero configuração</strong> para começar</li>
-<li><strong>Escrito em Rust</strong> — rápido e eficiente</li>
-<li><strong>Temas e colorschemes</strong> incluídos</li>
-<li><strong>Busca integrada</strong></li>
-<li><strong>RSS Feed</strong></li>
-<li><strong>Suporte a tags e arquivos</strong></li>
-</ul>
-<h2><a href="#instalação" aria-hidden="true" class="anchor" id="instalação"></a>Instalação</h2>
-<p>A forma mais fácil de instalar é usando o script de instalação:</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>curl</a-f> <a-co>-sS</a-co> https://marmite.blog/install.sh <a-o>|</a-o> <a-f>sh</a-f></code></pre>
-<p>Ou se você tem Rust instalado:</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>cargo</a-f> install marmite</code></pre>
-<h2><a href="#criando-seu-primeiro-blog" aria-hidden="true" class="anchor" id="criando-seu-primeiro-blog"></a>Criando seu primeiro blog</h2>
-<ol>
-<li><strong>Crie uma pasta para o conteúdo:</strong></li>
-</ol>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>mkdir</a-f> meu-blog
-<a-f>cd</a-f> meu-blog</code></pre>
-<ol start="2">
-<li><strong>Inicialize o blog:</strong></li>
-</ol>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>marmite</a-f> . <a-co>--init-site</a-co> \
-    <a-co>--name</a-co> <a-s>&quot;Meu Blog&quot;</a-s> \
-    <a-co>--tagline</a-co> <a-s>&quot;Minha descrição&quot;</a-s> \
-    <a-co>--enable-search</a-co> true</code></pre>
-<ol start="3">
-<li><strong>Crie seu primeiro post:</strong></li>
-</ol>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>marmite</a-f> . <a-co>--new</a-co> <a-s>&quot;Meu Primeiro Post&quot;</a-s> <a-co>-t</a-co> <a-s>&quot;novo,post&quot;</a-s></code></pre>
-<ol start="4">
-<li><strong>Gere e visualize o site:</strong></li>
-</ol>
-<pre class="marmite-code"><code class="marmite-code-inner language-bash"><a-f>marmite</a-f> . <a-co>--serve</a-co></code></pre>
-<p>Acesse <code>http://localhost:8000</code> e veja seu blog funcionando!</p>
-<h2><a href="#estrutura-de-um-post" aria-hidden="true" class="anchor" id="estrutura-de-um-post"></a>Estrutura de um post</h2>
-<p>Os posts são arquivos Markdown com um frontmatter YAML:</p>
-<pre class="marmite-code"><code class="marmite-code-inner language-markdown"><a-p>---</a-p>
-<a-pr>title</a-pr><a-p>:</a-p> <a-s>&quot;Título do Post&quot;</a-s>
-<a-pr>date</a-pr><a-p>:</a-p> <a-s>2026-01-31</a-s>
-<a-pr>tags</a-pr><a-p>:</a-p> <a-s>tag1, tag2</a-s>
-<a-p>---</a-p>
-
-Conteúdo do post aqui...</code></pre>
-<h2><a href="#próximos-passos" aria-hidden="true" class="anchor" id="próximos-passos"></a>Próximos passos</h2>
-<ul>
-<li>Personalize o <code>marmite.yaml</code> com suas informações</li>
-<li>Explore os colorschemes disponíveis</li>
-<li>Adicione mais conteúdo!</li>
-</ul>
-<hr />
-<p>Gostou? Deixe seu comentário!</p>
 <!-- Content Injected to every content markdown footer -->
 ]]></content:encoded></item></channel></rss>
